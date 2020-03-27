@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\services.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\about.js"],{
 
 /***/ "./components/UI/Footer.js":
 /*!*********************************!*\
@@ -664,10 +664,10 @@ var MobileDrawer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div
 
 /***/ }),
 
-/***/ "./components/service/ServiceBanner.js":
-/*!*********************************************!*\
-  !*** ./components/service/ServiceBanner.js ***!
-  \*********************************************/
+/***/ "./components/about/AboutBanner.js":
+/*!*****************************************!*\
+  !*** ./components/about/AboutBanner.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -678,17 +678,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
-/* harmony import */ var _UI_NavbarComp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../UI/NavbarComp */ "./components/UI/NavbarComp.js");
+/* harmony import */ var _UI_NavbarComp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../UI/NavbarComp */ "./components/UI/NavbarComp.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceBanner.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\about\\AboutBanner.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
+function _templateObject9() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height: 30%;\n      transform: translate3d(0, 80%, 0);\n      p{\n        font-size: 32px;\n    line-height: 50%;\n      }\n  "]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject8() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 768px (medium) and 1170px (large) */\n    height: 324px;\n    .banner-title{\n    height: 30%;\n  }\n  p{\n    font-size: 48px;\n    line-height: 30px;\n    transform: translate3d(0, 80%, 0);\n  }\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    height: 30%;\n      transform: translate3d(0, 10%, 0);\n      p{\n        font-size: 32px;\n    line-height: 50%;\n      }\n  "]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -698,7 +708,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height:200px;\n  .banner-title{\n    height: 30%;\n  }\n  p{\n    font-size: 38px;\n    line-height: 30px;\n  }\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 60%;\n  background: rgba(67, 67, 67, 0.44);\n  /* transform: translate3d(0, 0%, 0); */\n  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 100px;\n    line-height: 132%;\n    text-align: center;\n    letter-spacing: 0.345em;\n    transform: translate3d(0, 50%, 0);\n  }\n  ", "\n\n  ", "\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -708,7 +718,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n  height:200px;\n  .banner-title{\n    height: 30%;\n  }\n  p{\n    font-size: 38px;\n    line-height: 30px;\n  }\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height: 250px;\n  "]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -718,7 +728,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 424px;\n  overflow: hidden;\n  background: url(\"/static/images/service/service-banner.png\") top center\n    no-repeat;\n  background-size: cover;\n  .banner-title {\n    height: 60%;\n    width: 100%;\n    background: rgba(67, 67, 67, 0.44);\n  }\n  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 100px;\n    line-height: 125px;\n    text-align: center;\n    letter-spacing: 0.725em;\n    transform: translate3d(0, 50%, 0);\n    color: #ffffff;\n  }\n  ", "\n\n  ", "\n  ", "\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n       height: 250px;\n  "]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -728,7 +738,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 768px (medium) and 1170px (large) */\n    height: 130vh;\n    .service-intro {\n    font-size: 24px;\n    line-height:48px;\n  \n    }\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 424px;\n  overflow: hidden;\n  background: url(\"/static/images/about/aboutbanner.png\") top center no-repeat;\n  background-size: cover;\n\n  ", "\n  ", "\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -738,7 +748,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n \n    .service-intro {\nfont-size: 24px;\nline-height:48px;\nmargin: 15vh auto;\n}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    .about-intro{\n      font-size: 32px;\n    line-height: 42px;\n    width: 80%;\n    } \n  "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -748,7 +758,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    .service-intro {\n    font-size: 24px;\n    line-height:48px;\n  \n    }\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    .about-intro{\n      font-size: 32px;\n    line-height: 42px;\n    width: 80%;\n    }  \n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -758,7 +768,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100%;\n  height: 100vh;\n  background-color: #151515;\n  color: white;\n  .service-intro {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 50px;\n    line-height: 62px;\n    text-align: center;\n    letter-spacing: 0.055em;\n    color: #fcfcfc;\n    width: 40%;\n    margin: 10vh auto;\n    /* margin-top: 10vh; */\n  }\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n  ", "\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100%;\n  height: 100vh;\n  background-color: #151515;\n  color: white;\n  .about-intro {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 50px;\n    line-height: 62px;\n    text-align: center;\n    letter-spacing: 0.055em;\n    color: #fcfcfc;\n    width: 40%;\n    margin: 6vh auto;\n    /* margin-top: 10vh; */\n  }\n  ", "\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -773,7 +783,7 @@ function _templateObject() {
 
 
 
-var ServiceBanner = function ServiceBanner() {
+var AboutBanner = function AboutBanner() {
   return __jsx(Container, {
     __self: _this,
     __source: {
@@ -781,7 +791,7 @@ var ServiceBanner = function ServiceBanner() {
       lineNumber: 9,
       columnNumber: 5
     }
-  }, __jsx(_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -795,8 +805,7 @@ var ServiceBanner = function ServiceBanner() {
       lineNumber: 11,
       columnNumber: 7
     }
-  }, __jsx("div", {
-    className: "banner-title",
+  }, __jsx(ContentDiv, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -810,22 +819,22 @@ var ServiceBanner = function ServiceBanner() {
       lineNumber: 13,
       columnNumber: 11
     }
-  }, "Services"))), __jsx("p", {
-    className: "service-intro",
+  }, "Our Team"))), __jsx("p", {
+    className: "about-intro",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 7
     }
-  }, "We provide best-in-class services in your budget"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
+  }, "Meet our highly skilled team to deliver you the best"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_5__["motion"].div, {
     className: "scroll-arrow",
     initial: {
-      y: -30,
+      y: 5,
       opacity: 0
     },
     animate: {
-      y: -20,
+      y: 8,
       opacity: 1
     },
     exit: {
@@ -878,15 +887,16 @@ var ServiceBanner = function ServiceBanner() {
   }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ServiceBanner);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("medium", "large")(_templateObject4()));
-var BannerBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject6()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject7()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("medium", "large")(_templateObject8()));
+/* harmony default export */ __webpack_exports__["default"] = (AboutBanner);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()));
+var BannerBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()));
+var ContentDiv = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject8()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject9()));
 
 /***/ }),
 
-/***/ "./components/service/ServiceBox.js":
+/***/ "./components/about/AboutContent.js":
 /*!******************************************!*\
-  !*** ./components/service/ServiceBox.js ***!
+  !*** ./components/about/AboutContent.js ***!
   \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -898,15 +908,126 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
+/* harmony import */ var _TeamCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TeamCard */ "./components/about/TeamCard.js");
+/* harmony import */ var _public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/static/images/about/samavatar.png */ "./public/static/images/about/samavatar.png");
+/* harmony import */ var _public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../public/static/images/about/guru.png */ "./public/static/images/about/guru.png");
+/* harmony import */ var _public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../public/static/images/about/sathya.png */ "./public/static/images/about/sathya.png");
+/* harmony import */ var _public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../public/static/images/about/laka.png */ "./public/static/images/about/laka.png");
+/* harmony import */ var _public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../public/static/images/about/harsha.png */ "./public/static/images/about/harsha.png");
+/* harmony import */ var _public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_9__);
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceBox.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\about\\AboutContent.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
+function _templateObject12() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    grid-template-columns: repeat(1, 1fr);\n    padding-top: 80vh;\n    width: 80%;\n  margin: 0 auto;\n  grid-gap:10vh;\n  "]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    grid-template-columns: repeat(1, 1fr);\n    padding-top: 80vh;\n    width: 80%;\n  margin: 0 auto;\n  grid-gap:10vh;\n  "]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 95%;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  padding-top: 90vh;\n  overflow: hidden;\n  /* grid-gap: 25%; */\n  ", "\n\n  ", "\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    margin-top: 10vh;\n    width: 80vw;\n    top: 10vh;\n  left: 10vw;\n  height: 40vh;\n    img {\n    width: 45%;   \n    top: -45%;\n    left: 25%;\n  "]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    margin-top: 10vh;\n    width: 80vw;\n    top: 10vh;\n  left: 10vw;\n  height: 40vh;\n    img {\n    width: 55%;   \n    top: -45%;\n    left: 25%;\n    /* height: 25%; */\n  }\n    "]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 40vw;\n  height: 35vh;\n  background: #ffffff;\n  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25), -6px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 5px;\n  font-family: Poppins;\n  font-style: thin;\n  color: #000000;\n  text-align: center;\n  /* transform: translate3d(50%, -35%, 0); */\n  z-index: 10;\n  margin-top: 20vh;\n  position: absolute;\n  top: 10vh;\n  left: 30vw;\n  img {\n    width: 35%;\n    position: absolute;\n    top: -60%;\n    left: 33%;\n    /* height: 25%; */\n  }\n  .name {\n    font-weight: 300;\n    font-size: 48px;\n    letter-spacing: 0.21em;\n    margin: 50px 0 0 0;\n  }\n  .title {\n    font-weight: 200;\n    font-size: 32px;\n    line-height: 132%;\n    margin: 10px 0 0 0;\n    letter-spacing: 0.21em;\n    color: #6c6a6a;\n  }\n  .desc {\n    font-weight: 200;\n    font-size: 18px;\n    line-height: 132%;\n    width: 80%;\n    margin: 25px auto;\n    /* or 32px */\n\n    letter-spacing: 0.03em;\n  }\n  ", "\n\n  ", "\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height: 100%; \n  "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    height: 100%;    \n  "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: absolute;\n  /* z-index: -10; */\n  background: url(\"/static/images/about/stripes.svg\") bottom center no-repeat;\n\n  top: -10vh;\n  left: 0;\n  background-size: cover;\n  width: 100%;\n  height: 160%;\n  z-index: -10;\n  ", "\n  ", "\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height: 350vh;   \n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    .content-bg{\n      max-width: 60%;\n      transform: translate3d(0, 80%, 0);\n    }\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    height: 350vh;    \n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -916,7 +1037,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 335px;\n  height: 350px;\n  border-radius: 7px;\n  border: 2px solid #ffffff;\n  transition: all 0.3s ease-in-out;\n  z-index: 10;\n\n  /* background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),\n    url(\"/static/images/service/engine.jpg\") center top no-repeat; */\n  ", "\n  background-size: cover;\n  width: 60%;\n  margin: 0 auto;\n  .content-bg {\n    max-width: 40%;\n    margin: 0 auto;\n    transform: translate3d(0, 100%, 0);\n    background: rgba(196, 196, 196, 0.14);\n    border-radius: 5px;\n  }\n  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 32px;\n    line-height: 40px;\n    text-align: center;\n    letter-spacing: 0.055em;\n    color: #ffffff;\n  }\n  &:hover {\n    transform: scale3d(1.1, 1.1, 1.1);\n  }\n\n  ", "\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  background-color: #fff;\n  height: 200vh;\n  z-index: 20;\n  position: relative;\n  overflow: hidden;\n  ", "\n\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -929,47 +1050,133 @@ function _templateObject() {
 
 
 
-var ServiceBox = function ServiceBox(_ref) {
-  var name = _ref.name,
-      bg = _ref.bg;
+
+
+
+
+
+
+var AboutContent = function AboutContent() {
   return __jsx(Container, {
-    bg: bg,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 13,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: "content-bg",
+  }, __jsx(BGstripes, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 14,
       columnNumber: 7
     }
-  }, __jsx("p", {
+  }), __jsx(SamCard, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 15,
+      columnNumber: 7
+    }
+  }, __jsx("img", {
+    src: _public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "Sam",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
       columnNumber: 9
     }
-  }, name)));
+  }), __jsx("p", {
+    className: "name",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, "Sam"), __jsx("p", {
+    className: "title",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, "The Chief"), __jsx("p", {
+    className: "desc",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, "The CEO of Sam\u2019s auto. Great mechanic and solution provider. Friendly and great to have a chat with. Enjoy\u2019s BBQ")), __jsx(TeamGrid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 7
+    }
+  }, __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Guru",
+    title: "The Engine Guy",
+    desc: "Specializes in Engine swap. Highly knowlegable in\r\ncar tech. Will transform your car into\r\nthe beast you dream of. Loves his Dodge",
+    img: _public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }
+  }), __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Sathya",
+    title: "Spark Man",
+    desc: "Knows his way around your\r\ncar\u2019s nervous system.\r\nElectrical and wiring specialist.\r\nAlso the IT guy.",
+    img: _public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 9
+    }
+  }), __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Laka",
+    title: "Designer",
+    desc: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    img: _public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 9
+    }
+  }), __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Harsha",
+    title: "Master",
+    desc: "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    img: _public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_9___default.a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 9
+    }
+  })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ServiceBox);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), function (_ref2) {
-  var bg = _ref2.bg;
-  return bg && " background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),\n     url(".concat(bg, ") center top no-repeat;");
-}, styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()));
+/* harmony default export */ __webpack_exports__["default"] = (AboutContent);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()));
+var BGstripes = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()));
+var SamCard = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject8()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject9()));
+var TeamGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject10(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject11()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject12()));
 
 /***/ }),
 
-/***/ "./components/service/ServiceContent.js":
-/*!**********************************************!*\
-  !*** ./components/service/ServiceContent.js ***!
-  \**********************************************/
+/***/ "./components/about/TeamCard.js":
+/*!**************************************!*\
+  !*** ./components/about/TeamCard.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -980,26 +1187,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
-/* harmony import */ var _ServiceBox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ServiceBox */ "./components/service/ServiceBox.js");
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceContent.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\about\\TeamCard.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-function _templateObject7() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin: 4vh 0;\n  "]);
-
-  _templateObject7 = function _templateObject7() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject6() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    grid-template-columns: repeat(1, 1fr);\n    margin: 5vh 0;\n    grid-gap: 70px;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    width: 90%;\n  height: 45vh;\n  img {\n    width: 40%;\n   \n    position: absolute;\n    top: -35%;\n    left: 33%;\n  }\n  .name { \n    font-size:32px;\n    padding: 7vh 0 0 0;\n  }\n  .title { \n    font-size: 24px;   \n    margin: 5px 0 0 0;  \n  }\n  .desc {\n    font-weight: 200;\n    font-size: 18px;\n    line-height: 132%;\n    width: 80%;\n    margin: 5px auto;\n    /* or 32px */\n  }\n  "]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -1009,7 +1205,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    grid-template-columns: repeat(1, 1fr);\n    margin: 5vh 0;\n    grid-gap: 30px;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    width: 90%;\n  height: 45vh;\n  img {\n    width: 30%;\n    /* height: 60%; */\n    position: absolute;\n    top: -15%;\n    left: 33%;\n  }\n  .name { \n    font-size:32px;\n    padding: 7vh 0 0 0;\n  }\n  .title { \n    font-size: 24px;   \n    margin: 5px 0 0 0;  \n  }\n  .desc {\n    font-weight: 200;\n    font-size: 18px;\n    line-height: 132%;\n    width: 80%;\n    margin: 5px auto;\n    /* or 32px */\n\n  }\n  "]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -1019,7 +1215,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  z-index: 10;\n  margin: 15vh 0;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-gap: 95px;\n    /* screen width is less than 450px (small) */\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n    /* screen width is between 768px (medium) and 1170px (large) */\n  ", "\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 40vw;\n  height: 35vh;\n  background: #ffffff;\n  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  border-radius: 5px;\n  position: relative;\n  font-family: Poppins;\n  font-style: thin;\n  color: #000000;\n  text-align: center;\n  img {\n    width: 30%;\n    /* height: 60%; */\n    position: absolute;\n    top: -45%;\n    left: 33%;\n  }\n  .name {\n    font-weight: 300;\n    font-size: 48px;\n    letter-spacing: 0.21em;\n    padding: 8vh 0 0 0;\n  }\n  .title {\n    font-weight: 200;\n    font-size: 32px;\n    line-height: 132%;\n    margin: 10px 0 0 0;\n    letter-spacing: 0.21em;\n    color: #6c6a6a;\n  }\n  .desc {\n    font-weight: 200;\n    font-size: 18px;\n    line-height: 132%;\n    width: 80%;\n    margin: 25px auto;\n    /* or 32px */\n\n    letter-spacing: 0.03em;\n  }\n  ", "\n  ", "\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -1029,7 +1225,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    .bg-stripes{\n  top: 0vh;\n  width: 100%;\n    height: 65%;\n}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    width: 90vw;\n   height: 55vh;\n  "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -1039,7 +1235,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.bg-stripes{\n  top: 0vh;\n  width: 100%;\n    height: 65%;\n}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    width: 90vw;\n  height: 55vh;\n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -1049,7 +1245,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  background-color: #151515;\n  position: relative;\n  overflow: hidden;\n  /* height: 100vh; */\n\n  .bg-stripes {\n    position: absolute;\n  \n    background: url(\"/static/images/service/stripes.svg\") bottom center\n      no-repeat;\n    top: 10vh;\n    left: 0;\n    background-size: cover;\n    width: 120%;\n    height: 165%;\n\n  }\n    /* screen width is less than 450px (small) */\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 50vw;\n  height: 55vh;\n  ", "\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1062,90 +1258,64 @@ function _templateObject() {
 
 
 
-
-var ServiceContent = function ServiceContent() {
+var TeamCard = function TeamCard(_ref) {
+  var name = _ref.name,
+      title = _ref.title,
+      img = _ref.img,
+      desc = _ref.desc;
   return __jsx(Container, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 7,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: "bg-stripes",
+  }, __jsx(Card, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, __jsx("img", {
+    src: img,
+    alt: name,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }), __jsx(ServiceGrid, {
+  }), __jsx("div", {
+    className: "name",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, name), __jsx("div", {
+    className: "title",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }, __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    name: "Engine Swap / Repair",
-    bg: "/static/images/service/engine.jpg",
+  }, " ", title, " "), __jsx("div", {
+    className: "desc",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
       columnNumber: 9
     }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    name: "Electrical Repairs",
-    bg: "/static/images/service/electric.jpg",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    name: "Brakes Check",
-    bg: "/static/images/service/brakes.jpg",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    name: "Oil Change",
-    bg: "/static/images/service/oil.jpg",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    name: "Air Filter Check",
-    bg: "/static/images/service/filter.jpg",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    name: "General Services",
-    bg: "/static/images/service/general.jpg",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 9
-    }
-  })));
+  }, desc, " ")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ServiceContent);
+/* harmony default export */ __webpack_exports__["default"] = (TeamCard);
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()));
-var ServiceGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("medium", "large")(_templateObject7()));
+var Card = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()));
 
 /***/ }),
 
@@ -8642,21 +8812,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js!./":
-/*!*************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js ***!
-  \*************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cabout.js!./":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cabout.js ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/services", function() {
-      var mod = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
+      var mod = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
       if(true) {
-        module.hot.accept(/*! ./pages/services.js */ "./pages/services.js", function() {
-          if(!next.router.components["/services"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
-          next.router.update("/services", updatedPage)
+        module.hot.accept(/*! ./pages/about.js */ "./pages/about.js", function() {
+          if(!next.router.components["/about"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
+          next.router.update("/about", updatedPage)
         })
       }
       return mod
@@ -18370,10 +18540,10 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
-/***/ "./pages/services.js":
-/*!***************************!*\
-  !*** ./pages/services.js ***!
-  \***************************/
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -18385,23 +18555,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/UI/NavbarComp */ "./components/UI/NavbarComp.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_service_ServiceBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../components/service/ServiceBox */ "./components/service/ServiceBox.js");
-/* harmony import */ var _components_service_ServiceBanner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/service/ServiceBanner */ "./components/service/ServiceBanner.js");
-/* harmony import */ var _components_service_ServiceContent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/service/ServiceContent */ "./components/service/ServiceContent.js");
-/* harmony import */ var _components_UI_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/UI/Footer */ "./components/UI/Footer.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_about_AboutBanner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about/AboutBanner */ "./components/about/AboutBanner.js");
+/* harmony import */ var _components_about_AboutContent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../components/about/AboutContent */ "./components/about/AboutContent.js");
+/* harmony import */ var _components_UI_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/UI/Footer */ "./components/UI/Footer.js");
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\services.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\about.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 100vh;\n  line-height: 1.3;\n  overflow: hidden;\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 100vh;\n  line-height: 1.3;\n  overflow-x: hidden;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -18417,22 +18585,20 @@ function _templateObject() {
 
 
 
-
-
-var services = function services() {
+var about = function about() {
   return __jsx("div", {
     className: "jsx-633493357",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 10,
       columnNumber: 5
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 11,
       columnNumber: 7
     }
   }, __jsx("title", {
@@ -18440,17 +18606,17 @@ var services = function services() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 12,
       columnNumber: 9
     }
-  }, "Sam's Auto | Services"), __jsx("link", {
-    href: "https://fonts.googleapis.com/css?family=Poppins|Quicksand|Racing+Sans+One&display=swap",
+  }, "Sam's Auto | About"), __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=Poppins:200,300|Quicksand|Racing+Sans+One&display=swap",
     rel: "stylesheet",
     className: "jsx-633493357",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 13,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -18460,85 +18626,100 @@ var services = function services() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 9
     }
   })), __jsx(Container, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 19,
       columnNumber: 7
     }
-  }, __jsx(_components_service_ServiceBanner__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(_components_about_AboutBanner__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }), __jsx(_components_about_AboutContent__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }
+  }), __jsx(_components_UI_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
       columnNumber: 9
     }
-  }), __jsx(_components_service_ServiceContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
-    }
-  }), __jsx(_components_UI_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 9
-    }
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
     id: "633493357",
     __self: _this
-  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXHNlcnZpY2VzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXlCeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxzZXJ2aWNlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHNcIjtcclxuaW1wb3J0IE5hdmJhckNvbXAgZnJvbSBcIi4uL2NvbXBvbmVudHMvVUkvTmF2YmFyQ29tcFwiO1xyXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XHJcbmltcG9ydCBTZXJ2aWNlQm94IGZyb20gXCIuLy4uL2NvbXBvbmVudHMvc2VydmljZS9TZXJ2aWNlQm94XCI7XHJcbmltcG9ydCBTZXJ2aWNlQmFubmVyIGZyb20gXCIuLi9jb21wb25lbnRzL3NlcnZpY2UvU2VydmljZUJhbm5lclwiO1xyXG5pbXBvcnQgU2VydmljZUNvbnRlbnQgZnJvbSBcIi4uL2NvbXBvbmVudHMvc2VydmljZS9TZXJ2aWNlQ29udGVudFwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5cclxuY29uc3Qgc2VydmljZXMgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5TYW0ncyBBdXRvIHwgU2VydmljZXM8L3RpdGxlPlxyXG4gICAgICAgIDxsaW5rXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVBvcHBpbnN8UXVpY2tzYW5kfFJhY2luZytTYW5zK09uZSZkaXNwbGF5PXN3YXBcIlxyXG4gICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXHJcbiAgICAgICAgLz5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiIC8+XHJcbiAgICAgIDwvSGVhZD5cclxuICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICA8U2VydmljZUJhbm5lciAvPlxyXG4gICAgICAgIDxTZXJ2aWNlQ29udGVudCAvPlxyXG4gICAgICAgIDxGb290ZXIgLz5cclxuICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgICAgYm9keSB7XHJcbiAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBzZXJ2aWNlcztcclxuXHJcbmNvbnN0IENvbnRhaW5lciA9IHN0eWxlZC5kaXZgXHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbiAgbGluZS1oZWlnaHQ6IDEuMztcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG5gO1xyXG5cclxuLy8gY29uc3QgQ29udGFpbmVyID0gc3R5bGVkLmRpdmBcclxuLy8gICB3aWR0aDogMTAwdnc7XHJcbi8vICAgbGluZS1oZWlnaHQ6IDEuMztcclxuLy8gICBtYXJnaW46IDA7XHJcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogIzE1MTUxNTtcclxuLy8gICAvKiBoZWlnaHQ6IDMwMHZoOyAqL1xyXG4vLyAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuLy8gICB6LWluZGV4OiAtMjA7XHJcbi8vICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuXHJcbi8vIGA7XHJcbi8vIGNvbnN0IEJhbm5lckJHID0gc3R5bGVkLmRpdmBcclxuLy8gICB3aWR0aDogMTAwdnc7XHJcbi8vICAgaGVpZ2h0OiA2MHZoO1xyXG4vLyAgIGJhY2tncm91bmQ6IHVybChcIi9zdGF0aWMvaW1hZ2VzL3NlcnZpY2Uvc2VydmljZS1iYW5uZXIucG5nXCIpIGJvdHRvbSBjZW50ZXJcclxuLy8gICAgIG5vLXJlcGVhdDtcclxuLy8gICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG4vLyAgIC5iYW5uZXItdGl0bGUge1xyXG4vLyAgICAgaGVpZ2h0OiA2MCU7XHJcbi8vICAgICB3aWR0aDogMTAwJTtcclxuLy8gICAgIGJhY2tncm91bmQ6IHJnYmEoNjcsIDY3LCA2NywgMC40NCk7XHJcblxyXG4vLyAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAzNSUsIDApO1xyXG4vLyAgIH1cclxuLy8gICBwIHtcclxuLy8gICAgIGZvbnQtZmFtaWx5OiBRdWlja3NhbmQ7XHJcbi8vICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbi8vICAgICBmb250LXdlaWdodDogbm9ybWFsO1xyXG4vLyAgICAgZm9udC1zaXplOiAxMDBweDtcclxuLy8gICAgIGxpbmUtaGVpZ2h0OiAxMjVweDtcclxuLy8gICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuLy8gICAgIGxldHRlci1zcGFjaW5nOiAwLjcyNWVtO1xyXG4vLyAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCA2NSUsIDApO1xyXG4vLyAgICAgY29sb3I6ICNmZmZmZmY7XHJcbi8vICAgfVxyXG4vLyBgO1xyXG5cclxuLy8gY29uc3QgU2VydmljZUdyaWQgPSBzdHlsZWQuZGl2YFxyXG4vLyAgIHotaW5kZXg6IDEwO1xyXG4vLyAgIG1hcmdpbjogMTV2aCAwO1xyXG4vLyAgIGRpc3BsYXk6IGdyaWQ7XHJcbi8vICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMiwgMWZyKTtcclxuLy8gICBncmlkLWdhcDogOTVweDtcclxuLy8gYDtcclxuIl19 */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\services.js */"));
+  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXGFib3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXVCeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxhYm91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHNcIjtcclxuaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xyXG5pbXBvcnQgQWJvdXRCYW5uZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvYWJvdXQvQWJvdXRCYW5uZXJcIjtcclxuaW1wb3J0IEFib3V0Q29udGVudCBmcm9tIFwiLi8uLi9jb21wb25lbnRzL2Fib3V0L0Fib3V0Q29udGVudFwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5cclxuY29uc3QgYWJvdXQgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5TYW0ncyBBdXRvIHwgQWJvdXQ8L3RpdGxlPlxyXG4gICAgICAgIDxsaW5rXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVBvcHBpbnM6MjAwLDMwMHxRdWlja3NhbmR8UmFjaW5nK1NhbnMrT25lJmRpc3BsYXk9c3dhcFwiXHJcbiAgICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcclxuICAgICAgICAvPlxyXG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCIgLz5cclxuICAgICAgPC9IZWFkPlxyXG4gICAgICA8Q29udGFpbmVyPlxyXG4gICAgICAgIDxBYm91dEJhbm5lciAvPlxyXG4gICAgICAgIDxBYm91dENvbnRlbnQgLz5cclxuICAgICAgICA8Rm9vdGVyIC8+XHJcbiAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgIGJvZHkge1xyXG4gICAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgICAgICAgcGFkZGluZzogMDtcclxuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICA8L2Rpdj5cclxuICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgYWJvdXQ7XHJcblxyXG5jb25zdCBDb250YWluZXIgPSBzdHlsZWQuZGl2YFxyXG4gIHdpZHRoOiAxMDB2dztcclxuICBoZWlnaHQ6IDEwMHZoO1xyXG4gIGxpbmUtaGVpZ2h0OiAxLjM7XHJcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG5gO1xyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\about.js */"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (services);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject()); // const Container = styled.div`
-//   width: 100vw;
-//   line-height: 1.3;
-//   margin: 0;
-//   background-color: #151515;
-//   /* height: 300vh; */
-//   position: relative;
-//   z-index: -20;
-//   overflow: hidden;
-// `;
-// const BannerBG = styled.div`
-//   width: 100vw;
-//   height: 60vh;
-//   background: url("/static/images/service/service-banner.png") bottom center
-//     no-repeat;
-//   background-size: cover;
-//   .banner-title {
-//     height: 60%;
-//     width: 100%;
-//     background: rgba(67, 67, 67, 0.44);
-//     transform: translate3d(0, 35%, 0);
-//   }
-//   p {
-//     font-family: Quicksand;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 100px;
-//     line-height: 125px;
-//     text-align: center;
-//     letter-spacing: 0.725em;
-//     transform: translate3d(0, 65%, 0);
-//     color: #ffffff;
-//   }
-// `;
-// const ServiceGrid = styled.div`
-//   z-index: 10;
-//   margin: 15vh 0;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-gap: 95px;
-// `;
+/* harmony default export */ __webpack_exports__["default"] = (about);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
+
+/***/ }),
+
+/***/ "./public/static/images/about/guru.png":
+/*!*********************************************!*\
+  !*** ./public/static/images/about/guru.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/guru-c45f848e8fd10a8519454301e61a8cdd.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/harsha.png":
+/*!***********************************************!*\
+  !*** ./public/static/images/about/harsha.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/harsha-b64273a28355028f3428f3fdbf8cba76.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/laka.png":
+/*!*********************************************!*\
+  !*** ./public/static/images/about/laka.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/laka-7f373fc396485b7a6a01521515373848.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/samavatar.png":
+/*!**************************************************!*\
+  !*** ./public/static/images/about/samavatar.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/samavatar-eadb24eb6358a878bf22dfdee6be6c77.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/sathya.png":
+/*!***********************************************!*\
+  !*** ./public/static/images/about/sathya.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/sathya-b1731b6d32625d1e82598fb1df0a1fbe.png";
 
 /***/ }),
 
@@ -18586,14 +18767,14 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iNDIi
 
 /***/ }),
 
-/***/ 3:
-/*!*****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js ***!
-  \*****************************************************************************************************************************************************/
+/***/ 1:
+/*!***********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cabout.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cabout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cabout.js!./");
 
 
 /***/ }),
@@ -18609,5 +18790,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=services.js.map
+},[[1,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=about.js.map

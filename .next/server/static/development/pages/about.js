@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -759,10 +759,10 @@ const MobileDrawer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.di
 
 /***/ }),
 
-/***/ "./components/service/ServiceBanner.js":
-/*!*********************************************!*\
-  !*** ./components/service/ServiceBanner.js ***!
-  \*********************************************/
+/***/ "./components/about/AboutBanner.js":
+/*!*****************************************!*\
+  !*** ./components/about/AboutBanner.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -774,10 +774,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-media-query */ "styled-media-query");
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_media_query__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "framer-motion");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _UI_NavbarComp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../UI/NavbarComp */ "./components/UI/NavbarComp.js");
-var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceBanner.js";
+/* harmony import */ var _UI_NavbarComp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../UI/NavbarComp */ "./components/UI/NavbarComp.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "framer-motion");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\about\\AboutBanner.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -785,7 +785,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const ServiceBanner = () => {
+const AboutBanner = () => {
   return __jsx(Container, {
     __self: undefined,
     __source: {
@@ -793,7 +793,7 @@ const ServiceBanner = () => {
       lineNumber: 9,
       columnNumber: 5
     }
-  }, __jsx(_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -807,8 +807,7 @@ const ServiceBanner = () => {
       lineNumber: 11,
       columnNumber: 7
     }
-  }, __jsx("div", {
-    className: "banner-title",
+  }, __jsx(ContentDiv, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -822,22 +821,22 @@ const ServiceBanner = () => {
       lineNumber: 13,
       columnNumber: 11
     }
-  }, "Services"))), __jsx("p", {
-    className: "service-intro",
+  }, "Our Team"))), __jsx("p", {
+    className: "about-intro",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 7
     }
-  }, "We provide best-in-class services in your budget"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
+  }, "Meet our highly skilled team to deliver you the best"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
     className: "scroll-arrow",
     initial: {
-      y: -30,
+      y: 5,
       opacity: 0
     },
     animate: {
-      y: -20,
+      y: 8,
       opacity: 1
     },
     exit: {
@@ -890,13 +889,13 @@ const ServiceBanner = () => {
   }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ServiceBanner);
+/* harmony default export */ __webpack_exports__["default"] = (AboutBanner);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   width: 100%;
   height: 100vh;
   background-color: #151515;
   color: white;
-  .service-intro {
+  .about-intro {
     font-family: Quicksand;
     font-style: normal;
     font-weight: 500;
@@ -906,103 +905,82 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     letter-spacing: 0.055em;
     color: #fcfcfc;
     width: 40%;
-    margin: 10vh auto;
+    margin: 6vh auto;
     /* margin-top: 10vh; */
   }
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
-    .service-intro {
-    font-size: 24px;
-    line-height:48px;
-  
-    }
+    .about-intro{
+      font-size: 32px;
+    line-height: 42px;
+    width: 80%;
+    }  
   `}
-    /* screen width is between 450px and 768px (small to medium) */
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
- 
-    .service-intro {
-font-size: 24px;
-line-height:48px;
-margin: 15vh auto;
-}
+    /* screen width is between 450px and 768px (small to medium) */
+    .about-intro{
+      font-size: 32px;
+    line-height: 42px;
+    width: 80%;
+    } 
   `}
-  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("medium", "large")`
-    /* screen width is between 768px (medium) and 1170px (large) */
-    height: 130vh;
-    .service-intro {
-    font-size: 24px;
-    line-height:48px;
-  
-    }
-  `}
-
 `;
 const BannerBG = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   width: 100vw;
   height: 424px;
   overflow: hidden;
-  background: url("/static/images/service/service-banner.png") top center
-    no-repeat;
+  background: url("/static/images/about/aboutbanner.png") top center no-repeat;
   background-size: cover;
-  .banner-title {
-    height: 60%;
-    width: 100%;
-    background: rgba(67, 67, 67, 0.44);
-  }
+
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
+       height: 250px;
+  `}
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+    /* screen width is between 450px and 768px (small to medium) */
+    height: 250px;
+  `}
+`;
+const ContentDiv = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  width: 100vw;
+  height: 60%;
+  background: rgba(67, 67, 67, 0.44);
+  /* transform: translate3d(0, 0%, 0); */
   p {
     font-family: Quicksand;
     font-style: normal;
     font-weight: normal;
     font-size: 100px;
-    line-height: 125px;
+    line-height: 132%;
     text-align: center;
-    letter-spacing: 0.725em;
+    letter-spacing: 0.345em;
     transform: translate3d(0, 50%, 0);
-    color: #ffffff;
   }
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
-  height:200px;
-  .banner-title{
     height: 30%;
-  }
-  p{
-    font-size: 38px;
-    line-height: 30px;
-  }
+      transform: translate3d(0, 10%, 0);
+      p{
+        font-size: 32px;
+    line-height: 50%;
+      }
   `}
 
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
     /* screen width is between 450px and 768px (small to medium) */
-    height:200px;
-  .banner-title{
     height: 30%;
-  }
-  p{
-    font-size: 38px;
-    line-height: 30px;
-  }
+      transform: translate3d(0, 80%, 0);
+      p{
+        font-size: 32px;
+    line-height: 50%;
+      }
   `}
-  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("medium", "large")`
-    /* screen width is between 768px (medium) and 1170px (large) */
-    height: 324px;
-    .banner-title{
-    height: 30%;
-  }
-  p{
-    font-size: 48px;
-    line-height: 30px;
-    transform: translate3d(0, 80%, 0);
-  }
-  `}
-
 `;
 
 /***/ }),
 
-/***/ "./components/service/ServiceBox.js":
+/***/ "./components/about/AboutContent.js":
 /*!******************************************!*\
-  !*** ./components/service/ServiceBox.js ***!
+  !*** ./components/about/AboutContent.js ***!
   \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1015,96 +993,284 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-media-query */ "styled-media-query");
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_media_query__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceBox.js";
+/* harmony import */ var _TeamCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TeamCard */ "./components/about/TeamCard.js");
+/* harmony import */ var _public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/static/images/about/samavatar.png */ "./public/static/images/about/samavatar.png");
+/* harmony import */ var _public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/static/images/about/guru.png */ "./public/static/images/about/guru.png");
+/* harmony import */ var _public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../public/static/images/about/sathya.png */ "./public/static/images/about/sathya.png");
+/* harmony import */ var _public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../public/static/images/about/laka.png */ "./public/static/images/about/laka.png");
+/* harmony import */ var _public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../public/static/images/about/harsha.png */ "./public/static/images/about/harsha.png");
+/* harmony import */ var _public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_8__);
+var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\about\\AboutContent.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const ServiceBox = ({
-  name,
-  bg
-}) => {
+
+
+
+
+
+
+const AboutContent = () => {
   return __jsx(Container, {
-    bg: bg,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 13,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: "content-bg",
+  }, __jsx(BGstripes, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 14,
       columnNumber: 7
     }
-  }, __jsx("p", {
+  }), __jsx(SamCard, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 15,
+      columnNumber: 7
+    }
+  }, __jsx("img", {
+    src: _public_static_images_about_samavatar_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Sam",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
       columnNumber: 9
     }
-  }, name)));
+  }), __jsx("p", {
+    className: "name",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, "Sam"), __jsx("p", {
+    className: "title",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, "The Chief"), __jsx("p", {
+    className: "desc",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, "The CEO of Sam\u2019s auto. Great mechanic and solution provider. Friendly and great to have a chat with. Enjoy\u2019s BBQ")), __jsx(TeamGrid, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 7
+    }
+  }, __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "Guru",
+    title: "The Engine Guy",
+    desc: "Specializes in Engine swap. Highly knowlegable in\r\ncar tech. Will transform your car into\r\nthe beast you dream of. Loves his Dodge",
+    img: _public_static_images_about_guru_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 9
+    }
+  }), __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "Sathya",
+    title: "Spark Man",
+    desc: "Knows his way around your\r\ncar\u2019s nervous system.\r\nElectrical and wiring specialist.\r\nAlso the IT guy.",
+    img: _public_static_images_about_sathya_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 9
+    }
+  }), __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "Laka",
+    title: "Designer",
+    desc: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    img: _public_static_images_about_laka_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 9
+    }
+  }), __jsx(_TeamCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "Harsha",
+    title: "Master",
+    desc: "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    img: _public_static_images_about_harsha_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 9
+    }
+  })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ServiceBox);
+/* harmony default export */ __webpack_exports__["default"] = (AboutContent);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  width: 335px;
-  height: 350px;
-  border-radius: 7px;
-  border: 2px solid #ffffff;
-  transition: all 0.3s ease-in-out;
-  z-index: 10;
-
-  /* background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),
-    url("/static/images/service/engine.jpg") center top no-repeat; */
-  ${({
-  bg
-}) => bg && ` background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),
-     url(${bg}) center top no-repeat;`}
-  background-size: cover;
-  width: 60%;
-  margin: 0 auto;
-  .content-bg {
-    max-width: 40%;
-    margin: 0 auto;
-    transform: translate3d(0, 100%, 0);
-    background: rgba(196, 196, 196, 0.14);
-    border-radius: 5px;
-  }
-  p {
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.055em;
-    color: #ffffff;
-  }
-  &:hover {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
+  width: 100vw;
+  background-color: #fff;
+  height: 200vh;
+  z-index: 20;
+  position: relative;
+  overflow: hidden;
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
-    .content-bg{
-      max-width: 60%;
-      transform: translate3d(0, 80%, 0);
-    }
+    height: 350vh;    
+  `}
+
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+    /* screen width is between 450px and 768px (small to medium) */
+    height: 350vh;   
+  `}
+`;
+const BGstripes = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  position: absolute;
+  /* z-index: -10; */
+  background: url("/static/images/about/stripes.svg") bottom center no-repeat;
+
+  top: -10vh;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 160%;
+  z-index: -10;
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
+    /* screen width is less than 450px (small) */
+    height: 100%;    
+  `}
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+    /* screen width is between 450px and 768px (small to medium) */
+    height: 100%; 
+  `}
+`;
+const SamCard = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  width: 40vw;
+  height: 35vh;
+  background: #ffffff;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25), -6px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: Poppins;
+  font-style: thin;
+  color: #000000;
+  text-align: center;
+  /* transform: translate3d(50%, -35%, 0); */
+  z-index: 10;
+  margin-top: 20vh;
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+  img {
+    width: 35%;
+    position: absolute;
+    top: -60%;
+    left: 33%;
+    /* height: 25%; */
+  }
+  .name {
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: 0.21em;
+    margin: 50px 0 0 0;
+  }
+  .title {
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 132%;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.21em;
+    color: #6c6a6a;
+  }
+  .desc {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 132%;
+    width: 80%;
+    margin: 25px auto;
+    /* or 32px */
+
+    letter-spacing: 0.03em;
+  }
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
+    /* screen width is less than 450px (small) */
+    margin-top: 10vh;
+    width: 80vw;
+    top: 10vh;
+  left: 10vw;
+  height: 40vh;
+    img {
+    width: 55%;   
+    top: -45%;
+    left: 25%;
+    /* height: 25%; */
+  }
+    `}
+
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+    /* screen width is between 450px and 768px (small to medium) */
+    margin-top: 10vh;
+    width: 80vw;
+    top: 10vh;
+  left: 10vw;
+  height: 40vh;
+    img {
+    width: 45%;   
+    top: -45%;
+    left: 25%;
+  `}
+`;
+const TeamGrid = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 90vh;
+  overflow: hidden;
+  /* grid-gap: 25%; */
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
+    /* screen width is less than 450px (small) */
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 80vh;
+    width: 80%;
+  margin: 0 auto;
+  grid-gap:10vh;
+  `}
+
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+    /* screen width is between 450px and 768px (small to medium) */
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 80vh;
+    width: 80%;
+  margin: 0 auto;
+  grid-gap:10vh;
   `}
 `;
 
 /***/ }),
 
-/***/ "./components/service/ServiceContent.js":
-/*!**********************************************!*\
-  !*** ./components/service/ServiceContent.js ***!
-  \**********************************************/
+/***/ "./components/about/TeamCard.js":
+/*!**************************************!*\
+  !*** ./components/about/TeamCard.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1116,154 +1282,182 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-media-query */ "styled-media-query");
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_media_query__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ServiceBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ServiceBox */ "./components/service/ServiceBox.js");
-var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceContent.js";
+var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\about\\TeamCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-
-const ServiceContent = () => {
+const TeamCard = ({
+  name,
+  title,
+  img,
+  desc
+}) => {
   return __jsx(Container, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 7,
       columnNumber: 5
     }
-  }, __jsx("div", {
-    className: "bg-stripes",
+  }, __jsx(Card, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, __jsx("img", {
+    src: img,
+    alt: name,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }), __jsx(ServiceGrid, {
+  }), __jsx("div", {
+    className: "name",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, name), __jsx("div", {
+    className: "title",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }, __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "Engine Swap / Repair",
-    bg: "/static/images/service/engine.jpg",
+  }, " ", title, " "), __jsx("div", {
+    className: "desc",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
       columnNumber: 9
     }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "Electrical Repairs",
-    bg: "/static/images/service/electric.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "Brakes Check",
-    bg: "/static/images/service/brakes.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "Oil Change",
-    bg: "/static/images/service/oil.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "Air Filter Check",
-    bg: "/static/images/service/filter.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 9
-    }
-  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "General Services",
-    bg: "/static/images/service/general.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 9
-    }
-  })));
+  }, desc, " ")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ServiceContent);
+/* harmony default export */ __webpack_exports__["default"] = (TeamCard);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  width: 100vw;
-  background-color: #151515;
-  position: relative;
-  overflow: hidden;
-  /* height: 100vh; */
-
-  .bg-stripes {
-    position: absolute;
-  
-    background: url("/static/images/service/stripes.svg") bottom center
-      no-repeat;
-    top: 10vh;
-    left: 0;
-    background-size: cover;
-    width: 120%;
-    height: 165%;
-
-  }
-    /* screen width is less than 450px (small) */
+  width: 50vw;
+  height: 55vh;
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
-.bg-stripes{
-  top: 0vh;
-  width: 100%;
-    height: 65%;
-}
+    /* screen width is less than 450px (small) */
+    width: 90vw;
+  height: 55vh;
   `}
-    /* screen width is between 450px and 768px (small to medium) */
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
-    .bg-stripes{
-  top: 0vh;
-  width: 100%;
-    height: 65%;
-}
+    /* screen width is between 450px and 768px (small to medium) */
+    width: 90vw;
+   height: 55vh;
   `}
 `;
-const ServiceGrid = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  z-index: 10;
-  margin: 15vh 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 95px;
-    /* screen width is less than 450px (small) */
-  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5vh 0;
-    grid-gap: 30px;
-  `}
-    /* screen width is between 450px and 768px (small to medium) */
-  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5vh 0;
-    grid-gap: 70px;
-  `}
-    /* screen width is between 768px (medium) and 1170px (large) */
-  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("medium", "large")`
-    margin: 4vh 0;
-  `}
+const Card = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  width: 40vw;
+  height: 35vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: relative;
+  font-family: Poppins;
+  font-style: thin;
+  color: #000000;
+  text-align: center;
+  img {
+    width: 30%;
+    /* height: 60%; */
+    position: absolute;
+    top: -45%;
+    left: 33%;
+  }
+  .name {
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: 0.21em;
+    padding: 8vh 0 0 0;
+  }
+  .title {
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 132%;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.21em;
+    color: #6c6a6a;
+  }
+  .desc {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 132%;
+    width: 80%;
+    margin: 25px auto;
+    /* or 32px */
 
+    letter-spacing: 0.03em;
+  }
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
+    /* screen width is less than 450px (small) */
+    width: 90%;
+  height: 45vh;
+  img {
+    width: 30%;
+    /* height: 60%; */
+    position: absolute;
+    top: -15%;
+    left: 33%;
+  }
+  .name { 
+    font-size:32px;
+    padding: 7vh 0 0 0;
+  }
+  .title { 
+    font-size: 24px;   
+    margin: 5px 0 0 0;  
+  }
+  .desc {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 132%;
+    width: 80%;
+    margin: 5px auto;
+    /* or 32px */
+
+  }
+  `}
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+    /* screen width is between 450px and 768px (small to medium) */
+    width: 90%;
+  height: 45vh;
+  img {
+    width: 40%;
+   
+    position: absolute;
+    top: -35%;
+    left: 33%;
+  }
+  .name { 
+    font-size:32px;
+    padding: 7vh 0 0 0;
+  }
+  .title { 
+    font-size: 24px;   
+    margin: 5px 0 0 0;  
+  }
+  .desc {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 132%;
+    width: 80%;
+    margin: 5px auto;
+    /* or 32px */
+  }
+  `}
 `;
 
 /***/ }),
@@ -2943,10 +3137,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/services.js":
-/*!***************************!*\
-  !*** ./pages/services.js ***!
-  \***************************/
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2958,14 +3152,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/UI/NavbarComp */ "./components/UI/NavbarComp.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_service_ServiceBox__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../components/service/ServiceBox */ "./components/service/ServiceBox.js");
-/* harmony import */ var _components_service_ServiceBanner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/service/ServiceBanner */ "./components/service/ServiceBanner.js");
-/* harmony import */ var _components_service_ServiceContent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/service/ServiceContent */ "./components/service/ServiceContent.js");
-/* harmony import */ var _components_UI_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/UI/Footer */ "./components/UI/Footer.js");
-var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\services.js";
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_about_AboutBanner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/about/AboutBanner */ "./components/about/AboutBanner.js");
+/* harmony import */ var _components_about_AboutContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../components/about/AboutContent */ "./components/about/AboutContent.js");
+/* harmony import */ var _components_UI_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/UI/Footer */ "./components/UI/Footer.js");
+var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\about.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -2975,22 +3167,20 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-
-const services = () => {
+const about = () => {
   return __jsx("div", {
     className: "jsx-633493357",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 10,
       columnNumber: 5
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 11,
       columnNumber: 7
     }
   }, __jsx("title", {
@@ -2998,17 +3188,17 @@ const services = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 12,
       columnNumber: 9
     }
-  }, "Sam's Auto | Services"), __jsx("link", {
-    href: "https://fonts.googleapis.com/css?family=Poppins|Quicksand|Racing+Sans+One&display=swap",
+  }, "Sam's Auto | About"), __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=Poppins:200,300|Quicksand|Racing+Sans+One&display=swap",
     rel: "stylesheet",
     className: "jsx-633493357",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 13,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -3018,90 +3208,105 @@ const services = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 9
     }
   })), __jsx(Container, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 19,
       columnNumber: 7
     }
-  }, __jsx(_components_service_ServiceBanner__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(_components_about_AboutBanner__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }), __jsx(_components_about_AboutContent__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }
+  }), __jsx(_components_UI_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
       columnNumber: 9
     }
-  }), __jsx(_components_service_ServiceContent__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
-    }
-  }), __jsx(_components_UI_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 9
-    }
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "633493357",
     __self: undefined
-  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXHNlcnZpY2VzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXlCeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxzZXJ2aWNlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHNcIjtcclxuaW1wb3J0IE5hdmJhckNvbXAgZnJvbSBcIi4uL2NvbXBvbmVudHMvVUkvTmF2YmFyQ29tcFwiO1xyXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XHJcbmltcG9ydCBTZXJ2aWNlQm94IGZyb20gXCIuLy4uL2NvbXBvbmVudHMvc2VydmljZS9TZXJ2aWNlQm94XCI7XHJcbmltcG9ydCBTZXJ2aWNlQmFubmVyIGZyb20gXCIuLi9jb21wb25lbnRzL3NlcnZpY2UvU2VydmljZUJhbm5lclwiO1xyXG5pbXBvcnQgU2VydmljZUNvbnRlbnQgZnJvbSBcIi4uL2NvbXBvbmVudHMvc2VydmljZS9TZXJ2aWNlQ29udGVudFwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5cclxuY29uc3Qgc2VydmljZXMgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5TYW0ncyBBdXRvIHwgU2VydmljZXM8L3RpdGxlPlxyXG4gICAgICAgIDxsaW5rXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVBvcHBpbnN8UXVpY2tzYW5kfFJhY2luZytTYW5zK09uZSZkaXNwbGF5PXN3YXBcIlxyXG4gICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXHJcbiAgICAgICAgLz5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiIC8+XHJcbiAgICAgIDwvSGVhZD5cclxuICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICA8U2VydmljZUJhbm5lciAvPlxyXG4gICAgICAgIDxTZXJ2aWNlQ29udGVudCAvPlxyXG4gICAgICAgIDxGb290ZXIgLz5cclxuICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgICAgYm9keSB7XHJcbiAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBzZXJ2aWNlcztcclxuXHJcbmNvbnN0IENvbnRhaW5lciA9IHN0eWxlZC5kaXZgXHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbiAgbGluZS1oZWlnaHQ6IDEuMztcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG5gO1xyXG5cclxuLy8gY29uc3QgQ29udGFpbmVyID0gc3R5bGVkLmRpdmBcclxuLy8gICB3aWR0aDogMTAwdnc7XHJcbi8vICAgbGluZS1oZWlnaHQ6IDEuMztcclxuLy8gICBtYXJnaW46IDA7XHJcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogIzE1MTUxNTtcclxuLy8gICAvKiBoZWlnaHQ6IDMwMHZoOyAqL1xyXG4vLyAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuLy8gICB6LWluZGV4OiAtMjA7XHJcbi8vICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuXHJcbi8vIGA7XHJcbi8vIGNvbnN0IEJhbm5lckJHID0gc3R5bGVkLmRpdmBcclxuLy8gICB3aWR0aDogMTAwdnc7XHJcbi8vICAgaGVpZ2h0OiA2MHZoO1xyXG4vLyAgIGJhY2tncm91bmQ6IHVybChcIi9zdGF0aWMvaW1hZ2VzL3NlcnZpY2Uvc2VydmljZS1iYW5uZXIucG5nXCIpIGJvdHRvbSBjZW50ZXJcclxuLy8gICAgIG5vLXJlcGVhdDtcclxuLy8gICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG4vLyAgIC5iYW5uZXItdGl0bGUge1xyXG4vLyAgICAgaGVpZ2h0OiA2MCU7XHJcbi8vICAgICB3aWR0aDogMTAwJTtcclxuLy8gICAgIGJhY2tncm91bmQ6IHJnYmEoNjcsIDY3LCA2NywgMC40NCk7XHJcblxyXG4vLyAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAzNSUsIDApO1xyXG4vLyAgIH1cclxuLy8gICBwIHtcclxuLy8gICAgIGZvbnQtZmFtaWx5OiBRdWlja3NhbmQ7XHJcbi8vICAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbi8vICAgICBmb250LXdlaWdodDogbm9ybWFsO1xyXG4vLyAgICAgZm9udC1zaXplOiAxMDBweDtcclxuLy8gICAgIGxpbmUtaGVpZ2h0OiAxMjVweDtcclxuLy8gICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuLy8gICAgIGxldHRlci1zcGFjaW5nOiAwLjcyNWVtO1xyXG4vLyAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCA2NSUsIDApO1xyXG4vLyAgICAgY29sb3I6ICNmZmZmZmY7XHJcbi8vICAgfVxyXG4vLyBgO1xyXG5cclxuLy8gY29uc3QgU2VydmljZUdyaWQgPSBzdHlsZWQuZGl2YFxyXG4vLyAgIHotaW5kZXg6IDEwO1xyXG4vLyAgIG1hcmdpbjogMTV2aCAwO1xyXG4vLyAgIGRpc3BsYXk6IGdyaWQ7XHJcbi8vICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMiwgMWZyKTtcclxuLy8gICBncmlkLWdhcDogOTVweDtcclxuLy8gYDtcclxuIl19 */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\services.js */"));
+  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXGFib3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXVCeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxhYm91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHNcIjtcclxuaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xyXG5pbXBvcnQgQWJvdXRCYW5uZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvYWJvdXQvQWJvdXRCYW5uZXJcIjtcclxuaW1wb3J0IEFib3V0Q29udGVudCBmcm9tIFwiLi8uLi9jb21wb25lbnRzL2Fib3V0L0Fib3V0Q29udGVudFwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5cclxuY29uc3QgYWJvdXQgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5TYW0ncyBBdXRvIHwgQWJvdXQ8L3RpdGxlPlxyXG4gICAgICAgIDxsaW5rXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVBvcHBpbnM6MjAwLDMwMHxRdWlja3NhbmR8UmFjaW5nK1NhbnMrT25lJmRpc3BsYXk9c3dhcFwiXHJcbiAgICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcclxuICAgICAgICAvPlxyXG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCIgLz5cclxuICAgICAgPC9IZWFkPlxyXG4gICAgICA8Q29udGFpbmVyPlxyXG4gICAgICAgIDxBYm91dEJhbm5lciAvPlxyXG4gICAgICAgIDxBYm91dENvbnRlbnQgLz5cclxuICAgICAgICA8Rm9vdGVyIC8+XHJcbiAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgIGJvZHkge1xyXG4gICAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgICAgICAgcGFkZGluZzogMDtcclxuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICA8L2Rpdj5cclxuICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgYWJvdXQ7XHJcblxyXG5jb25zdCBDb250YWluZXIgPSBzdHlsZWQuZGl2YFxyXG4gIHdpZHRoOiAxMDB2dztcclxuICBoZWlnaHQ6IDEwMHZoO1xyXG4gIGxpbmUtaGVpZ2h0OiAxLjM7XHJcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG5gO1xyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\about.js */"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (services);
+/* harmony default export */ __webpack_exports__["default"] = (about);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
   width: 100vw;
   height: 100vh;
   line-height: 1.3;
-  overflow: hidden;
-`; // const Container = styled.div`
-//   width: 100vw;
-//   line-height: 1.3;
-//   margin: 0;
-//   background-color: #151515;
-//   /* height: 300vh; */
-//   position: relative;
-//   z-index: -20;
-//   overflow: hidden;
-// `;
-// const BannerBG = styled.div`
-//   width: 100vw;
-//   height: 60vh;
-//   background: url("/static/images/service/service-banner.png") bottom center
-//     no-repeat;
-//   background-size: cover;
-//   .banner-title {
-//     height: 60%;
-//     width: 100%;
-//     background: rgba(67, 67, 67, 0.44);
-//     transform: translate3d(0, 35%, 0);
-//   }
-//   p {
-//     font-family: Quicksand;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 100px;
-//     line-height: 125px;
-//     text-align: center;
-//     letter-spacing: 0.725em;
-//     transform: translate3d(0, 65%, 0);
-//     color: #ffffff;
-//   }
-// `;
-// const ServiceGrid = styled.div`
-//   z-index: 10;
-//   margin: 15vh 0;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-gap: 95px;
-// `;
+  overflow-x: hidden;
+`;
+
+/***/ }),
+
+/***/ "./public/static/images/about/guru.png":
+/*!*********************************************!*\
+  !*** ./public/static/images/about/guru.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/guru-c45f848e8fd10a8519454301e61a8cdd.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/harsha.png":
+/*!***********************************************!*\
+  !*** ./public/static/images/about/harsha.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/harsha-b64273a28355028f3428f3fdbf8cba76.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/laka.png":
+/*!*********************************************!*\
+  !*** ./public/static/images/about/laka.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/laka-7f373fc396485b7a6a01521515373848.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/samavatar.png":
+/*!**************************************************!*\
+  !*** ./public/static/images/about/samavatar.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/samavatar-eadb24eb6358a878bf22dfdee6be6c77.png";
+
+/***/ }),
+
+/***/ "./public/static/images/about/sathya.png":
+/*!***********************************************!*\
+  !*** ./public/static/images/about/sathya.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/sathya-b1731b6d32625d1e82598fb1df0a1fbe.png";
 
 /***/ }),
 
@@ -3149,14 +3354,14 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iNDIi
 
 /***/ }),
 
-/***/ 5:
-/*!*********************************!*\
-  !*** multi ./pages/services.js ***!
-  \*********************************/
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/about.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Laka Ganth\Documents\NextJS\sam\pages\services.js */"./pages/services.js");
+module.exports = __webpack_require__(/*! C:\Users\Laka Ganth\Documents\NextJS\sam\pages\about.js */"./pages/about.js");
 
 
 /***/ }),
@@ -3272,4 +3477,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=services.js.map
+//# sourceMappingURL=about.js.map
