@@ -40,6 +40,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   line-height: 1.3;
+  overflow: hidden;
 `;
 
 // const Container = styled.div`

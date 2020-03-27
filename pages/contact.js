@@ -38,4 +38,5 @@ const Container = styled.div`
   width: 100vw;
   line-height: 1.3;
   margin: 0;
+  overflow: hidden;
 `;

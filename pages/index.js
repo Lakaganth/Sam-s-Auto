@@ -60,9 +60,10 @@ const Container = styled.div`
   width: 100vw;
   line-height: 1.3;
   margin: 0;
+  overflow: hidden;
 
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
-    width: 100%;
+    width: 100vw;
   `}
 `;
