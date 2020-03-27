@@ -967,7 +967,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding-top:10vh;\nheight: 80vh;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding-top:10vh;\nheight: 100vh;\n  "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -977,7 +977,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\npadding-top:10vh;\nheight: 50vh;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\npadding-top:10vh;\nheight: 150vh;\n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;

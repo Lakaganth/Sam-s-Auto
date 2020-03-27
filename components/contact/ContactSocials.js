@@ -86,12 +86,12 @@ color: #F5F5F5;
     /* screen width is less than 450px (small) */
   ${media.lessThan("small")`
 padding-top:10vh;
-height: 50vh;
+height: 150vh;
   `}
     /* screen width is between 450px and 768px (small to medium) */
   ${media.between("small", "medium")`
   padding-top:10vh;
-height: 80vh;
+height: 100vh;
   `}
 
 `;

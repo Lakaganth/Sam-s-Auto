@@ -1172,12 +1172,12 @@ color: #F5F5F5;
     /* screen width is less than 450px (small) */
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
 padding-top:10vh;
-height: 50vh;
+height: 150vh;
   `}
     /* screen width is between 450px and 768px (small to medium) */
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
   padding-top:10vh;
-height: 80vh;
+height: 100vh;
   `}
 
 `;
