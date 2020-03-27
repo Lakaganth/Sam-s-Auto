@@ -14,6 +14,7 @@ const about = () => {
           href="https://fonts.googleapis.com/css?family=Poppins:200,300|Quicksand|Racing+Sans+One&display=swap"
           rel="stylesheet"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Container>
         <AboutBanner />

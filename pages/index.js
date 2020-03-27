@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
+import media from "styled-media-query";
 import Landing from "./../components/home/Landing";
 import Yus from "../components/home/Yus";
 import Services from "./../components/home/Services";
@@ -30,6 +31,8 @@ const index = () => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        >
       </Head>
       <Container>
         <Landing />
@@ -57,4 +60,9 @@ const Container = styled.div`
   width: 100vw;
   line-height: 1.3;
   margin: 0;
+
+  ${media.lessThan("small")`
+    /* screen width is less than 450px (small) */
+    width: 100%;
+  `}
 `;
