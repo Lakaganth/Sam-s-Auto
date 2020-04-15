@@ -3,6 +3,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SamLogo from "../../public/static/images/icons/samlogo.svg";
 
 const NavbarComp = () => {
   const [mobileWidth, setMobileWidth] = useState(false);
@@ -13,7 +14,7 @@ const NavbarComp = () => {
     // window.addEventListener("resize", handleScroll);
   }, []);
 
-  const handleScroll = e => {
+  const handleScroll = (e) => {
     const windowWidth = window.innerWidth;
 
     if (windowWidth < 768) {
@@ -99,7 +100,11 @@ const NavbarComp = () => {
         </MobileMenu>
       ) : (
         <NavigationComp>
-          {" "}
+          <Link href="/">
+            {/* <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}> */}
+            <img src={SamLogo} alt="SAMLOGO" />
+            {/* </motion.a> */}
+          </Link>
           <Link href="/">
             <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               Home
@@ -133,7 +138,7 @@ const NavigationComp = styled.div`
   height:90px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   color: white;
   justify-content: center;
   align-content: center;

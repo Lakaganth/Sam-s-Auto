@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import media from "styled-media-query";
-import Engine from "../../public/static/images/landing/engine.png";
-import Battery from "../../public/static/images/landing/battery.svg";
-import Oilcan from "../../public/static/images/landing/oilcan.png";
+import Engine from "../../public/static/images/landing/enginec.png";
+import Battery from "../../public/static/images/landing/battery.png";
+import Oilcan from "../../public/static/images/landing/oilc.png";
 
 const Services = () => {
   return (
@@ -15,7 +15,7 @@ const Services = () => {
           <p>Engine Swap</p>
           <img src={Engine} alt="Engine" />
         </ServiceBox>
-        <ServiceBox>
+        <ServiceBox className="battery">
           <p>Electrical Repairs</p>
           <img src={Battery} alt="Battery" />
         </ServiceBox>
@@ -33,7 +33,7 @@ export default Services;
 
 const Container = styled.div`
   width: 100vw;
-  height: 65vh;
+  height: 85vh;
   background-color: #fff;
   overflow: hidden;
   position: relative;
@@ -67,7 +67,7 @@ const Container = styled.div`
   }
     /* screen width is less than 450px (small) */
   ${media.lessThan("small")`
-    height: 120vh;
+    height: 150vh;
     p{
       font-size: 32px;
     line-height: 29%;
@@ -75,7 +75,7 @@ const Container = styled.div`
   `}
     /* screen width is between 450px and 768px (small to medium) */
   ${media.between("small", "medium")`
-    height: 150vh;
+    height: 180vh;
     p{
       font-size: 32px;
     line-height: 29%;
@@ -92,6 +92,17 @@ const ServiceGrid = styled.div`
   margin: 0 auto;
   z-index: 10;
   grid-gap: 30px;
+  .engine,
+  .battery {
+    img {
+      width: 80%;
+    }
+  }
+  .oil {
+    img {
+      width: 70%;
+    }
+  }
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
    display:flex;
@@ -133,6 +144,7 @@ const ServiceBox = styled.div`
     text-align: center;
     letter-spacing: 0.16em;
   }
+
   img {
   }
   ${media.lessThan("small")`

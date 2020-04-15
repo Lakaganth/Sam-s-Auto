@@ -48,16 +48,16 @@ export const ContactBanner = () => {
         className="scroll-arrow"
         initial={{
           y: 5,
-          opacity: 1
+          opacity: 0
         }}
         animate={{
           y: 8,
           opacity: 1
         }}
+        exit={{ y: 304, opacity: 0 }}
         transition={{
-          type: "spring",
-          //   duration: 1,
-          ease: "ease-in",
+          duration: 4,
+          ease: "linear",
           loop: Infinity,
           repeatDelay: 1
         }}

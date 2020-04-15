@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect, useCallback, useState } from "react";
 import styled from "styled-components";
 import media from "styled-media-query";
 import Slider from "react-slick";
 import Quote from "../../public/static/images/icons/quote.svg";
+import fb from "../../fbconfig";
 
-const Testimonials = () => {
+const Testimonials = ({ testimonials }) => {
+  // const [test, setTest] = useState([]);
+
+  // let testimonials = [];
+
+  // useEffect(() => {
+  //   getTestimonials();
+  // }, []);
+
+  // const getTestimonials = useCallback(async () => {
+  //   const documents = await fb.firestore().collection("testimonials").get();
+
+  //   await documents.forEach((doc) => testimonials.push({ ...doc.data() }));
+  //   console.log(testimonials);
+  // }, []);
+
+  console.log(testimonials);
+
   let settings = {
     dots: true,
     centerMode: true,
@@ -19,8 +37,8 @@ const Testimonials = () => {
           arrows: true,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 1
-        }
+          slidesToShow: 1,
+        },
       },
       {
         breakpoint: 450,
@@ -28,15 +46,26 @@ const Testimonials = () => {
           arrows: false,
           centerMode: true,
           centerPadding: "20px",
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <Container>
       <Slider {...settings}>
-        <TestCard>
+        {testimonials.length > 0 &&
+          testimonials.map((t) => (
+            <TestCard key={t.id}>
+              <div className="test-inner">
+                <img src={Quote} alt="Quote" />
+                <p className="comment">{t.cxComment}</p>
+                <p className="cx-name">{t.cxName}</p>
+                <p className="cx-car">{t.cxCarModel}</p>
+              </div>
+            </TestCard>
+          ))}
+        {/* <TestCard>
           <div className="test-inner">
             <img src={Quote} alt="Quote" />
             <p className="comment">The service was excellent</p>
@@ -70,7 +99,7 @@ const Testimonials = () => {
             <p className="cx-name">Sathy</p>
             <p className="cx-car">Chrysler 200c</p>
           </div>
-        </TestCard>
+        </TestCard> */}
       </Slider>
     </Container>
   );

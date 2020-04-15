@@ -121,11 +121,11 @@ const Landing = () => {
       <motion.div
         className="scroll-arrow"
         initial={{
-          y: 3,
+          y: 8,
           opacity: 0
         }}
         animate={{
-          y: 8,
+          y: 10,
           opacity: 1
         }}
         exit={{ y: 304, opacity: 0 }}
