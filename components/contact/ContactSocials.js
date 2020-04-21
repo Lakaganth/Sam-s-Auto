@@ -87,6 +87,10 @@ color: #F5F5F5;
   ${media.lessThan("small")`
 padding-top:10vh;
 height: 150vh;
+p{
+  font-size: 70px;
+line-height: 85px;
+}
   `}
     /* screen width is between 450px and 768px (small to medium) */
   ${media.between("small", "medium")`

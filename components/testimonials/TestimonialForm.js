@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import styled from "styled-components";
 import media from "styled-media-query";
-import firebase from "../../fbconfig";
+
+import fb from "./../../fbconfig";
 
 const TestimonialForm = () => {
   const [name, setName] = useState("");
@@ -17,7 +18,7 @@ const TestimonialForm = () => {
       service: serviceType,
       cxComment: comment,
     };
-    const submission = await firebase
+    const submission = await fb
       .firestore()
       .collection("testimonials")
       .add(input);

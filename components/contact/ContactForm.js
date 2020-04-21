@@ -19,7 +19,7 @@ const ContactForm = () => {
             name="name"
             value={name}
             placeholder="Name"
-            onChange={name => setName(name.target.value)}
+            onChange={(name) => setName(name.target.value)}
           />
         </InputGroup>
         <InputGroup>
@@ -29,7 +29,7 @@ const ContactForm = () => {
             name="email"
             value={phone}
             placeholder="Phone"
-            onChange={phone => setPhone(phone.target.value)}
+            onChange={(phone) => setPhone(phone.target.value)}
           />
         </InputGroup>
 
@@ -39,7 +39,7 @@ const ContactForm = () => {
             name="subject"
             value={subject}
             placeholder="Subject"
-            onChange={subject => setSubject(subject.target.value)}
+            onChange={(subject) => setSubject(subject.target.value)}
           />
         </InputGroup>
         <InputGroup>
@@ -48,7 +48,7 @@ const ContactForm = () => {
             name="message"
             value={message}
             placeholder="Message"
-            onChange={message => setMessage(message.target.value)}
+            onChange={(message) => setMessage(message.target.value)}
           />
         </InputGroup>
         <button>Submit</button>
@@ -66,8 +66,8 @@ const Container = styled.div`
   padding: 10vh 0;
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
-    height: 100vh;
-    padding: 0vh 0;
+    height: 120vh;
+    padding: 5vh 0;
   `}
   ${media.between("small", "medium")`
     /* screen width is between 450px and 768px (small to medium) */
@@ -78,7 +78,7 @@ const Container = styled.div`
 
 const FormBox = styled.div`
   width: 50%;
-  height: 100vh;
+  height: 120vh;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
@@ -89,11 +89,10 @@ const FormBox = styled.div`
     font-size: 80px;
     line-height: 100px;
     /* identical to box height */
-
+    padding: 50px 0 0px 0;
     text-align: center;
     letter-spacing: 0.345em;
-    margin: 0 auto;
-
+    margin: 25px auto;
     color: #767676;
   }
   button {

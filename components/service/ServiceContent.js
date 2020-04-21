@@ -12,23 +12,32 @@ const ServiceContent = () => {
         <ServiceBox
           name="Engine Swap / Repair"
           bg="/static/images/service/engine.jpg"
+          content="Sample"
         />
         <ServiceBox
           name="Electrical Repairs"
           bg="/static/images/service/electric.jpg"
+          content="Sample"
         />
         <ServiceBox
           name="Brakes Check"
           bg="/static/images/service/brakes.jpg"
+          content="Sample"
         />
-        <ServiceBox name="Oil Change" bg="/static/images/service/oil.jpg" />
+        <ServiceBox
+          name="Oil Change"
+          bg="/static/images/service/oil.jpg"
+          content="Sample"
+        />
         <ServiceBox
           name="Air Filter Check"
           bg="/static/images/service/filter.jpg"
+          content="Sample"
         />
         <ServiceBox
           name="General Services"
           bg="/static/images/service/general.jpg"
+          content="Sample"
         />
       </ServiceGrid>
     </Container>
@@ -58,6 +67,7 @@ const Container = styled.div`
   }
     /* screen width is less than 450px (small) */
   ${media.lessThan("small")`
+  padding-bottom: 5vh; 
 .bg-stripes{
   top: 0vh;
   width: 100%;

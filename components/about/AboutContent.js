@@ -65,6 +65,7 @@ const Container = styled.div`
   z-index: 20;
   position: relative;
   overflow: hidden;
+  /* background: url("/static/images/about/about-bg.jpg") top center repeat; */
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
     height: 350vh;    
@@ -114,7 +115,7 @@ const SamCard = styled.div`
   top: 10vh;
   left: 30vw;
   img {
-    width: 35%;
+    width: 250px;
     position: absolute;
     top: -60%;
     left: 33%;
@@ -146,11 +147,11 @@ const SamCard = styled.div`
   }
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
-    margin-top: 10vh;
+    margin-top: 13vh;
     width: 80vw;
     top: 10vh;
   left: 10vw;
-  height: 40vh;
+  height: 45vh;
     img {
     width: 55%;   
     top: -45%;
@@ -161,15 +162,15 @@ const SamCard = styled.div`
 
   ${media.between("small", "medium")`
     /* screen width is between 450px and 768px (small to medium) */
-    margin-top: 10vh;
+    margin-top: 20vh;
     width: 80vw;
     top: 10vh;
   left: 10vw;
   height: 40vh;
     img {
-    width: 45%;   
-    top: -45%;
-    left: 25%;
+    width: 35%;   
+    top: -55%;
+    left: 35%;
   `}
 `;
 

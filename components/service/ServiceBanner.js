@@ -20,18 +20,18 @@ const ServiceBanner = () => {
         className="scroll-arrow"
         initial={{
           y: -30,
-          opacity: 0
+          opacity: 0,
         }}
         animate={{
           y: -20,
-          opacity: 1
+          opacity: 1,
         }}
         exit={{ y: 304, opacity: 0 }}
         transition={{
           duration: 4,
           ease: "linear",
           loop: Infinity,
-          repeatDelay: 1
+          repeatDelay: 1,
         }}
       >
         <svg
@@ -74,6 +74,18 @@ const Container = styled.div`
     color: #fcfcfc;
     width: 40%;
     margin: 10vh auto;
+    animation: heropanimation 1s forwards 0s ease-in-out;     
+    @keyframes heropanimation{
+    0%{
+        transform: translateY(80%);
+        opacity: 0;
+        }
+    
+    100%{
+        transform:  translateY(0%);
+        opacity: 1;
+        }
+}
     /* margin-top: 10vh; */
   }
   ${media.lessThan("small")`
@@ -81,6 +93,7 @@ const Container = styled.div`
     .service-intro {
     font-size: 24px;
     line-height:48px;
+    width: 90%;
   
     }
   `}
@@ -107,11 +120,23 @@ margin: 15vh auto;
 
 const BannerBG = styled.div`
   width: 100vw;
-  height: 424px;
+  height: 524px;
   overflow: hidden;
-  background: url("/static/images/service/service-banner.png") top center
+  background: url("/static/images/service/ser-ban.png") center center
     no-repeat;
   background-size: cover;
+  animation: bannerAnimation 1s forwards 0s ease-in-out;  
+  @keyframes bannerAnimation{
+    0%{
+        transform: translateY(-80%);
+        opacity: 0;
+        }
+    
+    100%{
+        transform:  translateY(0%);
+        opacity: 1;
+        }
+}
   .banner-title {
     height: 60%;
     width: 100%;
@@ -135,7 +160,8 @@ const BannerBG = styled.div`
     height: 30%;
   }
   p{
-    font-size: 38px;
+    font-size: 58px;
+    letter-spacing: 0.225em;
     line-height: 30px;
   }
   `}

@@ -181,52 +181,76 @@ const Footer = () => {
       lineNumber: 19,
       columnNumber: 9
     }
-  }, __jsx("img", {
-    src: _public_static_images_landing_facebook_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "Facebook",
+  }, __jsx("a", {
+    href: "#",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,
       columnNumber: 11
     }
-  }), __jsx("p", {
+  }, __jsx("img", {
+    src: _public_static_images_landing_facebook_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Facebook",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21,
-      columnNumber: 11
+      columnNumber: 13
     }
-  }, "/samautos"), __jsx("img", {
-    src: _public_static_images_landing_insta_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "Insta",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 11
-    }
-  }), __jsx("p", {
+  })), __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
       columnNumber: 11
     }
-  }, "@samautos"), __jsx("img", {
-    src: _public_static_images_landing_phone_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "Phone",
+  }, "/samautos"), __jsx("a", {
+    href: "#",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26,
       columnNumber: 11
     }
-  }), __jsx("p", {
+  }, __jsx("img", {
+    src: _public_static_images_landing_insta_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "Insta",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  })), __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  }, "@samautos"), __jsx("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  }, __jsx("img", {
+    src: _public_static_images_landing_phone_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "Phone",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 13
+    }
+  })), __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
       columnNumber: 11
     }
   }, "555-555-5555"))));
@@ -244,11 +268,12 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
+  padding-top: 25px;
   /* identical to box height */
   letter-spacing: 0.05em;
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
-    height: 80vh;
+    height: 100vh;
     font-size: 20px;
   line-height: 24px;
   `}
@@ -275,9 +300,60 @@ const FotterGrid = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    img {
+    /* img {
       justify-self: center;
       transform: translate3d(0, 100%, 0);
+    } */
+    a {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      background: gray;
+      margin: 10px;
+      border-radius: 30%;
+      box-shadow: 0 5px 15px -5px #00000070;
+      color: #3498db;
+      overflow: hidden;
+      position: relative;
+    }
+    img {
+      line-height: 90px;
+      margin-top: 20px;
+      font-size: 26px;
+      transition: 0.2s linear;
+    }
+    a:hover img {
+      transform: scale(1.3);
+      color: #f1f1f1;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: #3498db;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    }
+    a:hover::before {
+      animation: contactanim 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    @keyframes contactanim {
+      0% {
+        left: -110%;
+        top: 90%;
+      }
+      50% {
+        left: 10%;
+        top: -30%;
+      }
+      100% {
+        top: -10%;
+        left: -10%;
+      }
     }
     p {
       text-align: left;
@@ -310,6 +386,94 @@ const FotterGrid = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   `}
 `;
 const IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div``;
+
+/***/ }),
+
+/***/ "./components/UI/Loader.js":
+/*!*********************************!*\
+  !*** ./components/UI/Loader.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_lottie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-lottie */ "react-lottie");
+/* harmony import */ var react_lottie__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_lottie__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_static_images_landing_19019_loading_animation_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/static/images/landing/19019-loading-animation.json */ "./public/static/images/landing/19019-loading-animation.json");
+var _public_static_images_landing_19019_loading_animation_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/static/images/landing/19019-loading-animation.json */ "./public/static/images/landing/19019-loading-animation.json", 1);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\UI\\Loader.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: _public_static_images_landing_19019_loading_animation_json__WEBPACK_IMPORTED_MODULE_2__,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice"
+  }
+};
+
+const Loader = () => {
+  return __jsx(LoadCont, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 7
+    }
+  }, __jsx("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, "Loading..."), __jsx(react_lottie__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    options: defaultOptions,
+    height: 400,
+    width: 400,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Loader);
+const LoadCont = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: #151515;
+  margin: 0;
+  padding: 0;
+
+  div {
+    h1 {
+      text-align: center;
+      color: White;
+      font-family: Poppins;
+    }
+    background-color: #151515;
+    padding-top: 10vh;
+  }
+`;
 
 /***/ }),
 
@@ -1081,26 +1245,7 @@ const Landing = () => {
       lineNumber: 108,
       columnNumber: 21
     }
-  })))))))), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
-    className: "scroll-arrow",
-    initial: {
-      y: 8,
-      opacity: 0
-    },
-    animate: {
-      y: 10,
-      opacity: 1
-    },
-    exit: {
-      y: 304,
-      opacity: 0
-    },
-    transition: {
-      duration: 4,
-      ease: "linear",
-      loop: Infinity,
-      repeatDelay: 1
-    },
+  })))))))), __jsx(ScrollDiv, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1116,7 +1261,7 @@ const Landing = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 122,
       columnNumber: 9
     }
   }, __jsx("path", {
@@ -1125,7 +1270,7 @@ const Landing = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146,
+      lineNumber: 129,
       columnNumber: 11
     }
   }), __jsx("path", {
@@ -1135,7 +1280,7 @@ const Landing = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150,
+      lineNumber: 133,
       columnNumber: 11
     }
   }))));
@@ -1210,7 +1355,7 @@ const HeroBanner = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
       transform: translate3d(0, 45%, 0);
     }
 h3{
-  font-size: 32px;
+  font-size: 22px;
     line-height: 50px;
 }
   `}
@@ -1219,7 +1364,7 @@ h3{
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("medium", "large")`
  
     h3{
-    font-size: 80px;
+    font-size: 60px;
     line-height: 100px;
 }
   `}
@@ -1265,6 +1410,23 @@ const HeroContent = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div
   .hero-content {
     width: 100%;
   }
+  .hero-p-b{
+    p{
+      animation: heropanimation 1s forwards 0s ease-in-out;
+      
+    }
+    @keyframes heropanimation{
+    0%{
+        transform: translateY(80%);
+        opacity: 0;
+        }
+    
+    100%{
+        transform:  translateY(0%);
+        opacity: 1;
+        }
+}
+  }
   p {
     font-family: "Quicksand";
     font-style: normal;
@@ -1289,7 +1451,12 @@ const HeroContent = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
+    
+    
+    
     }
+
+
 p{
   font-size: 18px;
   line-height: 42px;
@@ -1354,6 +1521,31 @@ const ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a
     height: 50px;
   `}
 `;
+const ScrollDiv = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  animation: scrollanimation 5s infinite 0s ease-in-out;
+
+  @keyframes scrollanimation {
+    0% {
+      transform: translateY(80%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
+
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
+    /* screen width is less than 450px (small) */
+
+display:none;
+  `}
+
+  ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
+  display:none;
+  `}
+`;
 
 /***/ }),
 
@@ -1374,8 +1566,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_media_query__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _public_static_images_icons_mission_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../public/static/images/icons/mission.svg */ "./public/static/images/icons/mission.svg");
 /* harmony import */ var _public_static_images_icons_mission_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_icons_mission_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _public_static_images_landing_mission_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/static/images/landing/mission.png */ "./public/static/images/landing/mission.png");
+/* harmony import */ var _public_static_images_landing_mission_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_landing_mission_png__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\home\\Mission.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1386,15 +1581,23 @@ const Mission = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "mission",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
     }
   }, __jsx("h3", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
+      lineNumber: 11,
+      columnNumber: 9
     }
   }, "Our Mission"), __jsx("img", {
     src: _public_static_images_icons_mission_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
@@ -1402,28 +1605,45 @@ const Mission = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
+      lineNumber: 12,
+      columnNumber: 9
     }
   }), __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, "Provide high quality service within the promised time. Keep customer satisfied.")), __jsx("div", {
+    className: "mission-illustration",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
       columnNumber: 7
     }
-  }, "Provide high quality service within the promised time. Keep customer satisfied."));
+  }, __jsx("img", {
+    src: _public_static_images_landing_mission_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Mission",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Mission);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   width: 100%;
-  height: 80vh;
+  /* height: 80vh; */
   background-color: #fff;
   font-family: "Quicksand", sans-serif;
   color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   text-align: center;
@@ -1450,16 +1670,25 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     width: 60%;
     margin: 0 auto;
   }
+  .mission-illustration {
+    width: 80%;
+    height: 80%;
+  }
 
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
-    height: 130vh;
+    flex-direction: column;
+margin-top: 2vh
+
     h3{
       font-size: 32px;
     line-height: 32px;
     }
+
+    .mission{
+
     img{
-      width: 80%;
+      width: 50%;
       margin: 0 auto;
     }
     p{
@@ -1467,6 +1696,15 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     line-height: 24px;
     /* padding-top:30vh; */
     }
+    }
+    .mission-illustration {
+      img{        
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 20%;
+      }
+  }
+
   `}
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.between("small", "medium")`
     /* screen width is between 450px and 768px (small to medium) */
@@ -1550,19 +1788,35 @@ const Services = () => {
       columnNumber: 7
     }
   }, __jsx(ServiceBox, {
-    className: "engine",
+    className: "engine ",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14,
       columnNumber: 9
     }
-  }, __jsx("p", {
+  }, __jsx("div", {
+    className: "face face1",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }
+  }, __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 15
     }
   }, "Engine Swap"), __jsx("img", {
     src: _public_static_images_landing_enginec_png__WEBPACK_IMPORTED_MODULE_3___default.a,
@@ -1570,23 +1824,62 @@ const Services = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 11
+      lineNumber: 18,
+      columnNumber: 15
     }
-  })), __jsx(ServiceBox, {
-    className: "battery",
+  }))), __jsx("div", {
+    className: "face face2",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
+      lineNumber: 21,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 13
     }
   }, __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 23,
+      columnNumber: 15
+    }
+  }, "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum")))), __jsx(ServiceBox, {
+    className: "battery",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "face face1",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
       columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 13
+    }
+  }, __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 15
     }
   }, "Electrical Repairs"), __jsx("img", {
     src: _public_static_images_landing_battery_png__WEBPACK_IMPORTED_MODULE_4___default.a,
@@ -1594,23 +1887,62 @@ const Services = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 11
+      lineNumber: 36,
+      columnNumber: 15
     }
-  })), __jsx(ServiceBox, {
-    className: "oil",
+  }))), __jsx("div", {
+    className: "face face2",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 9
+      lineNumber: 39,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 13
     }
   }, __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 41,
+      columnNumber: 15
+    }
+  }, "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum")))), __jsx(ServiceBox, {
+    className: "oil",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "face face1",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
       columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 13
+    }
+  }, __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 15
     }
   }, "Maintainene"), __jsx("img", {
     src: _public_static_images_landing_oilc_png__WEBPACK_IMPORTED_MODULE_5___default.a,
@@ -1618,15 +1950,38 @@ const Services = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 54,
+      columnNumber: 15
+    }
+  }))), __jsx("div", {
+    className: "face face2",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
       columnNumber: 11
     }
-  }))), __jsx("p", {
+  }, __jsx("div", {
+    className: "content",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 13
+    }
+  }, __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 15
+    }
+  }, "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"))))), __jsx("p", {
     className: "more",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 69,
       columnNumber: 7
     }
   }, "And More..."));
@@ -1635,7 +1990,7 @@ const Services = () => {
 /* harmony default export */ __webpack_exports__["default"] = (Services);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   width: 100vw;
-  height: 85vh;
+  /* height: 105vh; */
   background-color: #fff;
   overflow: hidden;
   position: relative;
@@ -1669,7 +2024,7 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   }
     /* screen width is less than 450px (small) */
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
-    height: 150vh;
+    /* height: 150vh; */
     p{
       font-size: 32px;
     line-height: 29%;
@@ -1693,15 +2048,21 @@ const ServiceGrid = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div
   margin: 0 auto;
   z-index: 10;
   grid-gap: 30px;
-  .engine,
+  position: relative;
+  .engine {
+    img {
+      padding-top: 50px;
+      width: 110%;
+    }
+  }
   .battery {
     img {
-      width: 80%;
+      width: 100%;
     }
   }
   .oil {
     img {
-      width: 70%;
+      width: 100%;
     }
   }
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
@@ -1732,9 +2093,51 @@ const ServiceBox = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   z-index: 10;
+  position: relative;
+
+  .face {
+    transition: 0.5s;
+  }
+
+  .face1 {
+    position: relative;
+    z-index: 1;
+    transform: translateY(100px);
+    background: #151515;
+    height: 60vh;
+    border-radius: 23px;
+    p {
+      color: white;
+    }
+  }
+  &:hover .face.face1 {
+    transform: translateY(00px);
+    background: #ff0057;
+  }
+
+  .face2 {
+    position: relative;
+    transform: translateY(-50vh);
+    opacity: 0;
+    height: 35vh;
+    background: #151515;
+    border-radius: 13px;
+    color: white;
+  }
+  &:hover .face.face2 {
+    transform: translateY(-3vh);
+    opacity: 1;
+  }
+  .face2 .content {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 2vh 2vw;
+      color: white;
+    }
+  }
   p {
     font-family: Poppins;
     font-style: normal;
@@ -1746,13 +2149,18 @@ const ServiceBox = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     letter-spacing: 0.16em;
   }
 
-  img {
-  }
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
    p{
-    font-size: 24px;
+    font-size: 20px;
    }
+   .face2{
+    height: 45vh;
+   }
+   .face2 .content {
+    p{
+      font-size: 16px;
+    }}
 img{
   width:40%;
 }
@@ -2119,7 +2527,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _public_static_images_icons_quote_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/static/images/icons/quote.svg */ "./public/static/images/icons/quote.svg");
 /* harmony import */ var _public_static_images_icons_quote_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_icons_quote_svg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _fbconfig__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../fbconfig */ "./fbconfig.js");
 var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\home\\Testimonials.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2131,21 +2538,9 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
-
 const Testimonials = ({
   testimonials
 }) => {
-  // const [test, setTest] = useState([]);
-  // let testimonials = [];
-  // useEffect(() => {
-  //   getTestimonials();
-  // }, []);
-  // const getTestimonials = useCallback(async () => {
-  //   const documents = await fb.firestore().collection("testimonials").get();
-  //   await documents.forEach((doc) => testimonials.push({ ...doc.data() }));
-  //   console.log(testimonials);
-  // }, []);
-  console.log(testimonials);
   let settings = {
     dots: true,
     centerMode: true,
@@ -2175,14 +2570,22 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 37,
       columnNumber: 5
     }
-  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_3___default.a, _extends({}, settings, {
+  }, __jsx("p", {
+    className: "testimonial-title",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 38,
+      columnNumber: 7
+    }
+  }, "Testimonials"), __jsx(react_slick__WEBPACK_IMPORTED_MODULE_3___default.a, _extends({}, settings, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
       columnNumber: 7
     }
   }), testimonials.length > 0 && testimonials.map(t => __jsx(TestCard, {
@@ -2190,7 +2593,7 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 42,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -2198,7 +2601,7 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 43,
       columnNumber: 15
     }
   }, __jsx("img", {
@@ -2207,7 +2610,7 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 44,
       columnNumber: 17
     }
   }), __jsx("p", {
@@ -2215,7 +2618,7 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 45,
       columnNumber: 17
     }
   }, t.cxComment), __jsx("p", {
@@ -2223,7 +2626,7 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 46,
       columnNumber: 17
     }
   }, t.cxName), __jsx("p", {
@@ -2231,7 +2634,7 @@ const Testimonials = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 47,
       columnNumber: 17
     }
   }, t.cxCarModel))))));
@@ -2241,7 +2644,19 @@ const Testimonials = ({
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   width: 80%;
   margin: 10vh auto;
-  height: 80vh;
+  .testimonial-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 42px;
+    z-index: 10;
+
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #000000;
+  }
+  /* height: 80vh; */
   background-color: #fff;
   .slick-next:before,
   .slick-prev:before {
@@ -2253,7 +2668,7 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   ${styled_media_query__WEBPACK_IMPORTED_MODULE_2___default.a.lessThan("small")`
     /* screen width is less than 450px (small) */
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     margin: 0vh auto;
 
   `}
@@ -2402,7 +2817,7 @@ const Yus = () => {
       lineNumber: 16,
       columnNumber: 11
     }
-  }, "High Quality")), __jsx("div", {
+  }, "Quality")), __jsx("div", {
     className: "reliable",
     __self: undefined,
     __source: {
@@ -2511,6 +2926,27 @@ const IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.d
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  .high-quality{
+    p{
+      justify-self:flex-start;
+text-align:left;
+    }
+    img{
+      animation: qualityanim 1s forwards 0s ease-in-out;
+    }
+    @keyframes qualityanim {
+    0% {
+      transform: translateY(-80%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  }
+
   p {
     font-family: Poppins;
     font-style: normal;
@@ -2521,6 +2957,7 @@ const IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.d
     letter-spacing: 0.16em;
     color: white;
   }
+
   .best-price {
     img {
       width: 140px;
@@ -2539,6 +2976,7 @@ const IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.d
     width: 100%;
     padding: 1vh 1vw;
     grid-template-columns: repeat(2, 1fr);
+    
     div {
     transform: translate3d(20%, 0, 0);
    
@@ -4293,6 +4731,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_home_Mission__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../components/home/Mission */ "./components/home/Mission.js");
 /* harmony import */ var _components_UI_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/UI/Footer */ "./components/UI/Footer.js");
 /* harmony import */ var _fbconfig__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../fbconfig */ "./fbconfig.js");
+/* harmony import */ var _components_UI_Loader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/UI/Loader */ "./components/UI/Loader.js");
 var _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -4316,14 +4755,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 const index = () => {
   let testimonials = [];
   const {
     0: test,
     1: setTest
   } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+  const {
+    0: loading,
+    1: setLoading
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
     getTestimonials();
+    setTimeout(() => setLoading(false), 0); // setTimeout(() => setLoading(false), 2400);
   }, []);
   const getTestimonials = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(async () => {
     const documents = await _fbconfig__WEBPACK_IMPORTED_MODULE_12__["default"].firestore().collection("testimonials").get();
@@ -4332,20 +4777,19 @@ const index = () => {
     }, doc.data())));
     setTest(testimonials);
   }, []);
-  console.log(test);
   return __jsx("div", {
     className: "jsx-633493357",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 36,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, __jsx("title", {
@@ -4353,7 +4797,7 @@ const index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, "Sam's Auto | Home"), __jsx("link", {
@@ -4363,7 +4807,17 @@ const index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }), __jsx("script", {
+    src: "https://kit.fontawesome.com/a21f7fe221.js",
+    crossOrigin: "anonymous",
+    className: "jsx-633493357",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -4375,7 +4829,7 @@ const index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 47,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -4386,7 +4840,7 @@ const index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 53,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -4396,35 +4850,35 @@ const index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 58,
       columnNumber: 9
     }
-  }), ">"), test.length > 0 ? __jsx(Container, {
+  }), ">"), test.length > 0 && !loading ? __jsx(Container, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 62,
       columnNumber: 9
     }
   }, __jsx(_components_home_Landing__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 63,
       columnNumber: 11
     }
   }), __jsx(_components_home_Services__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 64,
       columnNumber: 11
     }
   }), __jsx(_components_home_Yus__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 65,
       columnNumber: 11
     }
   }), __jsx(_components_home_Testimonials__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -4432,42 +4886,41 @@ const index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 66,
       columnNumber: 11
     }
   }), __jsx(_components_home_Team__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 67,
       columnNumber: 11
     }
   }), __jsx(_components_home_Mission__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 68,
       columnNumber: 11
     }
   }), __jsx(_components_UI_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 69,
       columnNumber: 11
     }
-  })) : __jsx("h1", {
-    className: "jsx-633493357",
+  })) : __jsx(_components_UI_Loader__WEBPACK_IMPORTED_MODULE_13__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 72,
       columnNumber: 9
     }
-  }, "Wait"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "633493357",
     __self: undefined
-  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXGluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1FeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyB1c2VFZmZlY3QsIHVzZUNhbGxiYWNrLCB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XHJcbmltcG9ydCBzdHlsZWQgZnJvbSBcInN0eWxlZC1jb21wb25lbnRzXCI7XHJcbmltcG9ydCBtZWRpYSBmcm9tIFwic3R5bGVkLW1lZGlhLXF1ZXJ5XCI7XHJcbmltcG9ydCBMYW5kaW5nIGZyb20gXCIuLy4uL2NvbXBvbmVudHMvaG9tZS9MYW5kaW5nXCI7XHJcbmltcG9ydCBZdXMgZnJvbSBcIi4uL2NvbXBvbmVudHMvaG9tZS9ZdXNcIjtcclxuaW1wb3J0IFNlcnZpY2VzIGZyb20gXCIuLy4uL2NvbXBvbmVudHMvaG9tZS9TZXJ2aWNlc1wiO1xyXG5pbXBvcnQgVGVzdGltb25pYWxzIGZyb20gXCIuLi9jb21wb25lbnRzL2hvbWUvVGVzdGltb25pYWxzXCI7XHJcbmltcG9ydCBUZWFtIGZyb20gXCIuLi9jb21wb25lbnRzL2hvbWUvVGVhbVwiO1xyXG5pbXBvcnQgTWlzc2lvbiBmcm9tIFwiLi8uLi9jb21wb25lbnRzL2hvbWUvTWlzc2lvblwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5pbXBvcnQgZmIgZnJvbSBcIi4uL2ZiY29uZmlnXCI7XHJcblxyXG5jb25zdCBpbmRleCA9ICgpID0+IHtcclxuICBsZXQgdGVzdGltb25pYWxzID0gW107XHJcbiAgY29uc3QgW3Rlc3QsIHNldFRlc3RdID0gdXNlU3RhdGUoW10pO1xyXG5cclxuICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgZ2V0VGVzdGltb25pYWxzKCk7XHJcbiAgfSwgW10pO1xyXG5cclxuICBjb25zdCBnZXRUZXN0aW1vbmlhbHMgPSB1c2VDYWxsYmFjayhhc3luYyAoKSA9PiB7XHJcbiAgICBjb25zdCBkb2N1bWVudHMgPSBhd2FpdCBmYi5maXJlc3RvcmUoKS5jb2xsZWN0aW9uKFwidGVzdGltb25pYWxzXCIpLmdldCgpO1xyXG5cclxuICAgIGF3YWl0IGRvY3VtZW50cy5mb3JFYWNoKChkb2MpID0+XHJcbiAgICAgIHRlc3RpbW9uaWFscy5wdXNoKHsgaWQ6IGRvYy5pZCwgLi4uZG9jLmRhdGEoKSB9KVxyXG4gICAgKTtcclxuICAgIHNldFRlc3QodGVzdGltb25pYWxzKTtcclxuICB9LCBbXSk7XHJcblxyXG4gIGNvbnNvbGUubG9nKHRlc3QpO1xyXG5cclxuICByZXR1cm4gKFxyXG4gICAgPGRpdj5cclxuICAgICAgPEhlYWQ+XHJcbiAgICAgICAgPHRpdGxlPlNhbSdzIEF1dG8gfCBIb21lPC90aXRsZT5cclxuICAgICAgICA8bGlua1xyXG4gICAgICAgICAgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Qb3BwaW5zfFF1aWNrc2FuZHxSYWNpbmcrU2FucytPbmUmZGlzcGxheT1zd2FwXCJcclxuICAgICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxyXG4gICAgICAgIC8+XHJcbiAgICAgICAgPGxpbmtcclxuICAgICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxyXG4gICAgICAgICAgdHlwZT1cInRleHQvY3NzXCJcclxuICAgICAgICAgIGNoYXJTZXQ9XCJVVEYtOFwiXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvc2xpY2stY2Fyb3VzZWwvMS42LjAvc2xpY2subWluLmNzc1wiXHJcbiAgICAgICAgLz5cclxuICAgICAgICA8bGlua1xyXG4gICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXHJcbiAgICAgICAgICB0eXBlPVwidGV4dC9jc3NcIlxyXG4gICAgICAgICAgaHJlZj1cImh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL3NsaWNrLWNhcm91c2VsLzEuNi4wL3NsaWNrLXRoZW1lLm1pbi5jc3NcIlxyXG4gICAgICAgIC8+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjBcIiAvPlxyXG4gICAgICAgID5cclxuICAgICAgPC9IZWFkPlxyXG4gICAgICB7dGVzdC5sZW5ndGggPiAwID8gKFxyXG4gICAgICAgIDxDb250YWluZXI+XHJcbiAgICAgICAgICA8TGFuZGluZyAvPlxyXG4gICAgICAgICAgPFNlcnZpY2VzIC8+XHJcbiAgICAgICAgICA8WXVzIC8+XHJcbiAgICAgICAgICA8VGVzdGltb25pYWxzIHRlc3RpbW9uaWFscz17dGVzdH0gLz5cclxuICAgICAgICAgIDxUZWFtIC8+XHJcbiAgICAgICAgICA8TWlzc2lvbiAvPlxyXG4gICAgICAgICAgPEZvb3RlciAvPlxyXG4gICAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICApIDogKFxyXG4gICAgICAgIDxoMT5XYWl0PC9oMT5cclxuICAgICAgKX1cclxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgICBib2R5IHtcclxuICAgICAgICAgIG1hcmdpbjogMDtcclxuICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgICAgIH1cclxuICAgICAgYH08L3N0eWxlPlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGluZGV4O1xyXG5cclxuY29uc3QgQ29udGFpbmVyID0gc3R5bGVkLmRpdmBcclxuICB3aWR0aDogMTAwdnc7XHJcbiAgbGluZS1oZWlnaHQ6IDEuMztcclxuICBtYXJnaW46IDA7XHJcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG5cclxuICAke21lZGlhLmxlc3NUaGFuKFwic21hbGxcIilgXHJcbiAgICAvKiBzY3JlZW4gd2lkdGggaXMgbGVzcyB0aGFuIDQ1MHB4IChzbWFsbCkgKi9cclxuICAgIHdpZHRoOiAxMDB2dztcclxuICBgfVxyXG5gO1xyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\index.js */"));
+  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXGluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXlFeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyB1c2VFZmZlY3QsIHVzZUNhbGxiYWNrLCB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XHJcbmltcG9ydCBzdHlsZWQgZnJvbSBcInN0eWxlZC1jb21wb25lbnRzXCI7XHJcbmltcG9ydCBtZWRpYSBmcm9tIFwic3R5bGVkLW1lZGlhLXF1ZXJ5XCI7XHJcbmltcG9ydCBMYW5kaW5nIGZyb20gXCIuLy4uL2NvbXBvbmVudHMvaG9tZS9MYW5kaW5nXCI7XHJcbmltcG9ydCBZdXMgZnJvbSBcIi4uL2NvbXBvbmVudHMvaG9tZS9ZdXNcIjtcclxuaW1wb3J0IFNlcnZpY2VzIGZyb20gXCIuLy4uL2NvbXBvbmVudHMvaG9tZS9TZXJ2aWNlc1wiO1xyXG5pbXBvcnQgVGVzdGltb25pYWxzIGZyb20gXCIuLi9jb21wb25lbnRzL2hvbWUvVGVzdGltb25pYWxzXCI7XHJcbmltcG9ydCBUZWFtIGZyb20gXCIuLi9jb21wb25lbnRzL2hvbWUvVGVhbVwiO1xyXG5pbXBvcnQgTWlzc2lvbiBmcm9tIFwiLi8uLi9jb21wb25lbnRzL2hvbWUvTWlzc2lvblwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5pbXBvcnQgZmIgZnJvbSBcIi4uL2ZiY29uZmlnXCI7XHJcbmltcG9ydCBMb2FkZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvVUkvTG9hZGVyXCI7XHJcblxyXG5jb25zdCBpbmRleCA9ICgpID0+IHtcclxuICBsZXQgdGVzdGltb25pYWxzID0gW107XHJcbiAgY29uc3QgW3Rlc3QsIHNldFRlc3RdID0gdXNlU3RhdGUoW10pO1xyXG4gIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpO1xyXG5cclxuICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgZ2V0VGVzdGltb25pYWxzKCk7XHJcbiAgICBzZXRUaW1lb3V0KCgpID0+IHNldExvYWRpbmcoZmFsc2UpLCAwKTtcclxuICAgIC8vIHNldFRpbWVvdXQoKCkgPT4gc2V0TG9hZGluZyhmYWxzZSksIDI0MDApO1xyXG4gIH0sIFtdKTtcclxuXHJcbiAgY29uc3QgZ2V0VGVzdGltb25pYWxzID0gdXNlQ2FsbGJhY2soYXN5bmMgKCkgPT4ge1xyXG4gICAgY29uc3QgZG9jdW1lbnRzID0gYXdhaXQgZmIuZmlyZXN0b3JlKCkuY29sbGVjdGlvbihcInRlc3RpbW9uaWFsc1wiKS5nZXQoKTtcclxuXHJcbiAgICBhd2FpdCBkb2N1bWVudHMuZm9yRWFjaCgoZG9jKSA9PlxyXG4gICAgICB0ZXN0aW1vbmlhbHMucHVzaCh7IGlkOiBkb2MuaWQsIC4uLmRvYy5kYXRhKCkgfSlcclxuICAgICk7XHJcbiAgICBzZXRUZXN0KHRlc3RpbW9uaWFscyk7XHJcbiAgfSwgW10pO1xyXG5cclxuICByZXR1cm4gKFxyXG4gICAgPGRpdj5cclxuICAgICAgPEhlYWQ+XHJcbiAgICAgICAgPHRpdGxlPlNhbSdzIEF1dG8gfCBIb21lPC90aXRsZT5cclxuICAgICAgICA8bGlua1xyXG4gICAgICAgICAgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Qb3BwaW5zfFF1aWNrc2FuZHxSYWNpbmcrU2FucytPbmUmZGlzcGxheT1zd2FwXCJcclxuICAgICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxyXG4gICAgICAgIC8+XHJcbiAgICAgICAgPHNjcmlwdFxyXG4gICAgICAgICAgc3JjPVwiaHR0cHM6Ly9raXQuZm9udGF3ZXNvbWUuY29tL2EyMWY3ZmUyMjEuanNcIlxyXG4gICAgICAgICAgY3Jvc3NPcmlnaW49XCJhbm9ueW1vdXNcIlxyXG4gICAgICAgID48L3NjcmlwdD5cclxuICAgICAgICA8bGlua1xyXG4gICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXHJcbiAgICAgICAgICB0eXBlPVwidGV4dC9jc3NcIlxyXG4gICAgICAgICAgY2hhclNldD1cIlVURi04XCJcclxuICAgICAgICAgIGhyZWY9XCJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9zbGljay1jYXJvdXNlbC8xLjYuMC9zbGljay5taW4uY3NzXCJcclxuICAgICAgICAvPlxyXG4gICAgICAgIDxsaW5rXHJcbiAgICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcclxuICAgICAgICAgIHR5cGU9XCJ0ZXh0L2Nzc1wiXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvc2xpY2stY2Fyb3VzZWwvMS42LjAvc2xpY2stdGhlbWUubWluLmNzc1wiXHJcbiAgICAgICAgLz5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiIC8+XHJcbiAgICAgICAgPlxyXG4gICAgICA8L0hlYWQ+XHJcbiAgICAgIHt0ZXN0Lmxlbmd0aCA+IDAgJiYgIWxvYWRpbmcgPyAoXHJcbiAgICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICAgIDxMYW5kaW5nIC8+XHJcbiAgICAgICAgICA8U2VydmljZXMgLz5cclxuICAgICAgICAgIDxZdXMgLz5cclxuICAgICAgICAgIDxUZXN0aW1vbmlhbHMgdGVzdGltb25pYWxzPXt0ZXN0fSAvPlxyXG4gICAgICAgICAgPFRlYW0gLz5cclxuICAgICAgICAgIDxNaXNzaW9uIC8+XHJcbiAgICAgICAgICA8Rm9vdGVyIC8+XHJcbiAgICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgICkgOiAoXHJcbiAgICAgICAgPExvYWRlciAvPlxyXG4gICAgICApfVxyXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgIGJvZHkge1xyXG4gICAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgICAgICAgcGFkZGluZzogMDtcclxuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICA8L2Rpdj5cclxuICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgaW5kZXg7XHJcblxyXG5jb25zdCBDb250YWluZXIgPSBzdHlsZWQuZGl2YFxyXG4gIHdpZHRoOiAxMDB2dztcclxuICBsaW5lLWhlaWdodDogMS4zO1xyXG4gIG1hcmdpbjogMDtcclxuICBvdmVyZmxvdy14OiBoaWRkZW47XHJcblxyXG4gICR7bWVkaWEubGVzc1RoYW4oXCJzbWFsbFwiKWBcclxuICAgIC8qIHNjcmVlbiB3aWR0aCBpcyBsZXNzIHRoYW4gNDUwcHggKHNtYWxsKSAqL1xyXG4gICAgd2lkdGg6IDEwMHZ3O1xyXG4gIGB9XHJcbmA7XHJcbiJdfQ== */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\index.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
@@ -4547,7 +5000,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFj
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MzEuMjQgMTEyLjYiPjxkZWZzPjxzdHlsZT4uY2xzLTEsLmNscy0ze2ZpbGw6I2ZmZjt9LmNscy0xLC5jbHMtMntzdHJva2U6IzIzMWYyMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6NnB4O30uY2xzLTJ7ZmlsbDojZWUyNDI0O30uY2xzLTN7Zm9udC1zaXplOjU2LjI4cHg7Zm9udC1mYW1pbHk6RnJhbmtsaW5Hb3RoaWMtSGVhdnksIEZyYW5rbGluIEdvdGhpYyBIZWF2eTt9LmNscy0zLC5jbHMtNHtmb250LXdlaWdodDo4MDA7fS5jbHMtNHtmb250LXNpemU6NDkuNDJweDtmaWxsOiMyMzFmMjA7Zm9udC1mYW1pbHk6RnJhbmtsaW5Hb3RoaWMtSGVhdnlJdGFsaWMsIEZyYW5rbGluIEdvdGhpYyBIZWF2eTtmb250LXN0eWxlOml0YWxpYzt9LmNscy01e2xldHRlci1zcGFjaW5nOi0wLjAyZW07fS5jbHMtNntsZXR0ZXItc3BhY2luZzowZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzowZW07fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5zYW1sb2dvPC90aXRsZT48ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iTGF5ZXJfMS0yIiBkYXRhLW5hbWU9IkxheWVyIDEiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIzMzguMTkgOTEuOCA0Ljk5IDkxLjggNTIuMDkgMyAzNzIuMjEgMyAzMzguMTkgOTEuOCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyMDEuNiA5MS44IDQuOTkgOTEuOCA1Mi4wOSAzIDI0Ny45NyAzIDIwMS42IDkxLjgiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyLjE1IDY5LjU3KSI+U2Ft4oCZczwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyNy4xMyA3MC43NSkiPjx0c3BhbiBjbGFzcz0iY2xzLTUiPkE8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTYiIHg9IjMwLjI0IiB5PSIwIj5VPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSI2Mi4wNyIgeT0iMCI+VDwvdHNwYW4+PHRzcGFuIHg9Ijg2LjYxIiB5PSIwIj5PPC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOTUuNzIgODUuMTEiPjxkZWZzPjxzdHlsZT4uY2xzLTEsLmNscy0ze2ZpbGw6I2ZmZjt9LmNscy0xLC5jbHMtMntzdHJva2U6IzIzMWYyMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ye2ZpbGw6I2VkMWMyNDt9LmNscy0ze2ZvbnQtc2l6ZTo3MS42cHg7bGV0dGVyLXNwYWNpbmc6MC4wN2VtO30uY2xzLTMsLmNscy00e2ZvbnQtZmFtaWx5OlZDUk9TRE1vbm8sIFZDUiBPU0QgTW9ubzt9LmNscy00e2ZvbnQtc2l6ZTo3NS45cHg7ZmlsbDojMjMxZjIwO2xldHRlci1zcGFjaW5nOjAuMDdlbTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFzc2V0IDI8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjM3My45NyA4My42OSAxNzYuNzEgODMuNjkgMTk3LjgxIDAuNSAzOTUuMDcgMC41IDM3My45NyA4My42OSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxOTcuOTEgODMuNjkgMC42NCA4My42OSAyMS43NSAwLjUgMjE5LjAxIDAuNSAxOTcuOTEgODMuNjkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjM4IDc2LjcpIHNjYWxlKDEuMTkgMSkiPlNBTTwvdGV4dD48dGV4dCBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxOS4wMSA3Ny43KSBzY2FsZSgwLjc5IDEpIj5BVVRPPC90ZXh0PjwvZz48L2c+PC9zdmc+"
 
 /***/ }),
 
@@ -4559,6 +5012,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTExcHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iLTM4IDAgNTExIDUxMS45OTk1NiIgd2lkdGg9IjUxMXB0Ij4KPGcgaWQ9InN1cmZhY2UxIj4KPHBhdGggZD0iTSA0MTMuNDc2NTYyIDM0MS45MTAxNTYgQyAzOTkuNzE0ODQ0IDM3OS4yMDcwMzEgMzc4LjkwMjM0NCA0MTEuNjM2NzE5IDM1MS42MDkzNzUgNDM4LjI4OTA2MiBDIDMyMC41NDI5NjkgNDY4LjYyNSAyNzkuODYzMjgxIDQ5Mi43MzA0NjkgMjMwLjY5OTIxOSA1MDkuOTI1NzgxIEMgMjI5LjA4NTkzOCA1MTAuNDg4MjgxIDIyNy40MDIzNDQgNTEwLjk0OTIxOSAyMjUuNzEwOTM4IDUxMS4yODkwNjIgQyAyMjMuNDc2NTYyIDUxMS43MzA0NjkgMjIxLjIwMzEyNSA1MTEuOTY4NzUgMjE4Ljk0OTIxOSA1MTIgTCAyMTguNTA3ODEyIDUxMiBDIDIxNi4xMDU0NjkgNTEyIDIxMy42OTE0MDYgNTExLjc1NzgxMiAyMTEuMjk2ODc1IDUxMS4yODkwNjIgQyAyMDkuNjA1NDY5IDUxMC45NDkyMTkgMjA3Ljk0NTMxMiA1MTAuNDg4MjgxIDIwNi4zMzk4NDQgNTA5LjkzNzUgQyAxNTcuMTE3MTg4IDQ5Mi43Njk1MzEgMTE2LjM4NjcxOSA0NjguNjc1NzgxIDg1LjI4OTA2MiA0MzguMzM5ODQ0IEMgNTcuOTg0Mzc1IDQxMS42ODc1IDM3LjE3NTc4MSAzNzkuMjc3MzQ0IDIzLjQzMzU5NCAzNDEuOTgwNDY5IEMgLTEuNTU0Njg4IDI3NC4xNjc5NjkgLTAuMTMyODEyIDE5OS40NjQ4NDQgMS4wMTE3MTkgMTM5LjQzMzU5NCBMIDEuMDMxMjUgMTM4LjUxMTcxOSBDIDEuMjYxNzE5IDEzMy41NTQ2ODggMS40MTAxNTYgMTI4LjM0NzY1NiAxLjQ5MjE4OCAxMjIuNTk3NjU2IEMgMS45MTAxNTYgOTQuMzY3MTg4IDI0LjM1NTQ2OSA3MS4wMTE3MTkgNTIuNTg5ODQ0IDY5LjQzNzUgQyAxMTEuNDU3MDMxIDY2LjE1MjM0NCAxNTYuOTk2MDk0IDQ2Ljk1MzEyNSAxOTUuOTA2MjUgOS4wMjczNDQgTCAxOTYuMjQ2MDk0IDguNzE0ODQ0IEMgMjAyLjcwNzAzMSAyLjc4OTA2MiAyMTAuODQ3NjU2IC0wLjExNzE4OCAyMTguOTQ5MjE5IDAuMDAzOTA2MjUgQyAyMjYuNzYxNzE5IDAuMTA1NDY5IDIzNC41NDI5NjkgMy4wMDc4MTIgMjQwLjc3MzQzOCA4LjcxNDg0NCBMIDI0MS4xMDU0NjkgOS4wMjczNDQgQyAyODAuMDIzNDM4IDQ2Ljk1MzEyNSAzMjUuNTYyNSA2Ni4xNTIzNDQgMzg0LjQyOTY4OCA2OS40Mzc1IEMgNDEyLjY2NDA2MiA3MS4wMTE3MTkgNDM1LjEwOTM3NSA5NC4zNjcxODggNDM1LjUyNzM0NCAxMjIuNTk3NjU2IEMgNDM1LjYwOTM3NSAxMjguMzg2NzE5IDQzNS43NTc4MTIgMTMzLjU4NTkzOCA0MzUuOTg4MjgxIDEzOC41MTE3MTkgTCA0MzYgMTM4LjkwMjM0NCBDIDQzNy4xNDA2MjUgMTk5LjA0Njg3NSA0MzguNTU0Njg4IDI3My44OTg0MzggNDEzLjQ3NjU2MiAzNDEuOTEwMTU2IFogTSA0MTMuNDc2NTYyIDM0MS45MTAxNTYgIiBzdHlsZT0iIHN0cm9rZTpub25lO2ZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDg2LjY2NjY2NyUsNTAuMTk2MDc4JSk7ZmlsbC1vcGFjaXR5OjE7IiAvPgo8cGF0aCBkPSJNIDQxMy40NzY1NjIgMzQxLjkxMDE1NiBDIDM5OS43MTQ4NDQgMzc5LjIwNzAzMSAzNzguOTAyMzQ0IDQxMS42MzY3MTkgMzUxLjYwOTM3NSA0MzguMjg5MDYyIEMgMzIwLjU0Mjk2OSA0NjguNjI1IDI3OS44NjMyODEgNDkyLjczMDQ2OSAyMzAuNjk5MjE5IDUwOS45MjU3ODEgQyAyMjkuMDg1OTM4IDUxMC40ODgyODEgMjI3LjQwMjM0NCA1MTAuOTQ5MjE5IDIyNS43MTA5MzggNTExLjI4OTA2MiBDIDIyMy40NzY1NjIgNTExLjczMDQ2OSAyMjEuMjAzMTI1IDUxMS45Njg3NSAyMTguOTQ5MjE5IDUxMiBMIDIxOC45NDkyMTkgMC4wMDM5MDYyNSBDIDIyNi43NjE3MTkgMC4xMDU0NjkgMjM0LjU0Mjk2OSAzLjAwNzgxMiAyNDAuNzczNDM4IDguNzE0ODQ0IEwgMjQxLjEwNTQ2OSA5LjAyNzM0NCBDIDI4MC4wMjM0MzggNDYuOTUzMTI1IDMyNS41NjI1IDY2LjE1MjM0NCAzODQuNDI5Njg4IDY5LjQzNzUgQyA0MTIuNjY0MDYyIDcxLjAxMTcxOSA0MzUuMTA5Mzc1IDk0LjM2NzE4OCA0MzUuNTI3MzQ0IDEyMi41OTc2NTYgQyA0MzUuNjA5Mzc1IDEyOC4zODY3MTkgNDM1Ljc1NzgxMiAxMzMuNTg1OTM4IDQzNS45ODgyODEgMTM4LjUxMTcxOSBMIDQzNiAxMzguOTAyMzQ0IEMgNDM3LjE0MDYyNSAxOTkuMDQ2ODc1IDQzOC41NTQ2ODggMjczLjg5ODQzOCA0MTMuNDc2NTYyIDM0MS45MTAxNTYgWiBNIDQxMy40NzY1NjIgMzQxLjkxMDE1NiAiIHN0eWxlPSIgc3Ryb2tlOm5vbmU7ZmlsbC1ydWxlOm5vbnplcm87ZmlsbDpyZ2IoMCUsNjYuNjY2NjY3JSwzOC44MjM1MjklKTtmaWxsLW9wYWNpdHk6MTsiIC8+CjxwYXRoIGQ9Ik0gMzQ2LjEwMTU2MiAyNTYgQyAzNDYuMTAxNTYyIDMyNi4yMDcwMzEgMjg5LjA5NzY1NiAzODMuMzU1NDY5IDIxOC45NDkyMTkgMzgzLjYwNTQ2OSBMIDIxOC41IDM4My42MDU0NjkgQyAxNDguMTQ0NTMxIDM4My42MDU0NjkgOTAuODk0NTMxIDMyNi4zNTkzNzUgOTAuODk0NTMxIDI1NiBDIDkwLjg5NDUzMSAxODUuNjQ0NTMxIDE0OC4xNDQ1MzEgMTI4LjM5ODQzOCAyMTguNSAxMjguMzk4NDM4IEwgMjE4Ljk0OTIxOSAxMjguMzk4NDM4IEMgMjg5LjA5NzY1NiAxMjguNjQ4NDM4IDM0Ni4xMDE1NjIgMTg1Ljc5Njg3NSAzNDYuMTAxNTYyIDI1NiBaIE0gMzQ2LjEwMTU2MiAyNTYgIiBzdHlsZT0iIHN0cm9rZTpub25lO2ZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDEwMCUsMTAwJSwxMDAlKTtmaWxsLW9wYWNpdHk6MTsiIC8+CjxwYXRoIGQ9Ik0gMzQ2LjEwMTU2MiAyNTYgQyAzNDYuMTAxNTYyIDMyNi4yMDcwMzEgMjg5LjA5NzY1NiAzODMuMzU1NDY5IDIxOC45NDkyMTkgMzgzLjYwNTQ2OSBMIDIxOC45NDkyMTkgMTI4LjM5ODQzOCBDIDI4OS4wOTc2NTYgMTI4LjY0ODQzOCAzNDYuMTAxNTYyIDE4NS43OTY4NzUgMzQ2LjEwMTU2MiAyNTYgWiBNIDM0Ni4xMDE1NjIgMjU2ICIgc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6bm9uemVybztmaWxsOnJnYig4OC4yMzUyOTQlLDkyLjE1Njg2MyUsOTQuMTE3NjQ3JSk7ZmlsbC1vcGFjaXR5OjE7IiAvPgo8cGF0aCBkPSJNIDI3Ni40MTc5NjkgMjM3LjYyNSBMIDIxOC45NDkyMTkgMjk1LjEwMTU2MiBMIDIwNi41MzEyNSAzMDcuNTE5NTMxIEMgMjAzLjU5NzY1NiAzMTAuNDUzMTI1IDE5OS43NSAzMTEuOTE3OTY5IDE5NS45MDYyNSAzMTEuOTE3OTY5IEMgMTkyLjA1ODU5NCAzMTEuOTE3OTY5IDE4OC4yMTQ4NDQgMzEwLjQ1MzEyNSAxODUuMjc3MzQ0IDMwNy41MTk1MzEgTCAxNTguNTc4MTI1IDI4MC44MDg1OTQgQyAxNTIuNzEwOTM4IDI3NC45NDE0MDYgMTUyLjcxMDkzOCAyNjUuNDM3NSAxNTguNTc4MTI1IDI1OS41NjY0MDYgQyAxNjQuNDM3NSAyNTMuNjk5MjE5IDE3My45NTMxMjUgMjUzLjY5OTIxOSAxNzkuODIwMzEyIDI1OS41NjY0MDYgTCAxOTUuOTA2MjUgMjc1LjY1MjM0NCBMIDI1NS4xNzU3ODEgMjE2LjM4MjgxMiBDIDI2MS4wNDI5NjkgMjEwLjUxMTcxOSAyNzAuNTU4NTk0IDIxMC41MTE3MTkgMjc2LjQxNzk2OSAyMTYuMzgyODEyIEMgMjgyLjI4NTE1NiAyMjIuMjUgMjgyLjI4NTE1NiAyMzEuNzY1NjI1IDI3Ni40MTc5NjkgMjM3LjYyNSBaIE0gMjc2LjQxNzk2OSAyMzcuNjI1ICIgc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6bm9uemVybztmaWxsOnJnYig3MC41ODgyMzUlLDgyLjM1Mjk0MSUsODQuMzEzNzI1JSk7ZmlsbC1vcGFjaXR5OjE7IiAvPgo8cGF0aCBkPSJNIDI3Ni40MTc5NjkgMjM3LjYyNSBMIDIxOC45NDkyMTkgMjk1LjEwMTU2MiBMIDIxOC45NDkyMTkgMjUyLjYwNTQ2OSBMIDI1NS4xNzU3ODEgMjE2LjM4MjgxMiBDIDI2MS4wNDI5NjkgMjEwLjUxMTcxOSAyNzAuNTU4NTk0IDIxMC41MTE3MTkgMjc2LjQxNzk2OSAyMTYuMzgyODEyIEMgMjgyLjI4NTE1NiAyMjIuMjUgMjgyLjI4NTE1NiAyMzEuNzY1NjI1IDI3Ni40MTc5NjkgMjM3LjYyNSBaIE0gMjc2LjQxNzk2OSAyMzcuNjI1ICIgc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6bm9uemVybztmaWxsOnJnYig0My41Mjk0MTIlLDY0LjcwNTg4MiUsNjYuNjY2NjY3JSk7ZmlsbC1vcGFjaXR5OjE7IiAvPgo8L2c+Cjwvc3ZnPg=="
+
+/***/ }),
+
+/***/ "./public/static/images/landing/19019-loading-animation.json":
+/*!*******************************************************************!*\
+  !*** ./public/static/images/landing/19019-loading-animation.json ***!
+  \*******************************************************************/
+/*! exports provided: v, fr, ip, op, w, h, nm, ddd, assets, fonts, layers, markers, chars, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"v\":\"5.5.9\",\"fr\":59.9400024414062,\"ip\":0,\"op\":241.000009816131,\"w\":1080,\"h\":1080,\"nm\":\"Comp 1\",\"ddd\":0,\"assets\":[],\"fonts\":{\"list\":[{\"fName\":\"Calibre-Light\",\"fFamily\":\"Calibre\",\"fStyle\":\"Light\",\"ascent\":64.9993896484375},{\"fName\":\"Calibre-Bold\",\"fFamily\":\"Calibre\",\"fStyle\":\"Bold\",\"ascent\":64.9993896484375}]},\"layers\":[{\"ddd\":0,\"ind\":1,\"ty\":5,\"nm\":\"100\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":239,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":240,\"s\":[100]},{\"t\":241.000009816131,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.462,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"100\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":2,\"ty\":5,\"nm\":\"99\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":238,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":239,\"s\":[100]},{\"t\":240.0000097754,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.052,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"99\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":3,\"ty\":5,\"nm\":\"98\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":236,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":237,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":238,\"s\":[100]},{\"t\":239.00000973467,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.728,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"98\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":4,\"ty\":5,\"nm\":\"97\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":235,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":236,\"s\":[100]},{\"t\":237.000009653208,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.871,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"97\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":5,\"ty\":5,\"nm\":\"96\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":234,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":235,\"s\":[100]},{\"t\":236.000009612477,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.163,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"96\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":6,\"ty\":5,\"nm\":\"95\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":232,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":234,\"s\":[100]},{\"t\":235.000009571746,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.737,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"95\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":7,\"ty\":5,\"nm\":\"94\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":231,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":232,\"s\":[100]},{\"t\":233.000009490285,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.16,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"94\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":8,\"ty\":5,\"nm\":\"93\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":229,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":230,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":231,\"s\":[100]},{\"t\":232.000009449554,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.856,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"93\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":9,\"ty\":5,\"nm\":\"92\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":228,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":229,\"s\":[100]},{\"t\":230.000009368092,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.407,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"92\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":10,\"ty\":5,\"nm\":\"91\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":227,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":228,\"s\":[100]},{\"t\":229.000009327361,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[493.496,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"91\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":11,\"ty\":5,\"nm\":\"90\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":226,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":227,\"s\":[100]},{\"t\":228.00000928663,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.02,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"90\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":12,\"ty\":5,\"nm\":\"89\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":224,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":225,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":226,\"s\":[100]},{\"t\":227.0000092459,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.385,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"89\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":13,\"ty\":5,\"nm\":\"88\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":223,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":224,\"s\":[100]},{\"t\":225.000009164438,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.061,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"88\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":14,\"ty\":5,\"nm\":\"87\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":219,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":220,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":223,\"s\":[100]},{\"t\":224.000009123707,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.203,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"87\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":15,\"ty\":5,\"nm\":\"86\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":212,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":213,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":219,\"s\":[100]},{\"t\":220.000008960784,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.496,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"86\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":16,\"ty\":5,\"nm\":\"85\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":206,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":207,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":212,\"s\":[100]},{\"t\":213.000008675668,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.069,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"85\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":17,\"ty\":5,\"nm\":\"84\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":199,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":200,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":206,\"s\":[100]},{\"t\":207.000008431283,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.493,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"84\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":18,\"ty\":5,\"nm\":\"83\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":193,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":194,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":199,\"s\":[100]},{\"t\":200.000008146167,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.188,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"83\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":19,\"ty\":5,\"nm\":\"82\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":186,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":187,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":193,\"s\":[100]},{\"t\":194.000007901782,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.739,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"82\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":20,\"ty\":5,\"nm\":\"81\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":180,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":181,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":186,\"s\":[100]},{\"t\":187.000007616666,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[493.828,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"81\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":21,\"ty\":5,\"nm\":\"80\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":174,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":175,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":180,\"s\":[100]},{\"t\":181.000007372281,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.353,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"80\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":22,\"ty\":5,\"nm\":\"79\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":167,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":168,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":174,\"s\":[100]},{\"t\":175.000007127896,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.493,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"79\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":23,\"ty\":5,\"nm\":\"78\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":161,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":162,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":167,\"s\":[100]},{\"t\":168.00000684278,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.169,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"78\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":24,\"ty\":5,\"nm\":\"77\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":154,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":155,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":161,\"s\":[100]},{\"t\":162.000006598395,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.312,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"77\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":25,\"ty\":5,\"nm\":\"76\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":148,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":149,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":154,\"s\":[100]},{\"t\":155.000006313279,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.604,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"76\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":26,\"ty\":5,\"nm\":\"75\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":144,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":145,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":148,\"s\":[100]},{\"t\":149.000006068894,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.178,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"75\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":27,\"ty\":5,\"nm\":\"74\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":143,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":144,\"s\":[100]},{\"t\":145.000005905971,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.602,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"74\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":28,\"ty\":5,\"nm\":\"73\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":142,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":143,\"s\":[100]},{\"t\":144.00000586524,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.297,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"73\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":29,\"ty\":5,\"nm\":\"72\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":141,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":142,\"s\":[100]},{\"t\":143.000005824509,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.848,669.704,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"72\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":30,\"ty\":5,\"nm\":\"71\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":140,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":141,\"s\":[100]},{\"t\":142.000005783779,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[494.937,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"71\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":31,\"ty\":5,\"nm\":\"70\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":139,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":140,\"s\":[100]},{\"t\":141.000005743048,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.462,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"70\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":32,\"ty\":5,\"nm\":\"69\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":138,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":139,\"s\":[100]},{\"t\":140.000005702317,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.163,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"69\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":33,\"ty\":5,\"nm\":\"68\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":137,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":138,\"s\":[100]},{\"t\":139.000005661586,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.839,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"68\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":34,\"ty\":5,\"nm\":\"67\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":136,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":137,\"s\":[100]},{\"t\":138.000005620855,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.982,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"67\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":35,\"ty\":5,\"nm\":\"66\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":135,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":136,\"s\":[100]},{\"t\":137.000005580124,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.274,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"66\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":36,\"ty\":5,\"nm\":\"65\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":134,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":135,\"s\":[100]},{\"t\":136.000005539394,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.847,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"65\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":37,\"ty\":5,\"nm\":\"64\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":133,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":134,\"s\":[100]},{\"t\":135.000005498663,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.271,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"64\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":38,\"ty\":5,\"nm\":\"63\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":131,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":132,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":133,\"s\":[100]},{\"t\":134.000005457932,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.967,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"63\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":39,\"ty\":5,\"nm\":\"62\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":126,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":127,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":131,\"s\":[100]},{\"t\":132.00000537647,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.518,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"62\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":40,\"ty\":5,\"nm\":\"61\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":120,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":121,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":126,\"s\":[100]},{\"t\":127.000005172816,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[493.607,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"61\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":41,\"ty\":5,\"nm\":\"60\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":114,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":115,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":120,\"s\":[100]},{\"t\":121.000004928431,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.131,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"60\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":42,\"ty\":5,\"nm\":\"59\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":108,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":109,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":114,\"s\":[100]},{\"t\":115.000004684046,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.717,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"59\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":43,\"ty\":5,\"nm\":\"58\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":102,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":103,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":108,\"s\":[100]},{\"t\":109.000004439661,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.393,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"58\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":44,\"ty\":5,\"nm\":\"57\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":97,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":98,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":102,\"s\":[100]},{\"t\":103.000004195276,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.536,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"57\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":45,\"ty\":5,\"nm\":\"56\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":91,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":92,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":97,\"s\":[100]},{\"t\":98.0000039916218,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.828,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"56\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":46,\"ty\":5,\"nm\":\"55\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":85,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":86,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":91,\"s\":[100]},{\"t\":92.0000037472368,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.402,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"55\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":47,\"ty\":5,\"nm\":\"54\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":79,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":80,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":85,\"s\":[100]},{\"t\":86.0000035028518,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[489.826,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"54\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":48,\"ty\":5,\"nm\":\"53\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":73,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":74,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":79,\"s\":[100]},{\"t\":80.0000032584668,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.521,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"53\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":49,\"ty\":5,\"nm\":\"52\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":67,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":68,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":73,\"s\":[100]},{\"t\":74.0000030140818,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.072,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"52\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":50,\"ty\":5,\"nm\":\"51\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":64,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":65,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":67,\"s\":[100]},{\"t\":68.0000027696968,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[494.161,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"51\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":51,\"ty\":5,\"nm\":\"49\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":63,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":64,\"s\":[100]},{\"t\":65.0000026475043,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.939,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"49\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":52,\"ty\":5,\"nm\":\"47\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":62,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":63,\"s\":[100]},{\"t\":64.0000026067734,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.758,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"47\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":53,\"ty\":5,\"nm\":\"44\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":61,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":62,\"s\":[100]},{\"t\":63.0000025660426,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.047,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"44\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":54,\"ty\":5,\"nm\":\"42\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":60,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":61,\"s\":[100]},{\"t\":62.0000025253118,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.294,669.704,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"42\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":55,\"ty\":5,\"nm\":\"40\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":59,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":60,\"s\":[100]},{\"t\":61.0000024845809,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.907,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"40\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":56,\"ty\":5,\"nm\":\"38\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":58,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":59,\"s\":[100]},{\"t\":60.0000024438501,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.724,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"38\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":57,\"ty\":5,\"nm\":\"35\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":57,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":58,\"s\":[100]},{\"t\":59.0000024031193,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.732,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"35\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":58,\"ty\":5,\"nm\":\"33\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":56,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":57,\"s\":[100]},{\"t\":58.0000023623884,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.851,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"33\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":59,\"ty\":5,\"nm\":\"31\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":55,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":56,\"s\":[100]},{\"t\":57.0000023216576,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[495.491,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"31\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":60,\"ty\":5,\"nm\":\"29\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":54,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":55,\"s\":[100]},{\"t\":56.0000022809268,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.272,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"29\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":61,\"ty\":5,\"nm\":\"27\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":53,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":54,\"s\":[100]},{\"t\":55.0000022401959,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.09,669.704,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"27\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":62,\"ty\":5,\"nm\":\"25\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":52,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":53,\"s\":[100]},{\"t\":54.0000021994651,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.956,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"25\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":63,\"ty\":5,\"nm\":\"23\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":51,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":52,\"s\":[100]},{\"t\":53.0000021587343,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.075,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"23\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":64,\"ty\":5,\"nm\":\"21\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":50,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":51,\"s\":[100]},{\"t\":52.0000021180034,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[494.715,669.704,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"21\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":65,\"ty\":5,\"nm\":\"19\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":49,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":50,\"s\":[100]},{\"t\":51.0000020772726,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.493,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"19\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":66,\"ty\":5,\"nm\":\"17\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":48,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":49,\"s\":[100]},{\"t\":50.0000020365418,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.312,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"17\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":67,\"ty\":5,\"nm\":\"15\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":47,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":48,\"s\":[100]},{\"t\":49.0000019958109,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.178,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"15\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":68,\"ty\":5,\"nm\":\"13\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":46,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":47,\"s\":[100]},{\"t\":48.0000019550801,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.297,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"13\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":69,\"ty\":5,\"nm\":\"12\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":43,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":44,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":46,\"s\":[100]},{\"t\":47.0000019143492,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.848,669.704,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"12\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":70,\"ty\":5,\"nm\":\"11\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":39,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":40,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":43,\"s\":[100]},{\"t\":44.0000017921567,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[494.937,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"11\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":71,\"ty\":5,\"nm\":\"10\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":35,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":36,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":39,\"s\":[100]},{\"t\":40.0000016292334,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.462,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"10\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":72,\"ty\":5,\"nm\":\"9 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":31,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":32,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":35,\"s\":[100]},{\"t\":36.0000014663101,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.052,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"9\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":73,\"ty\":5,\"nm\":\"8 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":28,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":29,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":31,\"s\":[100]},{\"t\":32.0000013033867,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.061,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"8\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":74,\"ty\":5,\"nm\":\"7 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":24,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":25,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":28,\"s\":[100]},{\"t\":29.0000011811942,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.312,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"7\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":75,\"ty\":5,\"nm\":\"6 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":20,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":21,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":24,\"s\":[100]},{\"t\":25.0000010182709,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.274,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"6\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":76,\"ty\":5,\"nm\":\"5 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":16,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":17,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":20,\"s\":[100]},{\"t\":21.0000008553475,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.402,667.487,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"5\\r\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":77,\"ty\":5,\"nm\":\"4 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":13,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":14,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":16,\"s\":[100]},{\"t\":17.0000006924242,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[490.047,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"4\\r\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":78,\"ty\":5,\"nm\":\"3 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":9,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":10,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":13,\"s\":[100]},{\"t\":14.0000005702317,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.851,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"3\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":79,\"ty\":5,\"nm\":\"2 \",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":5,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":6,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":9,\"s\":[100]},{\"t\":10.0000004073083,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[491.626,669.704,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"2\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":80,\"ty\":5,\"nm\":\"1\",\"sr\":1,\"ks\":{\"o\":{\"a\":1,\"k\":[{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":1,\"s\":[0]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":2,\"s\":[100]},{\"i\":{\"x\":[0.833],\"y\":[0.833]},\"o\":{\"x\":[0.167],\"y\":[0.167]},\"t\":5,\"s\":[100]},{\"t\":6.00000024438501,\"s\":[0]}],\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[494.937,668.595,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[512,512,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Bold\",\"t\":\"1\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[1,1,1]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":81,\"ty\":5,\"nm\":\"%\",\"sr\":1,\"ks\":{\"o\":{\"a\":0,\"k\":100,\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":1,\"k\":[{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":35,\"s\":[601.889,617.9,0],\"to\":[8.038,0,0],\"ti\":[-8.038,0,0]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":36,\"s\":[650.119,617.9,0],\"to\":[0,0,0],\"ti\":[0,0,0]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":239,\"s\":[650.119,617.9,0],\"to\":[9.761,0,0],\"ti\":[-9.761,0,0]},{\"t\":240.0000097754,\"s\":[708.684,617.9,0]}],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[231,231,100],\"ix\":6}},\"ao\":0,\"t\":{\"d\":{\"k\":[{\"s\":{\"s\":43,\"f\":\"Calibre-Light\",\"t\":\"%\",\"j\":2,\"tr\":0,\"lh\":51.6,\"ls\":0,\"fc\":[0.784,0.827,0.871]},\"t\":0}]},\"p\":{},\"m\":{\"g\":1,\"a\":{\"a\":0,\"k\":[0,0],\"ix\":2}},\"a\":[]},\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0},{\"ddd\":0,\"ind\":83,\"ty\":4,\"nm\":\"loader Outlines\",\"sr\":1,\"ks\":{\"o\":{\"a\":0,\"k\":100,\"ix\":11},\"r\":{\"a\":0,\"k\":0,\"ix\":10},\"p\":{\"a\":0,\"k\":[540.398,591.573,0],\"ix\":2},\"a\":{\"a\":0,\"k\":[300,300,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[380.968,380.968,100],\"ix\":6}},\"ao\":0,\"hasMask\":true,\"masksProperties\":[{\"inv\":false,\"mode\":\"a\",\"pt\":{\"a\":1,\"k\":[{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":0,\"s\":[{\"i\":[[0,0],[0,0],[0,0],[0,0]],\"o\":[[0,0],[0,0],[0,0],[0,0]],\"v\":[[305.018,147.268],[293.018,152.268],[295.018,194.768],[304.518,193.768]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":47,\"s\":[{\"i\":[[-0.5,-1.5],[0,0],[0,0],[-33.5,-32]],\"o\":[[-24,-41],[0,0],[0,0],[0,-0.5]],\"v\":[[392,190],[291.5,152],[295.5,194.5],[368.5,220.5]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":53,\"s\":[{\"i\":[[10.491,9.762],[0,0],[0,0],[-15,-93.5]],\"o\":[[-4,-135],[0,0],[0,0],[1.878,11.704]],\"v\":[[442.5,282],[291,155],[295,197.5],[385,284.5]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":59,\"s\":[{\"i\":[[10.491,9.762],[117,-18.5],[0,0],[-53,-91.5]],\"o\":[[180.5,-211.5],[-14.055,2.222],[0,0],[5.941,10.257]],\"v\":[[400.5,381.5],[298,153.5],[297,196.5],[368.5,351]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":65,\"s\":[{\"i\":[[6.072,-16.076],[155.5,-61],[0,0],[-0.856,-105.512]],\"o\":[[302.137,-4.734],[-13.245,5.196],[0,0],[0.096,11.726]],\"v\":[[287.863,432.234],[301,146.5],[296.446,200.508],[293.742,392.387]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":132,\"s\":[{\"i\":[[6,-16.5],[192,-67.5],[0,0],[-0.001,-105.741]],\"o\":[[322,151.5],[-13.424,4.719],[0,0],[0,11.75]],\"v\":[[217,400],[298,155.5],[293.388,198],[248.5,354]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":145,\"s\":[{\"i\":[[6,-16.5],[487,54.5],[0,0],[21.5,-95]],\"o\":[[-8,402.5],[-14.141,-1.583],[0,0],[-2.594,11.46]],\"v\":[[156.5,301.5],[300,155.5],[295.388,198],[206,282.5]],\"c\":true}]},{\"i\":{\"x\":0.833,\"y\":0.833},\"o\":{\"x\":0.167,\"y\":0.167},\"t\":223,\"s\":[{\"i\":[[6,-16.5],[565.615,118.301],[0,0],[21,-7]],\"o\":[[-238.5,576],[-13.928,-2.913],[0,0],[-11.146,3.716]],\"v\":[[196.5,177.5],[297,152.5],[292.388,195],[235.5,213.5]],\"c\":true}]},{\"t\":240.0000097754,\"s\":[{\"i\":[[6,-16.5],[693.079,171.698],[0,0],[21,-7]],\"o\":[[-537.815,708.24],[-13.812,-3.422],[0,0],[-11.147,3.716]],\"v\":[[287.069,41.423],[298,152.5],[293.387,195],[296.787,196.275]],\"c\":true}]}],\"ix\":1},\"o\":{\"a\":0,\"k\":100,\"ix\":3},\"x\":{\"a\":0,\"k\":0,\"ix\":4},\"nm\":\"Mask 1\"}],\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.7,-0.014],[0,0],[0.876,0]],\"o\":[[0.703,0],[0,0],[-0.874,-0.019],[0,0]],\"v\":[[-1.902,-112.421],[0.201,-112.4],[0.722,-137.653],[-1.902,-137.68]],\"c\":true},\"ix\":2},\"nm\":\"Path 4\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":1,\"ty\":\"sh\",\"ix\":2,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.696,-0.08],[0,0],[0.874,0.082]],\"o\":[[0.699,0.065],[0,0],[-0.871,-0.1],[0,0]],\"v\":[[7.557,-111.98],[9.648,-111.762],[12.533,-136.855],[9.916,-137.128]],\"c\":true},\"ix\":2},\"nm\":\"Path 5\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":2,\"ty\":\"sh\",\"ix\":3,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.87,-0.107],[0,0],[-0.7,0.071],[0,0]],\"o\":[[0,0],[0.696,-0.087],[0,0],[-0.875,0.09]],\"v\":[[-17.337,-136.736],[-14.25,-111.666],[-12.158,-111.902],[-14.719,-137.031]],\"c\":true},\"ix\":2},\"nm\":\"Path 6\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":3,\"ty\":\"sh\",\"ix\":4,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.685,-0.146],[0,0],[0.864,0.164]],\"o\":[[0.69,0.131],[0,0],[-0.859,-0.183],[0,0]],\"v\":[[16.933,-110.65],[18.995,-110.234],[24.249,-134.941],[21.664,-135.462]],\"c\":true},\"ix\":2},\"nm\":\"Path 7\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":4,\"ty\":\"sh\",\"ix\":5,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.859,-0.191],[0,0],[-0.689,0.137],[0,0]],\"o\":[[0,0],[0.683,-0.152],[0,0],[-0.863,0.172]],\"v\":[[-29.041,-134.726],[-23.587,-110.063],[-21.527,-110.496],[-26.458,-135.269]],\"c\":true},\"ix\":2},\"nm\":\"Path 8\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":5,\"ty\":\"sh\",\"ix\":6,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.668,-0.211],[0,0],[0.844,0.245]],\"o\":[[0.674,0.198],[0,0],[-0.838,-0.264],[0,0]],\"v\":[[26.149,-108.434],[28.161,-107.822],[35.747,-131.915],[33.223,-132.68]],\"c\":true},\"ix\":2},\"nm\":\"Path 9\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":6,\"ty\":\"sh\",\"ix\":7,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.837,-0.271],[0,0],[-0.673,0.203],[0,0]],\"o\":[[0,0],[0.666,-0.216],[0,0],[-0.844,0.253]],\"v\":[[-40.518,-131.607],[-32.736,-107.577],[-30.727,-108.204],[-37.998,-132.393]],\"c\":true},\"ix\":2},\"nm\":\"Path 10\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":7,\"ty\":\"sh\",\"ix\":8,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.646,-0.272],[0,0],[0.818,0.326]],\"o\":[[0.652,0.26],[0,0],[-0.81,-0.343],[0,0]],\"v\":[[35.1,-105.351],[37.046,-104.552],[46.893,-127.812],[44.452,-128.815]],\"c\":true},\"ix\":2},\"nm\":\"Path 11\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":8,\"ty\":\"sh\",\"ix\":9,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.807,-0.35],[0,0],[-0.651,0.265],[0,0]],\"o\":[[0,0],[0.644,-0.278],[0,0],[-0.815,0.333]],\"v\":[[-51.607,-127.422],[-41.576,-104.241],[-39.635,-105.056],[-49.174,-128.445]],\"c\":true},\"ix\":2},\"nm\":\"Path 12\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":9,\"ty\":\"sh\",\"ix\":10,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.619,-0.334],[0,0],[0.783,0.403]],\"o\":[[0.625,0.322],[0,0],[-0.775,-0.419],[0,0]],\"v\":[[43.737,-101.421],[45.602,-100.438],[57.62,-122.654],[55.283,-123.887]],\"c\":true},\"ix\":2},\"nm\":\"Path 13\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":10,\"ty\":\"sh\",\"ix\":11,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.77,-0.423],[0,0],[-0.622,0.326],[0,0]],\"o\":[[0,0],[0.615,-0.339],[0,0],[-0.779,0.408]],\"v\":[[-62.234,-122.212],[-50.053,-100.084],[-48.198,-101.081],[-59.911,-123.459]],\"c\":true},\"ix\":2},\"nm\":\"Path 14\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":11,\"ty\":\"sh\",\"ix\":12,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.584,-0.391],[0,0],[0.74,0.474]],\"o\":[[0.593,0.379],[0,0],[-0.73,-0.489],[0,0]],\"v\":[[51.943,-96.698],[53.707,-95.543],[67.772,-116.523],[65.566,-117.969]],\"c\":true},\"ix\":2},\"nm\":\"Path 15\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":12,\"ty\":\"sh\",\"ix\":13,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.726,-0.494],[0,0],[-0.587,0.384],[0,0]],\"o\":[[0,0],[0.58,-0.395],[0,0],[-0.736,0.48]],\"v\":[[-72.357,-115.995],[-58.134,-95.122],[-56.383,-96.289],[-70.164,-117.456]],\"c\":true},\"ix\":2},\"nm\":\"Path 16\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":13,\"ty\":\"sh\",\"ix\":14,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.545,-0.445],[0,0],[0.693,0.542]],\"o\":[[0.554,0.433],[0,0],[-0.681,-0.555],[0,0]],\"v\":[[59.659,-91.227],[61.305,-89.911],[77.284,-109.474],[75.224,-111.12]],\"c\":true},\"ix\":2},\"nm\":\"Path 17\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":14,\"ty\":\"sh\",\"ix\":15,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.675,-0.561],[0,0],[-0.549,0.436],[0,0]],\"o\":[[0,0],[0.54,-0.448],[0,0],[-0.687,0.547]],\"v\":[[-81.844,-108.851],[-65.714,-89.414],[-64.08,-90.74],[-79.801,-110.511]],\"c\":true},\"ix\":2},\"nm\":\"Path 18\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":15,\"ty\":\"sh\",\"ix\":16,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.498,-0.493],[0,0],[0.636,0.603]],\"o\":[[0.509,0.482],[0,0],[-0.626,-0.617],[0,0]],\"v\":[[66.839,-85.042],[68.35,-83.58],[86.1,-101.552],[84.208,-103.381]],\"c\":true},\"ix\":2},\"nm\":\"Path 19\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":16,\"ty\":\"sh\",\"ix\":17,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.619,-0.622],[0,0],[-0.505,0.486],[0,0]],\"o\":[[0,0],[0.496,-0.498],[0,0],[-0.632,0.61]],\"v\":[[-90.605,-100.853],[-72.716,-83.021],[-71.214,-84.497],[-88.727,-102.7]],\"c\":true},\"ix\":2},\"nm\":\"Path 20\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":17,\"ty\":\"sh\",\"ix\":18,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.451,-0.537],[0,0],[0.577,0.66]],\"o\":[[0.462,0.528],[0,0],[-0.565,-0.673],[0,0]],\"v\":[[73.407,-78.206],[74.776,-76.607],[94.139,-92.827],[92.426,-94.828]],\"c\":true},\"ix\":2},\"nm\":\"Path 21\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":18,\"ty\":\"sh\",\"ix\":19,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.558,-0.676],[0,0],[-0.457,0.531],[0,0]],\"o\":[[0,0],[0.446,-0.541],[0,0],[-0.572,0.665]],\"v\":[[-98.568,-92.074],[-79.08,-76.005],[-77.725,-77.613],[-96.873,-94.087]],\"c\":true},\"ix\":2},\"nm\":\"Path 22\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":19,\"ty\":\"sh\",\"ix\":20,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.399,-0.578],[0,0],[0.514,0.714]],\"o\":[[0.409,0.57],[0,0],[-0.499,-0.725],[0,0]],\"v\":[[79.304,-70.78],[80.516,-69.058],[101.323,-83.378],[99.804,-85.535]],\"c\":true},\"ix\":2},\"nm\":\"Path 23\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":20,\"ty\":\"sh\",\"ix\":21,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.492,-0.727],[0,0],[-0.406,0.573],[0,0]],\"o\":[[0,0],[0.394,-0.581],[0,0],[-0.507,0.716]],\"v\":[[-105.676,-82.573],[-84.759,-68.414],[-83.561,-70.145],[-104.177,-84.739]],\"c\":true},\"ix\":2},\"nm\":\"Path 24\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":21,\"ty\":\"sh\",\"ix\":22,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.343,-0.612],[0,0],[0.443,0.759]],\"o\":[[0.354,0.605],[0,0],[-0.428,-0.767],[0,0]],\"v\":[[84.476,-62.822],[85.52,-60.995],[107.59,-73.279],[106.283,-75.569]],\"c\":true},\"ix\":2},\"nm\":\"Path 25\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":22,\"ty\":\"sh\",\"ix\":23,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.423,-0.772],[0,0],[-0.351,0.608],[0,0]],\"o\":[[0,0],[0.337,-0.618],[0,0],[-0.438,0.763]],\"v\":[[-111.84,-72.471],[-89.679,-60.349],[-88.648,-62.187],[-110.548,-74.773]],\"c\":true},\"ix\":2},\"nm\":\"Path 26\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":23,\"ty\":\"sh\",\"ix\":24,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.281,-0.643],[0,0],[0.37,0.799]],\"o\":[[0.296,0.636],[0,0],[-0.353,-0.807],[0,0]],\"v\":[[88.859,-54.435],[89.724,-52.516],[112.861,-62.65],[111.775,-65.058]],\"c\":true},\"ix\":2},\"nm\":\"Path 27\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":24,\"ty\":\"sh\",\"ix\":25,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.347,-0.808],[0,0],[-0.29,0.637],[0,0]],\"o\":[[0,0],[0.278,-0.646],[0,0],[-0.363,0.8]],\"v\":[[-117.045,-61.773],[-93.832,-51.816],[-92.982,-53.74],[-115.98,-64.186]],\"c\":true},\"ix\":2},\"nm\":\"Path 28\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":25,\"ty\":\"sh\",\"ix\":26,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.22,-0.666],[0,0],[0.291,0.831]],\"o\":[[0.233,0.66],[0,0],[-0.275,-0.837],[0,0]],\"v\":[[92.413,-45.705],[93.092,-43.714],[117.085,-51.607],[116.234,-54.108]],\"c\":true},\"ix\":2},\"nm\":\"Path 29\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":26,\"ty\":\"sh\",\"ix\":27,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.268,-0.837],[0,0],[-0.228,0.662],[0,0]],\"o\":[[0,0],[0.214,-0.668],[0,0],[-0.285,0.831]],\"v\":[[-121.202,-50.644],[-97.145,-42.945],[-96.483,-44.939],[-120.372,-53.146]],\"c\":true},\"ix\":2},\"nm\":\"Path 30\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":27,\"ty\":\"sh\",\"ix\":28,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.156,-0.686],[0,0],[0.212,0.854]],\"o\":[[0.168,0.679],[0,0],[-0.195,-0.859],[0,0]],\"v\":[[95.135,-36.625],[95.621,-34.577],[120.258,-40.146],[119.648,-42.715]],\"c\":true},\"ix\":2},\"nm\":\"Path 31\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":28,\"ty\":\"sh\",\"ix\":29,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.188,-0.861],[0,0],[-0.163,0.683],[0,0]],\"o\":[[0,0],[0.149,-0.688],[0,0],[-0.205,0.857]],\"v\":[[-124.278,-39.174],[-99.597,-33.802],[-99.127,-35.857],[-123.688,-41.751]],\"c\":true},\"ix\":2},\"nm\":\"Path 32\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":29,\"ty\":\"sh\",\"ix\":30,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.088,-0.698],[0,0],[0.13,0.868]],\"o\":[[0.104,0.693],[0,0],[-0.111,-0.872],[0,0]],\"v\":[[96.978,-27.331],[97.267,-25.246],[122.322,-28.451],[121.96,-31.061]],\"c\":true},\"ix\":2},\"nm\":\"Path 33\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":30,\"ty\":\"sh\",\"ix\":31,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.105,-0.872],[0,0],[-0.098,0.693],[0,0]],\"o\":[[0,0],[0.083,-0.697],[0,0],[-0.122,0.869]],\"v\":[[-126.249,-27.458],[-101.17,-24.454],[-100.898,-26.539],[-125.909,-30.07]],\"c\":true},\"ix\":2},\"nm\":\"Path 34\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":31,\"ty\":\"sh\",\"ix\":32,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.022,-0.703],[0,0],[0.046,0.875]],\"o\":[[0.039,0.699],[0,0],[-0.028,-0.877],[0,0]],\"v\":[[97.933,-17.899],[98.024,-15.796],[123.269,-16.629],[123.157,-19.256]],\"c\":true},\"ix\":2},\"nm\":\"Path 35\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":32,\"ty\":\"sh\",\"ix\":33,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.023,-0.878],[0,0],[-0.032,0.7],[0,0]],\"o\":[[0,0],[0.018,-0.705],[0,0],[-0.041,0.875]],\"v\":[[-127.103,-15.641],[-101.852,-15.004],[-101.777,-17.111],[-127.009,-18.272]],\"c\":true},\"ix\":2},\"nm\":\"Path 36\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":33,\"ty\":\"sh\",\"ix\":34,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.043,-0.698],[0,0],[-0.034,0.876],[0,0]],\"o\":[[0,0],[0.052,-0.874],[0,0],[-0.027,0.702]],\"v\":[[97.896,-6.329],[123.11,-4.809],[123.24,-7.434],[98.001,-8.429]],\"c\":true},\"ix\":2},\"nm\":\"Path 37\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":34,\"ty\":\"sh\",\"ix\":35,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.059,-0.874],[0,0],[0.033,0.703]],\"o\":[[0.041,0.878],[0,0],[-0.049,-0.698],[0,0]],\"v\":[[-127.001,-6.445],[-126.85,-3.818],[-101.649,-5.536],[-101.771,-7.638]],\"c\":true},\"ix\":2},\"nm\":\"Path 38\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":35,\"ty\":\"sh\",\"ix\":36,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.107,-0.692],[0,0],[-0.117,0.871],[0,0]],\"o\":[[0,0],[0.134,-0.868],[0,0],[-0.093,0.696]],\"v\":[[96.881,3.094],[121.838,6.987],[122.217,4.379],[97.183,1.012]],\"c\":true},\"ix\":2},\"nm\":\"Path 39\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":36,\"ty\":\"sh\",\"ix\":37,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.143,-0.868],[0,0],[0.1,0.696]],\"o\":[[0.123,0.872],[0,0],[-0.114,-0.692],[0,0]],\"v\":[[-125.882,5.372],[-125.483,7.979],[-100.558,3.886],[-100.878,1.805]],\"c\":true},\"ix\":2},\"nm\":\"Path 40\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":37,\"ty\":\"sh\",\"ix\":38,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.174,-0.68],[0,0],[-0.2,0.858],[0,0]],\"o\":[[0,0],[0.217,-0.854],[0,0],[-0.159,0.685]],\"v\":[[94.976,12.38],[119.449,18.631],[120.075,16.064],[95.474,10.334]],\"c\":true},\"ix\":2},\"nm\":\"Path 41\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":38,\"ty\":\"sh\",\"ix\":39,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.225,-0.851],[0,0],[0.165,0.682]],\"o\":[[0.206,0.855],[0,0],[-0.178,-0.677],[0,0]],\"v\":[[-123.648,17.039],[-123.002,19.598],[-98.58,13.15],[-99.095,11.111]],\"c\":true},\"ix\":2},\"nm\":\"Path 42\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":39,\"ty\":\"sh\",\"ix\":40,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.238,-0.659],[0,0],[-0.28,0.834],[0,0]],\"o\":[[0,0],[0.298,-0.828],[0,0],[-0.223,0.666]],\"v\":[[92.201,21.42],[115.967,29.974],[116.835,27.479],[92.892,19.432]],\"c\":true},\"ix\":2},\"nm\":\"Path 43\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":40,\"ty\":\"sh\",\"ix\":41,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.305,-0.826],[0,0],[0.228,0.663]],\"o\":[[0.288,0.831],[0,0],[-0.242,-0.657],[0,0]],\"v\":[[-120.311,28.446],[-119.422,30.932],[-95.727,22.184],[-96.434,20.203]],\"c\":true},\"ix\":2},\"nm\":\"Path 44\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":41,\"ty\":\"sh\",\"ix\":42,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.299,-0.634],[0,0],[-0.359,0.803],[0,0]],\"o\":[[0,0],[0.375,-0.795],[0,0],[-0.286,0.641]],\"v\":[[88.568,30.181],[111.41,40.961],[112.51,38.564],[89.444,28.269]],\"c\":true},\"ix\":2},\"nm\":\"Path 45\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":42,\"ty\":\"sh\",\"ix\":43,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.381,-0.793],[0,0],[0.292,0.638]],\"o\":[[0.365,0.802],[0,0],[-0.304,-0.632],[0,0]],\"v\":[[-115.928,39.421],[-114.808,41.813],[-92.048,30.86],[-92.941,28.953]],\"c\":true},\"ix\":2},\"nm\":\"Path 46\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":43,\"ty\":\"sh\",\"ix\":44,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.357,-0.603],[0,0],[-0.432,0.764],[0,0]],\"o\":[[0,0],[0.449,-0.755],[0,0],[-0.346,0.61]],\"v\":[[84.118,38.552],[105.834,51.452],[107.155,49.174],[85.173,36.734]],\"c\":true},\"ix\":2},\"nm\":\"Path 47\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":44,\"ty\":\"sh\",\"ix\":45,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.454,-0.753],[0,0],[0.35,0.609]],\"o\":[[0.438,0.761],[0,0],[-0.363,-0.601],[0,0]],\"v\":[[-110.498,49.983],[-109.158,52.254],[-87.539,39.192],[-88.608,37.379]],\"c\":true},\"ix\":2},\"nm\":\"Path 48\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":45,\"ty\":\"sh\",\"ix\":46,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.414,-0.566],[0,0],[-0.504,0.72],[0,0]],\"o\":[[0,0],[0.517,-0.71],[0,0],[-0.403,0.576]],\"v\":[[78.911,46.442],[99.314,61.334],[100.846,59.188],[80.135,44.729]],\"c\":true},\"ix\":2},\"nm\":\"Path 49\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":46,\"ty\":\"sh\",\"ix\":47,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.523,-0.706],[0,0],[0.407,0.572]],\"o\":[[0.509,0.716],[0,0],[-0.419,-0.564],[0,0]],\"v\":[[-104.089,59.984],[-102.541,62.118],[-82.254,47.069],[-83.492,45.364]],\"c\":true},\"ix\":2},\"nm\":\"Path 50\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":47,\"ty\":\"sh\",\"ix\":48,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.464,-0.525],[0,0],[-0.568,0.669],[0,0]],\"o\":[[0,0],[0.582,-0.656],[0,0],[-0.455,0.534]],\"v\":[[72.971,53.823],[91.88,70.569],[93.604,68.581],[74.35,52.234]],\"c\":true},\"ix\":2},\"nm\":\"Path 51\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":48,\"ty\":\"sh\",\"ix\":49,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.587,-0.653],[0,0],[0.458,0.53]],\"o\":[[0.573,0.665],[0,0],[-0.469,-0.521],[0,0]],\"v\":[[-96.772,69.325],[-95.031,71.301],[-76.254,54.407],[-77.644,52.829]],\"c\":true},\"ix\":2},\"nm\":\"Path 52\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":49,\"ty\":\"sh\",\"ix\":50,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.512,-0.479],[0,0],[-0.629,0.613],[0,0]],\"o\":[[0,0],[0.641,-0.599],[0,0],[-0.502,0.488]],\"v\":[[66.358,60.616],[83.606,79.068],[85.51,77.252],[67.879,59.165]],\"c\":true},\"ix\":2},\"nm\":\"Path 53\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":50,\"ty\":\"sh\",\"ix\":51,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.646,-0.594],[0,0],[0.507,0.485]],\"o\":[[0.634,0.608],[0,0],[-0.517,-0.475],[0,0]],\"v\":[[-88.613,77.93],[-86.692,79.734],[-69.588,61.148],[-71.123,59.706]],\"c\":true},\"ix\":2},\"nm\":\"Path 54\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":51,\"ty\":\"sh\",\"ix\":52,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.556,-0.428],[0,0],[-0.684,0.551],[0,0]],\"o\":[[0,0],[0.693,-0.536],[0,0],[-0.545,0.44]],\"v\":[[59.132,66.758],[74.566,86.754],[76.632,85.124],[60.783,65.456]],\"c\":true},\"ix\":2},\"nm\":\"Path 55\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":52,\"ty\":\"sh\",\"ix\":53,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.699,-0.531],[0,0],[0.549,0.436]],\"o\":[[0.688,0.545],[0,0],[-0.558,-0.424],[0,0]],\"v\":[[-79.676,85.732],[-77.596,87.345],[-62.319,67.23],[-63.98,65.941]],\"c\":true},\"ix\":2},\"nm\":\"Path 56\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":53,\"ty\":\"sh\",\"ix\":54,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.594,-0.373],[0,0],[-0.733,0.484],[0,0]],\"o\":[[0,0],[0.744,-0.468],[0,0],[-0.585,0.387]],\"v\":[[51.358,72.191],[64.832,93.556],[67.047,92.127],[53.127,71.05]],\"c\":true},\"ix\":2},\"nm\":\"Path 57\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":54,\"ty\":\"sh\",\"ix\":55,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.746,-0.463],[0,0],[0.587,0.382]],\"o\":[[0.736,0.478],[0,0],[-0.596,-0.369],[0,0]],\"v\":[[-70.076,92.635],[-67.853,94.046],[-54.537,72.582],[-56.312,71.455]],\"c\":true},\"ix\":2},\"nm\":\"Path 58\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":55,\"ty\":\"sh\",\"ix\":56,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.625,-0.317],[0,0],[-0.776,0.413],[0,0]],\"o\":[[0,0],[0.785,-0.397],[0,0],[-0.619,0.33]],\"v\":[[43.101,76.867],[54.485,99.414],[56.827,98.2],[44.969,75.898]],\"c\":true},\"ix\":2},\"nm\":\"Path 59\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":56,\"ty\":\"sh\",\"ix\":57,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.788,-0.39],[0,0],[0.621,0.324]],\"o\":[[0.779,0.407],[0,0],[-0.629,-0.311],[0,0]],\"v\":[[-59.817,98.629],[-57.467,99.826],[-46.249,77.194],[-48.123,76.24]],\"c\":true},\"ix\":2},\"nm\":\"Path 60\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":57,\"ty\":\"sh\",\"ix\":58,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.654,-0.256],[0,0],[-0.812,0.338],[0,0]],\"o\":[[0,0],[0.819,-0.32],[0,0],[-0.646,0.27]],\"v\":[[34.507,80.707],[43.709,104.229],[46.156,103.242],[36.458,79.919]],\"c\":true},\"ix\":2},\"nm\":\"Path 61\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":58,\"ty\":\"sh\",\"ix\":59,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.821,-0.315],[0,0],[0.648,0.263]],\"o\":[[0.814,0.33],[0,0],[-0.655,-0.251],[0,0]],\"v\":[[-49.027,103.626],[-46.574,104.593],[-37.563,80.996],[-39.518,80.225]],\"c\":true},\"ix\":2},\"nm\":\"Path 62\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":59,\"ty\":\"sh\",\"ix\":60,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.676,-0.193],[0,0],[-0.843,0.258],[0,0]],\"o\":[[0,0],[0.847,-0.241],[0,0],[-0.67,0.206]],\"v\":[[25.531,83.733],[32.448,108.025],[34.981,107.276],[27.55,83.135]],\"c\":true},\"ix\":2},\"nm\":\"Path 63\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":60,\"ty\":\"sh\",\"ix\":61,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.849,-0.234],[0,0],[0.672,0.2]],\"o\":[[0.844,0.252],[0,0],[-0.677,-0.187],[0,0]],\"v\":[[-37.833,107.565],[-35.295,108.294],[-28.573,83.946],[-30.596,83.365]],\"c\":true},\"ix\":2},\"nm\":\"Path 64\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":61,\"ty\":\"sh\",\"ix\":62,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.692,-0.127],[0,0],[-0.861,0.177],[0,0]],\"o\":[[0,0],[0.866,-0.159],[0,0],[-0.686,0.14]],\"v\":[[16.301,85.89],[20.87,110.732],[23.461,110.227],[18.367,85.488]],\"c\":true},\"ix\":2},\"nm\":\"Path 65\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":62,\"ty\":\"sh\",\"ix\":63,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.866,-0.152],[0,0],[0.685,0.136]],\"o\":[[0.862,0.17],[0,0],[-0.691,-0.121],[0,0]],\"v\":[[-26.278,110.426],[-23.686,110.909],[-19.317,86.031],[-21.383,85.645]],\"c\":true},\"ix\":2},\"nm\":\"Path 66\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":63,\"ty\":\"sh\",\"ix\":64,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.7,-0.061],[0,0],[-0.873,0.095],[0,0]],\"o\":[[0,0],[0.875,-0.076],[0,0],[-0.696,0.075]],\"v\":[[6.909,87.16],[9.107,112.323],[11.728,112.066],[9.004,86.955]],\"c\":true},\"ix\":2},\"nm\":\"Path 67\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":64,\"ty\":\"sh\",\"ix\":65,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-0.878,-0.07],[0,0],[0.698,0.071]],\"o\":[[0.875,0.088],[0,0],[-0.703,-0.056],[0,0]],\"v\":[[-14.554,112.168],[-11.926,112.405],[-9.926,87.226],[-12.027,87.036]],\"c\":true},\"ix\":2},\"nm\":\"Path 68\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":65,\"ty\":\"sh\",\"ix\":66,\"ks\":{\"a\":0,\"k\":{\"i\":[[0.483,0],[0,0],[0,0],[-0.278,0],[-0.6,0.008],[0,0]],\"o\":[[0,0],[0,0],[0.275,0.002],[0.603,0],[0,0],[-0.481,0.006]],\"v\":[[-1.902,87.543],[-2.564,87.541],[-2.727,112.799],[-1.899,112.802],[-0.095,112.789],[-0.454,87.533]],\"c\":true},\"ix\":2},\"nm\":\"Path 69\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ty\":\"gf\",\"o\":{\"a\":0,\"k\":100,\"ix\":10},\"r\":1,\"bm\":0,\"g\":{\"p\":5,\"k\":{\"a\":0,\"k\":[0,0.937,0.235,0.251,0,0.937,0.235,0.251,0,0.937,0.235,0.251,0.315,0.957,0.424,0.208,0.63,0.976,0.612,0.165],\"ix\":9}},\"s\":{\"a\":0,\"k\":[-123,109],\"ix\":5},\"e\":{\"a\":0,\"k\":[105,-119],\"ix\":6},\"t\":1,\"nm\":\"Gradient Fill 1\",\"mn\":\"ADBE Vector Graphic - G-Fill\",\"hd\":false},{\"ty\":\"tr\",\"p\":{\"a\":0,\"k\":[300,300],\"ix\":2},\"a\":{\"a\":0,\"k\":[0,0],\"ix\":1},\"s\":{\"a\":0,\"k\":[100,100],\"ix\":3},\"r\":{\"a\":0,\"k\":0,\"ix\":6},\"o\":{\"a\":0,\"k\":100,\"ix\":7},\"sk\":{\"a\":0,\"k\":0,\"ix\":4},\"sa\":{\"a\":0,\"k\":0,\"ix\":5},\"nm\":\"Transform\"}],\"nm\":\"Group 1\",\"np\":67,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}],\"ip\":0,\"op\":600.000024438501,\"st\":0,\"bm\":0}],\"markers\":[],\"chars\":[{\"ch\":\"%\",\"size\":43,\"style\":\"Light\",\"w\":62.1,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[0,0],[0,0],[0,0]],\"o\":[[0,0],[0,0],[0,0],[0,0]],\"v\":[[9.064,0],[13.394,0],[53.476,-61.835],[49.146,-61.835]],\"c\":true},\"ix\":2},\"nm\":\"%\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":1,\"ty\":\"sh\",\"ix\":2,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,4.733],[-4.834,0],[0,-4.834],[4.834,0]],\"o\":[[0,-4.834],[4.834,0],[0,4.733],[-4.834,0]],\"v\":[[7.855,-49.85],[16.516,-58.612],[25.177,-49.85],[16.516,-41.29]],\"c\":true},\"ix\":2},\"nm\":\"%\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":2,\"ty\":\"sh\",\"ix\":3,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,7.15],[7.05,0],[0,-7.05],[-7.05,0]],\"o\":[[0,-7.05],[-7.05,0],[0,7.15],[7.05,0]],\"v\":[[58.713,-11.984],[46.024,-24.673],[33.234,-11.984],[46.024,0.906]],\"c\":true},\"ix\":2},\"nm\":\"%\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":3,\"ty\":\"sh\",\"ix\":4,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,7.05],[7.05,0],[0,-7.15],[-7.15,0]],\"o\":[[0,-7.15],[-7.15,0],[0,7.05],[7.05,0]],\"v\":[[29.306,-49.85],[16.516,-62.741],[3.726,-49.85],[16.516,-37.161]],\"c\":true},\"ix\":2},\"nm\":\"%\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":4,\"ty\":\"sh\",\"ix\":5,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,-4.733],[4.733,0],[0,4.834],[-4.834,0]],\"o\":[[0,4.834],[-4.834,0],[0,-4.733],[4.733,0]],\"v\":[[54.584,-11.984],[46.024,-3.223],[37.363,-11.984],[46.024,-20.544]],\"c\":true},\"ix\":2},\"nm\":\"%\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"%\",\"np\":8,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"1\",\"size\":43,\"style\":\"Bold\",\"w\":36.7,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"o\":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"v\":[[31.421,-61.835],[20.544,-61.835],[1.309,-52.67],[1.309,-37.363],[15.71,-44.312],[15.71,0],[31.421,0]],\"c\":true},\"ix\":2},\"nm\":\"1\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"1\",\"np\":3,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"2\",\"size\":43,\"style\":\"Bold\",\"w\":49.7,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,-3.323],[4.23,-4.33],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,7.956],[13.596,0],[1.208,-11.481],[0,0],[-3.827,0]],\"o\":[[0,3.625],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[6.244,-6.042],[0,-11.481],[-13.193,0],[0,0],[0.201,-3.323],[3.625,0]],\"v\":[[30.112,-42.599],[23.062,-31.522],[1.813,-10.373],[1.813,0],[46.628,0],[46.628,-13.898],[24.371,-13.898],[34.543,-23.969],[46.426,-43.607],[24.271,-62.842],[1.511,-42.197],[18.228,-42.197],[24.271,-48.34]],\"c\":true},\"ix\":2},\"nm\":\"2\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"2\",\"np\":3,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"3\",\"size\":43,\"style\":\"Bold\",\"w\":49.4,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[0,0],[0,-4.23],[4.028,0],[0.403,4.23],[0,0],[-14.2,0],[0,10.977],[4.935,2.316],[0,5.338],[12.991,0],[1.309,-11.179],[0,0],[-4.33,0],[0,-3.424],[4.431,0],[0,0]],\"o\":[[0,0],[4.733,0],[0,3.928],[-4.633,0],[0,0],[0.806,12.488],[13.596,0],[0,-5.64],[3.827,-2.115],[0,-11.179],[-13.596,0],[0,0],[0.403,-3.726],[3.928,0],[0,4.33],[0,0],[0,0]],\"v\":[[19.437,-25.479],[23.264,-25.479],[31.32,-19.034],[24.472,-12.589],[16.919,-19.839],[0.806,-19.839],[24.774,1.007],[46.729,-18.228],[39.175,-31.219],[45.923,-43.909],[24.875,-62.842],[1.712,-42.499],[17.221,-42.499],[24.371,-49.347],[30.615,-43.304],[22.76,-37.061],[19.437,-37.061]],\"c\":true},\"ix\":2},\"nm\":\"3\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"3\",\"np\":3,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"4\",\"size\":43,\"style\":\"Bold\",\"w\":53,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"o\":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"v\":[[35.953,-61.835],[20.544,-61.835],[1.813,-23.364],[1.813,-11.481],[28.702,-11.481],[28.702,0],[42.599,0],[42.599,-11.481],[51.059,-11.481],[51.059,-24.573],[42.599,-24.573],[42.599,-35.046],[28.702,-35.046],[28.702,-24.573],[18.933,-24.573]],\"c\":true},\"ix\":2},\"nm\":\"4\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"4\",\"np\":3,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"\\r\",\"size\":43,\"style\":\"Bold\",\"w\":0,\"fFamily\":\"Calibre\"},{\"ch\":\"5\",\"size\":43,\"style\":\"Bold\",\"w\":49.7,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[-3.021,0],[0,-4.431],[4.23,0],[0.504,4.33],[0,0],[-13.998,0],[0,12.79],[12.488,0],[1.913,-1.108],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"o\":[[4.733,0],[0,4.633],[-4.733,0],[0,0],[0.906,12.589],[13.394,0],[0,-12.186],[-3.928,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[1.813,-1.813]],\"v\":[[25.378,-28.098],[32.831,-20.343],[25.681,-12.589],[17.725,-19.839],[2.014,-19.839],[25.58,1.007],[47.836,-20.343],[27.594,-40.988],[18.228,-38.773],[18.228,-48.038],[43.304,-48.038],[43.304,-61.835],[5.237,-61.835],[5.237,-24.875],[18.228,-24.875]],\"c\":true},\"ix\":2},\"nm\":\"5\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"5\",\"np\":3,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"6\",\"size\":43,\"style\":\"Bold\",\"w\":51.8,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,4.935],[-4.935,0],[0,-5.035],[4.834,0]],\"o\":[[0,-5.035],[4.834,0],[0,4.935],[-4.935,0]],\"v\":[[18.329,-20.343],[26.688,-28.802],[35.147,-20.343],[26.688,-11.984]],\"c\":true},\"ix\":2},\"nm\":\"6\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":1,\"ty\":\"sh\",\"ix\":2,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[12.286,0],[0,-19.336],[-3.625,-5.438],[-7.956,0],[0,12.387],[12.589,0],[1.813,-2.618],[0,0],[-5.942,0],[-0.906,-2.719]],\"o\":[[-2.014,-10.876],[-15.61,0],[0,8.157],[4.129,6.546],[14.2,0],[0,-11.078],[-5.338,0],[0,0],[0.101,-6.445],[3.525,0],[0,0]],\"v\":[[49.045,-45.016],[27.191,-62.842],[2.518,-29.507],[7.654,-9.265],[26.587,1.007],[49.548,-20.746],[29.105,-40.787],[17.725,-36.154],[17.725,-36.658],[27.292,-49.649],[33.838,-45.016]],\"c\":true},\"ix\":2},\"nm\":\"6\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"6\",\"np\":5,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"7\",\"size\":43,\"style\":\"Bold\",\"w\":47.6,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"o\":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],\"v\":[[44.614,-50.958],[44.614,-61.835],[1.309,-61.835],[1.309,-47.937],[27.594,-47.937],[9.567,0],[25.882,0]],\"c\":true},\"ix\":2},\"nm\":\"7\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"7\",\"np\":3,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"8\",\"size\":43,\"style\":\"Bold\",\"w\":50.8,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[4.532,0],[0,4.129],[-4.431,0],[0,-4.23]],\"o\":[[-4.431,0],[0,-4.23],[4.532,0],[0,4.129]],\"v\":[[25.58,-11.481],[17.825,-18.329],[25.58,-25.177],[33.435,-18.329]],\"c\":true},\"ix\":2},\"nm\":\"8\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":1,\"ty\":\"sh\",\"ix\":2,\"ks\":{\"a\":0,\"k\":{\"i\":[[3.928,0],[0,3.726],[-3.827,0],[0,-3.928]],\"o\":[[-3.827,0],[0,-3.928],[3.928,0],[0,3.726]],\"v\":[[25.58,-38.068],[18.631,-44.312],[25.58,-50.757],[32.529,-44.312]],\"c\":true},\"ix\":2},\"nm\":\"8\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":2,\"ty\":\"sh\",\"ix\":3,\"ks\":{\"a\":0,\"k\":{\"i\":[[-12.891,0],[0,11.38],[5.539,1.913],[0,6.042],[11.38,0],[0,-11.682],[-5.035,-2.417],[0,-7.251]],\"o\":[[12.891,0],[0,-7.251],[4.935,-2.417],[0,-11.682],[-11.279,0],[0,6.042],[-5.64,1.913],[0,11.38]],\"v\":[[25.58,1.007],[48.944,-17.12],[38.974,-31.421],[46.93,-44.815],[25.58,-62.842],[4.23,-44.815],[12.286,-31.421],[2.316,-17.12]],\"c\":true},\"ix\":2},\"nm\":\"8\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"8\",\"np\":6,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"9\",\"size\":43,\"style\":\"Bold\",\"w\":51.8,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,-4.935],[4.935,0],[0,5.035],[-4.834,0]],\"o\":[[0,5.035],[-4.834,0],[0,-4.935],[4.935,0]],\"v\":[[33.838,-41.492],[25.479,-33.032],[17.02,-41.492],[25.479,-49.85]],\"c\":true},\"ix\":2},\"nm\":\"9\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":1,\"ty\":\"sh\",\"ix\":2,\"ks\":{\"a\":0,\"k\":{\"i\":[[0,0],[-12.286,0],[0,19.336],[3.625,5.438],[7.956,0],[0,-12.387],[-12.589,0],[-1.813,2.618],[0,0],[5.942,0],[0.906,2.719]],\"o\":[[2.014,10.876],[15.61,0],[0,-8.157],[-4.129,-6.546],[-14.2,0],[0,11.078],[5.338,0],[0,0],[-0.101,6.445],[-3.525,0],[0,0]],\"v\":[[3.122,-16.818],[24.976,1.007],[49.649,-32.327],[44.513,-52.57],[25.58,-62.842],[2.618,-41.089],[23.062,-21.048],[34.442,-25.681],[34.442,-25.177],[24.875,-12.186],[18.329,-16.818]],\"c\":true},\"ix\":2},\"nm\":\"9\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"9\",\"np\":5,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"},{\"ch\":\"0\",\"size\":43,\"style\":\"Bold\",\"w\":55.9,\"data\":{\"shapes\":[{\"ty\":\"gr\",\"it\":[{\"ind\":0,\"ty\":\"sh\",\"ix\":1,\"ks\":{\"a\":0,\"k\":{\"i\":[[-15.207,0],[0,18.832],[15.207,0],[0,-18.832]],\"o\":[[15.207,0],[0,-18.832],[-15.207,0],[0,18.832]],\"v\":[[28.098,1.007],[53.778,-30.917],[28.098,-62.842],[2.518,-30.917]],\"c\":true},\"ix\":2},\"nm\":\"0\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false},{\"ind\":1,\"ty\":\"sh\",\"ix\":2,\"ks\":{\"a\":0,\"k\":{\"i\":[[-7.15,0],[0,-9.567],[7.15,0],[0,9.567]],\"o\":[[7.15,0],[0,9.567],[-7.15,0],[0,-9.567]],\"v\":[[28.098,-48.642],[38.068,-30.917],[28.098,-13.193],[18.127,-30.917]],\"c\":true},\"ix\":2},\"nm\":\"0\",\"mn\":\"ADBE Vector Shape - Group\",\"hd\":false}],\"nm\":\"0\",\"np\":5,\"cix\":2,\"bm\":0,\"ix\":1,\"mn\":\"ADBE Vector Group\",\"hd\":false}]},\"fFamily\":\"Calibre\"}]}");
 
 /***/ }),
 
@@ -4625,6 +5089,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgi
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/map-6dbac7c6417c1739f6a6d5e8aa9240d9.png";
+
+/***/ }),
+
+/***/ "./public/static/images/landing/mission.png":
+/*!**************************************************!*\
+  !*** ./public/static/images/landing/mission.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/mission-0270d9893ba6fe1a48998ce5cf93233d.png";
 
 /***/ }),
 
@@ -4747,6 +5222,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-lottie":
+/*!*******************************!*\
+  !*** external "react-lottie" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-lottie");
 
 /***/ }),
 

@@ -2,6 +2,7 @@ import React from "react";
 import NavbarComp from "../UI/NavbarComp";
 import styled from "styled-components";
 import media from "styled-media-query";
+import contactPhone from "../../public/static/images/contact/shopphone.png";
 
 import { motion } from "framer-motion";
 import { useSpring, animated, interpolate } from "react-spring";
@@ -9,13 +10,16 @@ import { useSpring, animated, interpolate } from "react-spring";
 export const ContactBanner = () => {
   const scrollAnim = useSpring({
     x: 1,
-    from: { x: 0 }
+    from: { x: 0 },
   });
   return (
     <Container>
       <NavbarComp />
       <BannerBG></BannerBG>
-      <p className="contact-intro">We wil get in touch with you.</p>
+      <BannerGrid>
+        <p className="contact-intro">Let's Get In Touch</p>
+        <img src={contactPhone} alt="contactPhone" />
+      </BannerGrid>
       {/* <animated.div
         style={{
           transform: scrollAnim.x
@@ -48,18 +52,18 @@ export const ContactBanner = () => {
         className="scroll-arrow"
         initial={{
           y: 5,
-          opacity: 0
+          opacity: 0,
         }}
         animate={{
           y: 8,
-          opacity: 1
+          opacity: 1,
         }}
         exit={{ y: 304, opacity: 0 }}
         transition={{
           duration: 4,
           ease: "linear",
           loop: Infinity,
-          repeatDelay: 1
+          repeatDelay: 1,
         }}
       >
         <svg
@@ -96,12 +100,12 @@ const Container = styled.div`
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
-    line-height: 62px;
-    text-align: center;
+    line-height: 52px;
+    text-align: right;
     letter-spacing: 0.055em;
     color: #fcfcfc;
     width: 40%;
-    margin: 6vh auto;
+    margin: 2vh 0;
     /* margin-top: 10vh; */
   }
   ${media.lessThan("small")`
@@ -109,7 +113,7 @@ const Container = styled.div`
     .contact-intro{
     font-size: 32px;
     line-height: 42px;
-    margin: 8vh auto;}
+    margin: 2vh auto;}
   `}
   ${media.between("small", "medium")`
     /* screen width is between 450px and 768px (small to medium) */
@@ -124,11 +128,13 @@ const BannerBG = styled.div`
   width: 100vw;
   height: 424px;
   overflow: hidden;
-  background: url("/static/images/contact/contact.png") top center no-repeat;
+  display:none;
+  background: url("/static/images/contact/contactdice.png") top center no-repeat;
   background-size: cover;
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
     height: 20%;
+    display:none;
   `}
   ${media.between("small", "medium")`
     /* screen width is between 450px and 768px (small to medium) */
@@ -143,6 +149,55 @@ const BannerBG = styled.div`
     height:65%;
   `}
 
+`;
+
+const BannerGrid = styled.div`
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 10px 0; */
+  p {
+    animation: heropanimation 1s forwards 0s ease-in-out;
+    @keyframes heropanimation {
+      0% {
+        transform: translateY(80%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  }
+
+  img {
+    width: 40%;
+    height: 40%;
+    animation: heroimganimation 1s forwards 0s ease-in-out;
+    @keyframes heroimganimation {
+      0% {
+        transform: translateY(-80%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  }
+  ${media.lessThan("small")`
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+align-items: center;
+    img {
+    width: 80%;
+    height: 80%;
+  }
+  `}
 `;
 
 const ContentDiv = styled.div`

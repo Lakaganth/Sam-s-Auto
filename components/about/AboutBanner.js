@@ -20,18 +20,18 @@ const AboutBanner = () => {
         className="scroll-arrow"
         initial={{
           y: 5,
-          opacity: 0
+          opacity: 0,
         }}
         animate={{
           y: 8,
-          opacity: 1
+          opacity: 1,
         }}
         exit={{ y: 304, opacity: 0 }}
         transition={{
           duration: 4,
           ease: "linear",
           loop: Infinity,
-          repeatDelay: 1
+          repeatDelay: 1,
         }}
       >
         <svg
@@ -73,6 +73,19 @@ const Container = styled.div`
     color: #fcfcfc;
     width: 40%;
     margin: 6vh auto;
+    animation: heropanimation 1s forwards 0s ease-in-out;
+
+    @keyframes heropanimation {
+      0% {
+        transform: translateY(80%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
     /* margin-top: 10vh; */
   }
   ${media.lessThan("small")`
@@ -97,8 +110,20 @@ const BannerBG = styled.div`
   width: 100vw;
   height: 424px;
   overflow: hidden;
-  background: url("/static/images/about/aboutbanner.png") top center no-repeat;
+  background: url("/static/images/about/about-ban.png") top center no-repeat;
   background-size: cover;
+  animation: bannerAnimation 1s forwards 0s ease-in-out;
+  @keyframes bannerAnimation {
+    0% {
+      transform: translateY(-80%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
 
   ${media.lessThan("small")`
        height: 250px;
@@ -129,8 +154,8 @@ const ContentDiv = styled.div`
     height: 30%;
       transform: translate3d(0, 10%, 0);
       p{
-        font-size: 32px;
-    line-height: 50%;
+        font-size: 52px;
+    line-height: 80%;
       }
   `}
 

@@ -13,7 +13,7 @@ const Yus = () => {
       <IconContainer>
         <div className="high-quality">
           <img src={Quality} alt="Quality" />
-          <p>High Quality</p>
+          <p>Quality</p>
         </div>
         <div className="reliable">
           <img src={Reliable} alt="reliable" />
@@ -67,6 +67,27 @@ const IconContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  .high-quality{
+    p{
+      justify-self:flex-start;
+text-align:left;
+    }
+    img{
+      animation: qualityanim 1s forwards 0s ease-in-out;
+    }
+    @keyframes qualityanim {
+    0% {
+      transform: translateY(-80%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  }
+
   p {
     font-family: Poppins;
     font-style: normal;
@@ -77,6 +98,7 @@ const IconContainer = styled.div`
     letter-spacing: 0.16em;
     color: white;
   }
+
   .best-price {
     img {
       width: 140px;
@@ -95,6 +117,7 @@ const IconContainer = styled.div`
     width: 100%;
     padding: 1vh 1vw;
     grid-template-columns: repeat(2, 1fr);
+    
     div {
     transform: translate3d(20%, 0, 0);
    

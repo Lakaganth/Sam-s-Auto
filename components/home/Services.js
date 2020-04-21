@@ -11,17 +11,59 @@ const Services = () => {
       <div className="bg-stripes"></div>
       <p>Our Services</p>
       <ServiceGrid>
-        <ServiceBox className="engine">
-          <p>Engine Swap</p>
-          <img src={Engine} alt="Engine" />
+        <ServiceBox className="engine ">
+          <div className="face face1">
+            <div className="content">
+              <p>Engine Swap</p>
+              <img src={Engine} alt="Engine" />
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <p>
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum
+              </p>
+            </div>
+          </div>
         </ServiceBox>
         <ServiceBox className="battery">
-          <p>Electrical Repairs</p>
-          <img src={Battery} alt="Battery" />
+          <div className="face face1">
+            <div className="content">
+              <p>Electrical Repairs</p>
+              <img src={Battery} alt="Battery" />
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <p>
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum
+              </p>
+            </div>
+          </div>
         </ServiceBox>
         <ServiceBox className="oil">
-          <p>Maintainene</p>
-          <img src={Oilcan} alt="Oilcan" />
+          <div className="face face1">
+            <div className="content">
+              <p>Maintainene</p>
+              <img src={Oilcan} alt="Oilcan" />
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <p>
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum
+              </p>
+            </div>
+          </div>
         </ServiceBox>
       </ServiceGrid>
       <p className="more">And More...</p>
@@ -33,7 +75,7 @@ export default Services;
 
 const Container = styled.div`
   width: 100vw;
-  height: 85vh;
+  /* height: 105vh; */
   background-color: #fff;
   overflow: hidden;
   position: relative;
@@ -67,7 +109,7 @@ const Container = styled.div`
   }
     /* screen width is less than 450px (small) */
   ${media.lessThan("small")`
-    height: 150vh;
+    /* height: 150vh; */
     p{
       font-size: 32px;
     line-height: 29%;
@@ -92,15 +134,21 @@ const ServiceGrid = styled.div`
   margin: 0 auto;
   z-index: 10;
   grid-gap: 30px;
-  .engine,
+  position: relative;
+  .engine {
+    img {
+      padding-top: 50px;
+      width: 110%;
+    }
+  }
   .battery {
     img {
-      width: 80%;
+      width: 100%;
     }
   }
   .oil {
     img {
-      width: 70%;
+      width: 100%;
     }
   }
   ${media.lessThan("small")`
@@ -131,9 +179,51 @@ const ServiceBox = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   z-index: 10;
+  position: relative;
+
+  .face {
+    transition: 0.5s;
+  }
+
+  .face1 {
+    position: relative;
+    z-index: 1;
+    transform: translateY(100px);
+    background: #151515;
+    height: 60vh;
+    border-radius: 23px;
+    p {
+      color: white;
+    }
+  }
+  &:hover .face.face1 {
+    transform: translateY(00px);
+    background: #ff0057;
+  }
+
+  .face2 {
+    position: relative;
+    transform: translateY(-50vh);
+    opacity: 0;
+    height: 35vh;
+    background: #151515;
+    border-radius: 13px;
+    color: white;
+  }
+  &:hover .face.face2 {
+    transform: translateY(-3vh);
+    opacity: 1;
+  }
+  .face2 .content {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 2vh 2vw;
+      color: white;
+    }
+  }
   p {
     font-family: Poppins;
     font-style: normal;
@@ -145,13 +235,18 @@ const ServiceBox = styled.div`
     letter-spacing: 0.16em;
   }
 
-  img {
-  }
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
    p{
-    font-size: 24px;
+    font-size: 20px;
    }
+   .face2{
+    height: 45vh;
+   }
+   .face2 .content {
+    p{
+      font-size: 16px;
+    }}
 img{
   width:40%;
 }

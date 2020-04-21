@@ -1,28 +1,10 @@
-import React, { useEffect, useCallback, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import media from "styled-media-query";
 import Slider from "react-slick";
 import Quote from "../../public/static/images/icons/quote.svg";
-import fb from "../../fbconfig";
 
 const Testimonials = ({ testimonials }) => {
-  // const [test, setTest] = useState([]);
-
-  // let testimonials = [];
-
-  // useEffect(() => {
-  //   getTestimonials();
-  // }, []);
-
-  // const getTestimonials = useCallback(async () => {
-  //   const documents = await fb.firestore().collection("testimonials").get();
-
-  //   await documents.forEach((doc) => testimonials.push({ ...doc.data() }));
-  //   console.log(testimonials);
-  // }, []);
-
-  console.log(testimonials);
-
   let settings = {
     dots: true,
     centerMode: true,
@@ -53,6 +35,7 @@ const Testimonials = ({ testimonials }) => {
   };
   return (
     <Container>
+      <p className="testimonial-title">Testimonials</p>
       <Slider {...settings}>
         {testimonials.length > 0 &&
           testimonials.map((t) => (
@@ -65,41 +48,6 @@ const Testimonials = ({ testimonials }) => {
               </div>
             </TestCard>
           ))}
-        {/* <TestCard>
-          <div className="test-inner">
-            <img src={Quote} alt="Quote" />
-            <p className="comment">The service was excellent</p>
-            <p className="cx-name">Sathya</p>
-            <p className="cx-car">Chrysler 200c</p>
-          </div>
-        </TestCard>
-        <TestCard>
-          <div className="test-inner">
-            <img src={Quote} alt="Quote" />
-            <p className="comment">The service was excellent</p>
-            <p className="cx-name">Sathya</p>
-            <p className="cx-car">Chrysler 200c</p>
-          </div>
-        </TestCard>
-        <TestCard>
-          <div className="test-inner">
-            <img src={Quote} alt="Quote" />
-            <p className="comment">The service was excellent</p>
-            <p className="cx-name">Sathy</p>
-            <p className="cx-car">Chrysler 200c</p>
-          </div>
-        </TestCard>
-        <TestCard>
-          <div className="test-inner">
-            <img src={Quote} alt="Quote" />
-            <p className="comment">
-              The service was excellent, the car was delivered as promised and
-              timing was impecciable
-            </p>
-            <p className="cx-name">Sathy</p>
-            <p className="cx-car">Chrysler 200c</p>
-          </div>
-        </TestCard> */}
       </Slider>
     </Container>
   );
@@ -110,7 +58,19 @@ export default Testimonials;
 const Container = styled.div`
   width: 80%;
   margin: 10vh auto;
-  height: 80vh;
+  .testimonial-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 42px;
+    z-index: 10;
+
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #000000;
+  }
+  /* height: 80vh; */
   background-color: #fff;
   .slick-next:before,
   .slick-prev:before {
@@ -122,7 +82,7 @@ const Container = styled.div`
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     margin: 0vh auto;
 
   `}

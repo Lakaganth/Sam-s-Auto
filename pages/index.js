@@ -10,13 +10,17 @@ import Team from "../components/home/Team";
 import Mission from "./../components/home/Mission";
 import Footer from "../components/UI/Footer";
 import fb from "../fbconfig";
+import Loader from "../components/UI/Loader";
 
 const index = () => {
   let testimonials = [];
   const [test, setTest] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getTestimonials();
+    setTimeout(() => setLoading(false), 0);
+    // setTimeout(() => setLoading(false), 2400);
   }, []);
 
   const getTestimonials = useCallback(async () => {
@@ -28,8 +32,6 @@ const index = () => {
     setTest(testimonials);
   }, []);
 
-  console.log(test);
-
   return (
     <div>
       <Head>
@@ -38,6 +40,10 @@ const index = () => {
           href="https://fonts.googleapis.com/css?family=Poppins|Quicksand|Racing+Sans+One&display=swap"
           rel="stylesheet"
         />
+        <script
+          src="https://kit.fontawesome.com/a21f7fe221.js"
+          crossOrigin="anonymous"
+        ></script>
         <link
           rel="stylesheet"
           type="text/css"
@@ -52,7 +58,7 @@ const index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         >
       </Head>
-      {test.length > 0 ? (
+      {test.length > 0 && !loading ? (
         <Container>
           <Landing />
           <Services />
@@ -63,7 +69,7 @@ const index = () => {
           <Footer />
         </Container>
       ) : (
-        <h1>Wait</h1>
+        <Loader />
       )}
       <style jsx global>{`
         body {

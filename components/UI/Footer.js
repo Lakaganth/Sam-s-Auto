@@ -17,13 +17,22 @@ const Footer = () => {
           <p>155 Norfinch Dr #3, North York, ON M3N 1Y2</p>
         </div>
         <div className="contact">
-          <img src={Facebook} alt="Facebook" />
+          <a href="#">
+            <img src={Facebook} alt="Facebook" />
+            {/* <i className="fab fa-facebook-f"></i> */}
+          </a>
           <p>/samautos</p>
 
-          <img src={Insta} alt="Insta" />
+          <a href="#">
+            {/* <i className="fab fa-instagram"></i> */}
+            <img src={Insta} alt="Insta" />
+          </a>
           <p>@samautos</p>
 
-          <img src={Phone} alt="Phone" />
+          <a href="#">
+            <img src={Phone} alt="Phone" />
+            {/* <i className="fas fa-phone"></i> */}
+          </a>
           <p>555-555-5555</p>
         </div>
       </FotterGrid>
@@ -44,11 +53,12 @@ const Container = styled.div`
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
+  padding-top: 25px;
   /* identical to box height */
   letter-spacing: 0.05em;
   ${media.lessThan("small")`
     /* screen width is less than 450px (small) */
-    height: 80vh;
+    height: 100vh;
     font-size: 20px;
   line-height: 24px;
   `}
@@ -76,9 +86,60 @@ const FotterGrid = styled.div`
   .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    img {
+    /* img {
       justify-self: center;
       transform: translate3d(0, 100%, 0);
+    } */
+    a {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      background: gray;
+      margin: 10px;
+      border-radius: 30%;
+      box-shadow: 0 5px 15px -5px #00000070;
+      color: #3498db;
+      overflow: hidden;
+      position: relative;
+    }
+    img {
+      line-height: 90px;
+      margin-top: 20px;
+      font-size: 26px;
+      transition: 0.2s linear;
+    }
+    a:hover img {
+      transform: scale(1.3);
+      color: #f1f1f1;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: #3498db;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    }
+    a:hover::before {
+      animation: contactanim 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+    @keyframes contactanim {
+      0% {
+        left: -110%;
+        top: 90%;
+      }
+      50% {
+        left: 10%;
+        top: -30%;
+      }
+      100% {
+        top: -10%;
+        left: -10%;
+      }
     }
     p {
       text-align: left;

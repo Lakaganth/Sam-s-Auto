@@ -29,6 +29,8 @@ const Container = styled.div`
     /* screen width is between 450px and 768px (small to medium) */
     width: 90vw;
    height: 55vh;
+
+   margin-top: 5vh;
   `}
 `;
 const Card = styled.div`
@@ -36,14 +38,14 @@ const Card = styled.div`
   height: 35vh;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
   font-family: Poppins;
   font-style: thin;
   color: #000000;
   text-align: center;
   img {
-    width: 30%;
+    width: 200px;
     /* height: 60%; */
     position: absolute;
     top: -45%;
@@ -107,11 +109,11 @@ const Card = styled.div`
     width: 90%;
   height: 45vh;
   img {
-    width: 40%;
+    width: 25%;
    
     position: absolute;
     top: -35%;
-    left: 33%;
+    left: 38%;
   }
   .name { 
     font-size:32px;

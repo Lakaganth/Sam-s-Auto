@@ -118,24 +118,7 @@ const Landing = () => {
           </Link>
         </div>
       </HeroContent>
-      <motion.div
-        className="scroll-arrow"
-        initial={{
-          y: 8,
-          opacity: 0
-        }}
-        animate={{
-          y: 10,
-          opacity: 1
-        }}
-        exit={{ y: 304, opacity: 0 }}
-        transition={{
-          duration: 4,
-          ease: "linear",
-          loop: Infinity,
-          repeatDelay: 1
-        }}
-      >
+      <ScrollDiv>
         <svg
           width="100%"
           height="40"
@@ -153,7 +136,7 @@ const Landing = () => {
             fillOpacity="0.46"
           />
         </svg>
-      </motion.div>
+      </ScrollDiv>
     </Container>
   );
 };
@@ -229,7 +212,7 @@ const HeroBanner = styled.div`
       transform: translate3d(0, 45%, 0);
     }
 h3{
-  font-size: 32px;
+  font-size: 22px;
     line-height: 50px;
 }
   `}
@@ -238,7 +221,7 @@ h3{
   ${media.between("medium", "large")`
  
     h3{
-    font-size: 80px;
+    font-size: 60px;
     line-height: 100px;
 }
   `}
@@ -286,6 +269,23 @@ const HeroContent = styled.div`
   .hero-content {
     width: 100%;
   }
+  .hero-p-b{
+    p{
+      animation: heropanimation 1s forwards 0s ease-in-out;
+      
+    }
+    @keyframes heropanimation{
+    0%{
+        transform: translateY(80%);
+        opacity: 0;
+        }
+    
+    100%{
+        transform:  translateY(0%);
+        opacity: 1;
+        }
+}
+  }
   p {
     font-family: "Quicksand";
     font-style: normal;
@@ -310,7 +310,12 @@ const HeroContent = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
+    
+    
+    
     }
+
+
 p{
   font-size: 18px;
   line-height: 42px;
@@ -373,5 +378,31 @@ const ButtonContainer = styled.button`
   /* screen width is between 450px and 768px (small to medium) */
   ${media.between("small", "medium")`
     height: 50px;
+  `}
+`;
+
+const ScrollDiv = styled.div`
+  animation: scrollanimation 5s infinite 0s ease-in-out;
+
+  @keyframes scrollanimation {
+    0% {
+      transform: translateY(80%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
+
+  ${media.lessThan("small")`
+    /* screen width is less than 450px (small) */
+
+display:none;
+  `}
+
+  ${media.between("small", "medium")`
+  display:none;
   `}
 `;
