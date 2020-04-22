@@ -8,9 +8,27 @@ const ContactForm = () => {
   const [subject, setSubject] = React.useState("");
   const [message, setMessage] = React.useState("");
 
+  handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: { "form-name": "contact", name, phone, subject, message },
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
   return (
     <Container>
-      <FormBox method="POST" data-netlify="true">
+      <FormBox
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
         <p>Contact Form</p>
         <InputGroup>
           <input
@@ -26,7 +44,7 @@ const ContactForm = () => {
           <input
             className="phone-input"
             type="text"
-            name="email"
+            name="Phone"
             value={phone}
             placeholder="Phone"
             onChange={(phone) => setPhone(phone.target.value)}
