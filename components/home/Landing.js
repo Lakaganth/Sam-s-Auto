@@ -271,8 +271,7 @@ const HeroContent = styled.div`
   }
   .hero-p-b{
     p{
-      animation: heropanimation 1s forwards 0s ease-in-out;
-      
+      animation: heropanimation 1s forwards 0s ease-in-out;      
     }
     @keyframes heropanimation{
     0%{

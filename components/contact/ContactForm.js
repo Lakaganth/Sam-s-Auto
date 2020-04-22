@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   return (
     <Container>
-      <FormBox>
+      <FormBox method="POST" data-netlify="true">
         <p>Contact Form</p>
         <InputGroup>
           <input
@@ -51,7 +51,7 @@ const ContactForm = () => {
             onChange={(message) => setMessage(message.target.value)}
           />
         </InputGroup>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </FormBox>
     </Container>
   );
@@ -76,7 +76,7 @@ const Container = styled.div`
   `}
 `;
 
-const FormBox = styled.div`
+const FormBox = styled.form`
   width: 50%;
   height: 120vh;
   margin: 0 auto;
