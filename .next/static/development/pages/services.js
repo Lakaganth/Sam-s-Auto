@@ -1,4 +1,248 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\contact.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\services.js"],{
+
+/***/ "./components/UI/Footer.js":
+/*!*********************************!*\
+  !*** ./components/UI/Footer.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
+/* harmony import */ var _public_static_images_landing_map_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/static/images/landing/map.png */ "./public/static/images/landing/map.png");
+/* harmony import */ var _public_static_images_landing_map_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_landing_map_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _public_static_images_landing_facebook_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/static/images/landing/facebook.svg */ "./public/static/images/landing/facebook.svg");
+/* harmony import */ var _public_static_images_landing_facebook_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_landing_facebook_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _public_static_images_landing_insta_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../public/static/images/landing/insta.svg */ "./public/static/images/landing/insta.svg");
+/* harmony import */ var _public_static_images_landing_insta_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_landing_insta_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _public_static_images_landing_phone_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../public/static/images/landing/phone.svg */ "./public/static/images/landing/phone.svg");
+/* harmony import */ var _public_static_images_landing_phone_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_landing_phone_svg__WEBPACK_IMPORTED_MODULE_7__);
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\UI\\Footer.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject7() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([""]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    .address{\n      width:90%;\n      margin-left: 3vw;\n      img{\n        width: 50vw;\n      }\n    }\n.contact{\n  img{\n    transform: translate3d(0, 20%, 0);\n   }\n}\n  "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n flex-direction:column;\n .contact {\n   img{\n    transform: translate3d(0, 20%, 0);\n   }\n }\n  "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  .address {\n    height: 50vh;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    align-items: center;\n    p {\n      width: 60%;\n      margin: 0 auto;\n    }\n  }\n  .contact {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    /* img {\n      justify-self: center;\n      transform: translate3d(0, 100%, 0);\n    } */\n    a {\n      display: inline-block;\n      width: 90px;\n      height: 90px;\n      background: gray;\n      margin: 10px;\n      border-radius: 30%;\n      box-shadow: 0 5px 15px -5px #00000070;\n      color: #3498db;\n      overflow: hidden;\n      position: relative;\n    }\n    img {\n      line-height: 90px;\n      margin-top: 20px;\n      font-size: 26px;\n      transition: 0.2s linear;\n    }\n    a:hover img {\n      transform: scale(1.3);\n      color: #f1f1f1;\n    }\n    a::before {\n      content: \"\";\n      position: absolute;\n      width: 120%;\n      height: 120%;\n      background: #3498db;\n      transform: rotate(45deg);\n      left: -110%;\n      top: 90%;\n    }\n    a:hover::before {\n      animation: contactanim 0.7s 1;\n      top: -10%;\n      left: -10%;\n    }\n    @keyframes contactanim {\n      0% {\n        left: -110%;\n        top: 90%;\n      }\n      50% {\n        left: 10%;\n        top: -30%;\n      }\n      100% {\n        top: -10%;\n        left: -10%;\n      }\n    }\n    p {\n      text-align: left;\n    }\n  }\n  ", "\n\n  ", "\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    font-size: 18px;\n    line-height: 24px;\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    height: 100vh;\n    font-size: 20px;\n  line-height: 24px;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 50vh;\n  background-color: #151515;\n  color: #fff;\n  text-align: center;\n  font-family: Poppins;\n  font-style: normal;\n  font-weight: 600;\n  font-size: 32px;\n  line-height: 48px;\n  padding-top: 25px;\n  /* identical to box height */\n  letter-spacing: 0.05em;\n  ", "\n  ", "\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+var Footer = function Footer() {
+  return __jsx(Container, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(FotterGrid, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "address",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    href: "https://www.google.com/maps/dir//sam's+auto+norfinch/@43.7784626,-79.4512931,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x882b3027a9c588d7:0xd9ed80a3353b1e20!2m2!1d-79.5294928!2d43.7651579!3e0",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }, __jsx("img", {
+    src: _public_static_images_landing_map_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "amp",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  })), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 11
+    }
+  }, "155 Norfinch Dr #3, North York, ON M3N 1Y2")), __jsx("div", {
+    className: "contact",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    href: "#",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 11
+    }
+  }, __jsx("img", {
+    src: _public_static_images_landing_facebook_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "Facebook",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 13
+    }
+  })), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 11
+    }
+  }, "/samautos"), __jsx("a", {
+    href: "#",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }, __jsx("img", {
+    src: _public_static_images_landing_insta_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "Insta",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  })), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  }, "@samautos"), __jsx("a", {
+    href: "#",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  }, __jsx("img", {
+    src: _public_static_images_landing_phone_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    alt: "Phone",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 13
+    }
+  })), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 11
+    }
+  }, "555-555-5555"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()));
+var FotterGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()));
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7());
+
+/***/ }),
 
 /***/ "./components/UI/NavbarComp.js":
 /*!*************************************!*\
@@ -464,65 +708,31 @@ var MobileDrawer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div
 
 /***/ }),
 
-/***/ "./components/contact/ContactBanner.js":
+/***/ "./components/service/ServiceBanner.js":
 /*!*********************************************!*\
-  !*** ./components/contact/ContactBanner.js ***!
+  !*** ./components/service/ServiceBanner.js ***!
   \*********************************************/
-/*! exports provided: ContactBanner, default */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactBanner", function() { return ContactBanner; });
 /* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _UI_NavbarComp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../UI/NavbarComp */ "./components/UI/NavbarComp.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
-/* harmony import */ var _public_static_images_contact_shopphone_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/static/images/contact/shopphone.png */ "./public/static/images/contact/shopphone.png");
-/* harmony import */ var _public_static_images_contact_shopphone_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_static_images_contact_shopphone_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
-/* harmony import */ var react_spring__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-spring */ "./node_modules/react-spring/web.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/framer-motion.es.js");
+/* harmony import */ var _UI_NavbarComp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../UI/NavbarComp */ "./components/UI/NavbarComp.js");
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\contact\\ContactBanner.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceBanner.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-function _templateObject11() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 60%;\n  background: rgba(67, 67, 67, 0.44);\n  /* transform: translate3d(0, 0%, 0); */\n  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 100px;\n    line-height: 132%;\n    text-align: center;\n    letter-spacing: 0.345em;\n    transform: translate3d(0, 50%, 0);\n  }\n"]);
-
-  _templateObject11 = function _templateObject11() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject10() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: column;\njustify-content: space-around;\nalign-items: center;\n    img {\n    width: 80%;\n    height: 80%;\n  }\n  "]);
-
-  _templateObject10 = function _templateObject10() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject9() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n\n  justify-content: space-around;\n  align-items: center;\n  /* margin: 10px 0; */\n  p {\n    animation: heropanimation 1s forwards 0s ease-in-out;\n    @keyframes heropanimation {\n      0% {\n        transform: translateY(80%);\n        opacity: 0;\n      }\n\n      100% {\n        transform: translateY(0%);\n        opacity: 1;\n      }\n    }\n  }\n\n  img {\n    width: 40%;\n    height: 40%;\n    animation: heroimganimation 1s forwards 0s ease-in-out;\n    @keyframes heroimganimation {\n      0% {\n        transform: translateY(-80%);\n        opacity: 0;\n      }\n\n      100% {\n        transform: translateY(0%);\n        opacity: 1;\n      }\n    }\n  }\n  ", "\n"]);
-
-  _templateObject9 = function _templateObject9() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject8() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is greater than 1170px (large) */\n    height:65%;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 768px (medium) and 1170px (large) */\n    height: 324px;\n    .banner-title{\n    height: 30%;\n  }\n  p{\n    font-size: 48px;\n    line-height: 30px;\n    transform: translate3d(0, 80%, 0);\n  }\n  "]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -532,7 +742,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 768px (medium) and 1170px (large) */\n    height: 65%;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height:200px;\n  .banner-title{\n    height: 30%;\n  }\n  p{\n    font-size: 38px;\n    line-height: 30px;\n  }\n  "]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -542,7 +752,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height: 35%;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n  height:200px;\n  .banner-title{\n    height: 30%;\n  }\n  p{\n    font-size: 58px;\n    letter-spacing: 0.225em;\n    line-height: 30px;\n  }\n  "]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -552,7 +762,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    height: 20%;\n    display:none;\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 524px;\n  overflow: hidden;\n  background: url(\"/static/images/service/ser-ban.png\") center center\n    no-repeat;\n  background-size: cover;\n  animation: bannerAnimation 1s forwards 0s ease-in-out;  \n  @keyframes bannerAnimation{\n    0%{\n        transform: translateY(-80%);\n        opacity: 0;\n        }\n    \n    100%{\n        transform:  translateY(0%);\n        opacity: 1;\n        }\n}\n  .banner-title {\n    height: 60%;\n    width: 100%;\n    background: rgba(67, 67, 67, 0.44);\n  }\n  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 100px;\n    line-height: 125px;\n    text-align: center;\n    letter-spacing: 0.725em;\n    transform: translate3d(0, 50%, 0);\n    color: #ffffff;\n  }\n  ", "\n\n  ", "\n  ", "\n\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -562,7 +772,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 424px;\n  overflow: hidden;\n  display:none;\n  background: url(\"/static/images/contact/contactdice.png\") top center no-repeat;\n  background-size: cover;\n  ", "\n  ", "\n  ", "\n  ", "\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 768px (medium) and 1170px (large) */\n    height: 130vh;\n    .service-intro {\n    font-size: 24px;\n    line-height:48px;\n  \n    }\n  "]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -572,7 +782,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    .contact-intro{\n    font-size: 32px;\n    line-height: 42px;\n    margin: 6vh auto;}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n \n    .service-intro {\nfont-size: 24px;\nline-height:48px;\nmargin: 15vh auto;\n}\n  "]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -582,7 +792,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    .contact-intro{\n    font-size: 32px;\n    line-height: 42px;\n    margin: 2vh auto;}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    .service-intro {\n    font-size: 24px;\n    line-height:48px;\n    width: 90%;\n  \n    }\n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -592,7 +802,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100%;\n  height: 100vh;\n  background-color: #151515;\n  color: white;\n  .contact-intro {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 50px;\n    line-height: 52px;\n    text-align: right;\n    letter-spacing: 0.055em;\n    color: #fcfcfc;\n    width: 40%;\n    margin: 2vh 0;\n    /* margin-top: 10vh; */\n  }\n  ", "\n  ", "\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100%;\n  height: 100vh;\n  background-color: #151515;\n  color: white;\n  .service-intro {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 50px;\n    line-height: 62px;\n    text-align: center;\n    letter-spacing: 0.055em;\n    color: #fcfcfc;\n    width: 40%;\n    margin: 10vh auto;\n    animation: heropanimation 1s forwards 0s ease-in-out;     \n    @keyframes heropanimation{\n    0%{\n        transform: translateY(80%);\n        opacity: 0;\n        }\n    \n    100%{\n        transform:  translateY(0%);\n        opacity: 1;\n        }\n}\n    /* margin-top: 10vh; */\n  }\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n  ", "\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -607,67 +817,59 @@ function _templateObject() {
 
 
 
-
-var ContactBanner = function ContactBanner() {
-  var scrollAnim = Object(react_spring__WEBPACK_IMPORTED_MODULE_7__["useSpring"])({
-    x: 1,
-    from: {
-      x: 0
-    }
-  });
+var ServiceBanner = function ServiceBanner() {
   return __jsx(Container, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 9,
       columnNumber: 5
     }
-  }, __jsx(_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 10,
       columnNumber: 7
     }
   }), __jsx(BannerBG, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 11,
       columnNumber: 7
     }
-  }), __jsx(BannerGrid, {
+  }, __jsx("div", {
+    className: "banner-title",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 7
+      lineNumber: 12,
+      columnNumber: 9
     }
   }, __jsx("p", {
-    className: "contact-intro",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
+      lineNumber: 13,
+      columnNumber: 11
     }
-  }, "Let's Get In Touch"), __jsx("img", {
-    src: _public_static_images_contact_shopphone_png__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "contactPhone",
+  }, "Services"))), __jsx("p", {
+    className: "service-intro",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
+      lineNumber: 16,
+      columnNumber: 7
     }
-  })), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_6__["motion"].div, {
+  }, "We provide best-in-class services in your budget"), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["motion"].div, {
     className: "scroll-arrow",
     initial: {
-      y: 5,
+      y: -30,
       opacity: 0
     },
     animate: {
-      y: 8,
+      y: -20,
       opacity: 1
     },
     exit: {
@@ -683,7 +885,7 @@ var ContactBanner = function ContactBanner() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 19,
       columnNumber: 7
     }
   }, __jsx("svg", {
@@ -695,7 +897,7 @@ var ContactBanner = function ContactBanner() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 37,
       columnNumber: 9
     }
   }, __jsx("path", {
@@ -704,7 +906,7 @@ var ContactBanner = function ContactBanner() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 44,
       columnNumber: 11
     }
   }), __jsx("path", {
@@ -714,301 +916,22 @@ var ContactBanner = function ContactBanner() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 48,
       columnNumber: 11
     }
   }))));
 };
-/* harmony default export */ __webpack_exports__["default"] = (ContactBanner);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].between("small", "medium")(_templateObject3()));
-var BannerBG = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].between("small", "medium")(_templateObject6()), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].between("medium", "large")(_templateObject7()), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].greaterThan("large")(_templateObject8()));
-var BannerGrid = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject9(), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("small")(_templateObject10()));
-var ContentDiv = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject11());
+
+/* harmony default export */ __webpack_exports__["default"] = (ServiceBanner);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("medium", "large")(_templateObject4()));
+var BannerBG = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject6()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject7()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("medium", "large")(_templateObject8()));
 
 /***/ }),
 
-/***/ "./components/contact/ContactForm.js":
-/*!*******************************************!*\
-  !*** ./components/contact/ContactForm.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
-
-
-
-var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\contact\\ContactForm.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-function _templateObject8() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    textarea {\n      height: 50vh;\n    }\n  "]);
-
-  _templateObject8 = function _templateObject8() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject7() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 70%;\n  margin: 2vh auto;\n  font-family: Quicksand;\n  input {\n    width: 100%;\n    height: 5vh;\n    margin: 1vh 0;\n    padding-left: 2vw;\n    border: 1px gray solid;\n    border-radius: 5px;\n  }\n  textarea {\n    width: 100%;\n    height: 25vh;\n    margin: 1vh 0;\n    padding-left: 2vw;\n    border: 1px gray solid;\n    border-radius: 5px;\n    padding-top: 1vh;\n  }\n  ", "\n"]);
-
-  _templateObject7 = function _templateObject7() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject6() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    width: 90%;\n    height: 80vh;\n   \np{\n  font-size: 32px;\n    line-height: 60px;\n}\nbutton{\n  margin: 0 40%;\n}\n  "]);
-
-  _templateObject6 = function _templateObject6() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject5() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 90%;\n\n    /* screen width is less than 450px (small) */\np{\n  font-size: 32px;\n    line-height: 60px;\n}\nbutton{\n  margin: 0 30%;\n}\n  "]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject4() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 50%;\n  height: 120vh;\n  margin: 0 auto;\n  background-color: #fff;\n  border-radius: 15px;\n  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: normal;\n    font-size: 80px;\n    line-height: 100px;\n    /* identical to box height */\n    padding: 50px 0 0px 0;\n    text-align: center;\n    letter-spacing: 0.345em;\n    margin: 25px auto;\n    color: #767676;\n  }\n  button {\n    width: 155px;\n    height: 51px;\n    background-color: #ff3838;\n    color: #ffffff;\n    font-size: 24px;\n    border: none;\n    margin: 0 40%;\n    cursor: pointer;\n    /* box-shadow: 6px 4px 16px -2px rgba(134, 143, 179, 1); */\n  }\n  ", "\n\n  ", "\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is between 450px and 768px (small to medium) */\n    height: 80vh;\n    padding: 0vh 0;\n  "]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    height: 120vh;\n    padding: 5vh 0;\n  "]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 120vh;\n  background-color: #151515;\n  padding: 10vh 0;\n  ", "\n  ", "\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-
-
-
-var ContactForm = function ContactForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(""),
-      name = _useState[0],
-      setName = _useState[1];
-
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(""),
-      _React$useState2 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState, 2),
-      phone = _React$useState2[0],
-      setPhone = _React$useState2[1];
-
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(""),
-      _React$useState4 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState3, 2),
-      subject = _React$useState4[0],
-      setSubject = _React$useState4[1];
-
-  var _React$useState5 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(""),
-      _React$useState6 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState5, 2),
-      message = _React$useState6[0],
-      setMessage = _React$useState6[1];
-
-  var handleSubmit = function handleSubmit(e) {
-    fetch("/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      body: {
-        "form-name": "contact",
-        name: name,
-        phone: phone,
-        subject: subject,
-        message: message
-      }
-    }).then(function () {
-      return alert("Success!");
-    })["catch"](function (error) {
-      return alert(error);
-    });
-    e.preventDefault();
-  };
-
-  return __jsx(Container, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 5
-    }
-  }, __jsx(FormBox, {
-    name: "contact",
-    method: "post",
-    "data-netlify": "true",
-    "data-netlify-honeypot": "bot-field",
-    onSubmit: handleSubmit,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 7
-    }
-  }, __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 9
-    }
-  }, "Contact Form"), __jsx(InputGroup, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 9
-    }
-  }, __jsx("input", {
-    className: "name-input",
-    type: "text",
-    name: "name",
-    value: name,
-    placeholder: "Name",
-    onChange: function onChange(name) {
-      return setName(name.target.value);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 11
-    }
-  })), __jsx(InputGroup, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 9
-    }
-  }, __jsx("input", {
-    className: "phone-input",
-    type: "text",
-    name: "Phone",
-    value: phone,
-    placeholder: "Phone",
-    onChange: function onChange(phone) {
-      return setPhone(phone.target.value);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 11
-    }
-  })), __jsx(InputGroup, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 9
-    }
-  }, __jsx("input", {
-    type: "text",
-    name: "subject",
-    value: subject,
-    placeholder: "Subject",
-    onChange: function onChange(subject) {
-      return setSubject(subject.target.value);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 11
-    }
-  })), __jsx(InputGroup, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 9
-    }
-  }, __jsx("textarea", {
-    className: "message-input",
-    name: "message",
-    value: message,
-    placeholder: "Message",
-    onChange: function onChange(message) {
-      return setMessage(message.target.value);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 11
-    }
-  })), __jsx("button", {
-    type: "submit",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 9
-    }
-  }, "Submit")));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].between("small", "medium")(_templateObject3()));
-var FormBox = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].form(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].between("small", "medium")(_templateObject6()));
-var InputGroup = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject7(), styled_media_query__WEBPACK_IMPORTED_MODULE_4__["default"].lessThan("small")(_templateObject8()));
-
-/***/ }),
-
-/***/ "./components/contact/ContactSocials.js":
-/*!**********************************************!*\
-  !*** ./components/contact/ContactSocials.js ***!
-  \**********************************************/
+/***/ "./components/service/ServiceBox.js":
+/*!******************************************!*\
+  !*** ./components/service/ServiceBox.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1022,52 +945,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\contact\\ContactSocials.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceBox.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-function _templateObject6() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    grid-gap: 35px;\n    margin-top:10vh;\n    .icon {\n    margin: 0px 0;\n    width:30%;\n  }\n p{\n   font-size: 24px;\n    line-height: 35px;\n  }\n  "]);
-
-  _templateObject6 = function _templateObject6() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject5() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    \n    grid-gap: 35px;\n    .icon {\n    margin: 0px 0;\n    width:30%;\n  }\np{\n  font-size: 24px;\n    line-height: 35px;\n}\n  "]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject4() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 60%;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  justify-content: center;\n  align-content: center;\n  .icon {\n    margin: 30px 0;\n  }\n  p {\n    font-family: Poppins;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 50px;\n    line-height: 75px;\n    letter-spacing: 0.05em;\n\n    color: #ffffff;\n  }\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding-top:10vh;\nheight: 100vh;\n  "]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\npadding-top:10vh;\nheight: 150vh;\np{\n  font-size: 70px;\nline-height: 85px;\n}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    /* screen width is less than 450px (small) */\n    width: 90%;\n    margin 0 auto;\n\n\n    .front-content-bg p{\n      /* font-size: 42px; */\n    }\n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -1077,7 +960,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 100vh;\n  background-color: #151515;\n  overflow: hidden;\n  p{\n    font-family: Quicksand;\nfont-style: normal;\nfont-weight: normal;\nfont-size: 100px;\nline-height: 125px;\ntext-align: center;\nletter-spacing: 0.345em;\n\ncolor: #F5F5F5;\n  }\n    /* screen width is less than 450px (small) */\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 335px;\n  height: 350px;\n \n  transition: all 0.3s ease-in-out;\n  transform-style: preserve-3d;\n  perspective: 900px;\n  z-index: 10;\n\n  /* background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),\n    url(\"/static/images/service/engine.jpg\") center top no-repeat; */\n  /* ", "\n  background-size: cover; */\n  width: 60%;\n  margin: 0 auto;\n  .front-content-bg {\n    /* max-width: 0%; */\n    margin: 0 auto;\n    /* transform: translate3d(0, 100%, 0); */\n    background: rgba(196, 196, 196, 0.14);\n     border-radius: 7px;\n  border: 2px solid #ffffff;\n    ", "\n  background-size: cover;\n    border-radius: 5px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    backface-visibility: hidden;\n    transform: rotateY(0deg);\n    transition: 0.5s;\n  }\n  &:hover .front-content-bg {\n    transform: rotateY(-180deg);\n  }\n  .back-content {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background:#ffffff;\n    color:black;\n    backface-visibility: hidden;\n    transform: rotateY(180deg);\n    transition: 0.5s;\n    border-radius:5px;\n    /* border: 2px solid red; */\n    \n  }\n\n  &:hover .back-content {\n    transform: rotateY(0deg);\n  }\n\n  .front-content-bg  p {\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 62px;\n    line-height: 80px;\n    text-align: center;\n    letter-spacing: 0.055em;\n    color: white;\n   \n  }\n\n  .back-content p{\n    font-family: Quicksand;\n    font-style: normal;\n    font-weight: 500;\n    font-size: 32px;\n    line-height: 40px;\n    text-align: center;\n    letter-spacing: 0.055em;\n  }\n \n  /* &:hover {\n    transform: scale3d(1.1, 1.1, 1.1);\n  } */\n\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1090,160 +973,248 @@ function _templateObject() {
 
 
 
-var ContactSocials = function ContactSocials() {
+var ServiceBox = function ServiceBox(_ref) {
+  var name = _ref.name,
+      bg = _ref.bg,
+      content = _ref.content;
   return __jsx(Container, {
+    bg: bg,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
       columnNumber: 5
     }
-  }, __jsx("p", {
+  }, __jsx("div", {
+    className: "front-content-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
       columnNumber: 7
     }
-  }, "Social Media"), __jsx(SocialGrid, {
+  }, __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, name)), __jsx("div", {
+    className: "back-content",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }, __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, content)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ServiceBox);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), function (_ref2) {
+  var bg = _ref2.bg;
+  return bg && " background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),\n     url(".concat(bg, ") center top no-repeat;");
+}, function (_ref3) {
+  var bg = _ref3.bg;
+  return bg && " background: linear-gradient(0deg, #1a0b0b 0%, rgba(111, 111, 111, 0) 109.24%),\n     url(".concat(bg, ") center top no-repeat;");
+}, styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()));
+
+/***/ }),
+
+/***/ "./components/service/ServiceContent.js":
+/*!**********************************************!*\
+  !*** ./components/service/ServiceContent.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
+/* harmony import */ var _ServiceBox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ServiceBox */ "./components/service/ServiceBox.js");
+
+
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\components\\service\\ServiceContent.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _templateObject7() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin: 4vh 0;\n  "]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    grid-template-columns: repeat(1, 1fr);\n    margin: 5vh 0;\n    grid-gap: 70px;\n  "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    grid-template-columns: repeat(1, 1fr);\n    margin: 5vh 0;\n    grid-gap: 30px;\n  "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  z-index: 10;\n  margin: 15vh 0;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-gap: 95px;\n    /* screen width is less than 450px (small) */\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n    /* screen width is between 768px (medium) and 1170px (large) */\n  ", "\n\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    .bg-stripes{\n  top: 0vh;\n  width: 100%;\n    height: 65%;\n}\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding-bottom: 5vh; \n.bg-stripes{\n  top: 0vh;\n  width: 100%;\n    height: 65%;\n}\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  background-color: #151515;\n  position: relative;\n  overflow: hidden;\n  /* height: 100vh; */\n\n  .bg-stripes {\n    position: absolute;\n  \n    background: url(\"/static/images/service/stripes.svg\") bottom center\n      no-repeat;\n    top: 10vh;\n    left: 0;\n    background-size: cover;\n    width: 120%;\n    height: 165%;\n\n  }\n    /* screen width is less than 450px (small) */\n  ", "\n    /* screen width is between 450px and 768px (small to medium) */\n  ", "\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+var ServiceContent = function ServiceContent() {
+  return __jsx(Container, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "bg-stripes",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
       columnNumber: 7
     }
-  }, __jsx("div", {
-    className: "icon",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 9
-    }
-  }, __jsx("svg", {
-    width: "126",
-    height: "106",
-    viewBox: "0 0 126 106",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+  }), __jsx(ServiceGrid, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11,
-      columnNumber: 11
+      columnNumber: 7
     }
-  }, __jsx("path", {
-    d: "M125.99 53.1734C125.99 23.8064 97.7865 0 62.9953 0C28.2038 0 0 23.8064 0 53.1734C0 79.7138 23.0364 101.711 53.1521 105.701V68.5439H37.1573V53.1734H53.1521V41.4585C53.1521 28.132 62.5569 20.7708 76.9461 20.7708C83.8383 20.7708 91.0476 21.8093 91.0476 21.8093V34.895H83.1044C75.2787 34.895 72.838 38.9938 72.838 43.1988V53.1734H90.3095L87.5165 68.5439H72.838V105.701C102.954 101.711 125.99 79.7138 125.99 53.1734Z",
-    fill: "#274DD2",
+  }, __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Engine Swap / Repair",
+    bg: "/static/images/service/engine.jpg",
+    content: "Sample",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
-    }
-  }))), __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 12,
       columnNumber: 9
     }
-  }, "/samautos"), __jsx("div", {
-    className: "icon",
+  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Electrical Repairs",
+    bg: "/static/images/service/electric.jpg",
+    content: "Sample",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 17,
       columnNumber: 9
     }
-  }, __jsx("svg", {
-    width: "135",
-    height: "114",
-    viewBox: "0 0 135 114",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
+  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Brakes Check",
+    bg: "/static/images/service/brakes.jpg",
+    content: "Sample",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 11
+      lineNumber: 22,
+      columnNumber: 9
     }
-  }, __jsx("path", {
-    d: "M54.283 57.3535C54.283 63.3225 60.0359 68.1611 67.1327 68.1611C74.2296 68.1611 79.9824 63.3225 79.9824 57.3535C79.9824 51.3845 74.2296 46.5459 67.1327 46.5459C60.0359 46.5459 54.283 51.3845 54.283 57.3535Z",
-    fill: "#FF3A81",
+  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Oil Change",
+    bg: "/static/images/service/oil.jpg",
+    content: "Sample",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 13
+      lineNumber: 27,
+      columnNumber: 9
     }
-  }), __jsx("path", {
-    d: "M37.0835 38.2316C37.7012 36.8238 38.6866 35.5495 39.9671 34.5036C41.2107 33.4266 42.7247 32.5978 44.3996 32.0782C45.7579 31.6345 47.7984 31.1064 51.5568 30.9625C55.6226 30.8066 56.8416 30.7729 67.1344 30.7729C77.4283 30.7729 78.6473 30.8057 82.712 30.9616C86.4704 31.1064 88.512 31.6345 89.8693 32.0782C91.5441 32.5978 93.0592 33.4266 94.3017 34.5036C95.5822 35.5495 96.5676 36.8229 97.1864 38.2316C97.7139 39.374 98.3419 41.0911 98.5129 44.2523C98.6983 47.671 98.7383 48.6962 98.7383 57.3542C98.7383 66.0113 98.6983 67.0365 98.5129 70.4561C98.3419 73.6172 97.7139 75.3335 97.1864 76.4759C96.5676 77.8846 95.5832 79.158 94.3028 80.204C93.0592 81.2809 91.5452 82.1098 89.8703 82.6293C88.512 83.0739 86.4704 83.602 82.712 83.7459C78.6473 83.9018 77.4293 83.9346 67.1354 83.9346C56.8405 83.9346 55.6215 83.9018 51.5579 83.7459C47.7994 83.602 45.7579 83.0739 44.3996 82.6293C41.0376 81.5385 38.3804 79.3036 37.0835 76.4759C36.556 75.3335 35.928 73.6172 35.7559 70.4561C35.5705 67.0365 35.5316 66.0113 35.5316 57.3542C35.5316 48.6962 35.5705 47.671 35.7559 44.2523C35.927 41.0911 36.5549 39.374 37.0835 38.2316ZM67.1344 74.0024C78.0675 74.0024 86.9304 66.5489 86.9304 57.3533C86.9304 48.1578 78.0675 40.7043 67.1344 40.7043C56.2023 40.7043 47.3395 48.1578 47.3395 57.3533C47.3395 66.5489 56.2023 74.0024 67.1344 74.0024ZM46.5569 43.9369C49.1117 43.9369 51.1829 42.1948 51.1829 40.0461C51.1829 37.8973 49.1117 36.1552 46.5569 36.1552C44.0021 36.1552 41.9308 37.8973 41.9308 40.0461C41.9319 42.1948 44.0021 43.9369 46.5569 43.9369Z",
-    fill: "#FF43EC",
+  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Air Filter Check",
+    bg: "/static/images/service/filter.jpg",
+    content: "Sample",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 9
+    }
+  }), __jsx(_ServiceBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "General Services",
+    bg: "/static/images/service/general.jpg",
+    content: "Sample",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37,
-      columnNumber: 13
-    }
-  }), __jsx("path", {
-    d: "M67.1335 0.889404C104.204 0.889404 134.267 26.174 134.267 57.3534C134.267 88.5328 104.204 113.817 67.1335 113.817C30.0626 113.817 0.000427246 88.5328 0.000427246 57.3534C0.000427246 26.174 30.0626 0.889404 67.1335 0.889404ZM28.817 70.7207C29.0034 74.1721 29.6559 76.5285 30.6086 78.5911C32.6112 82.9464 36.7046 86.3892 41.8828 88.0736C44.3341 88.8749 47.1368 89.4228 51.2394 89.5805C55.3502 89.7382 56.6634 89.7761 67.1325 89.7761C77.6026 89.7761 78.9148 89.7382 83.0266 89.5805C87.1292 89.4228 89.9319 88.8749 92.3832 88.0736C94.9564 87.2594 97.2858 85.9834 99.2116 84.3335C101.172 82.7146 102.689 80.7546 103.657 78.5911C104.61 76.5294 105.263 74.1721 105.449 70.7215C105.639 67.2632 105.683 66.1587 105.683 57.3534C105.683 48.5481 105.639 47.4436 105.45 43.9861C105.264 40.5346 104.612 38.1782 103.659 36.1156C102.691 33.9522 101.173 31.9922 99.2116 30.3733C97.2869 28.7234 94.9564 27.4474 92.3842 26.6332C89.9319 25.8319 87.1302 25.284 83.0266 25.1263C78.9158 24.9686 77.6026 24.9307 67.1335 24.9307C56.6645 24.9307 55.3512 24.9686 51.2404 25.1272C47.1368 25.284 44.3351 25.8319 41.8828 26.6323C39.3106 27.4465 36.9802 28.7234 35.0544 30.3733C33.0937 31.993 31.5756 33.9522 30.6086 36.1156C29.6549 38.1782 29.0034 40.5346 28.8159 43.9861C28.6285 47.4436 28.5844 48.5481 28.5844 57.3534C28.5844 66.1587 28.6285 67.2632 28.817 70.7207V70.7207Z",
-    fill: "white",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 13
-    }
-  }))), __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
       columnNumber: 9
     }
-  }, "@samautos"), __jsx("div", {
-    className: "icon",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 9
-    }
-  }, __jsx("svg", {
-    width: "118",
-    height: "100",
-    viewBox: "0 0 118 100",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 11
-    }
-  }, __jsx("path", {
-    d: "M100.713 15.4021C77.6687 -3.92979 40.3118 -3.92515 17.2744 15.4127C-5.76301 34.7506 -5.75748 66.0985 17.2871 85.4304C40.3316 104.762 77.6883 104.758 100.726 85.4198C111.79 76.1326 118.004 63.5376 118 50.4056C117.997 37.2758 111.779 24.6848 100.713 15.4021ZM89.3535 69.8731C89.351 69.8752 89.3484 69.8775 89.3457 69.8797V69.8632L86.3562 72.3552C82.4901 75.6404 76.8596 76.9921 71.5078 75.9199C66.116 74.7088 60.9904 72.781 56.3253 70.2098C51.9911 67.8853 47.9745 65.1681 44.3483 62.1066C41.0118 59.3273 38.0143 56.2754 35.3998 52.9968C32.5402 49.4688 30.2768 45.6256 28.6739 41.5764C26.8363 36.8196 28.359 31.6 32.6073 28.0933L36.1079 25.1557C37.0811 24.3354 38.6626 24.3325 39.64 25.1492C39.6425 25.1513 39.6453 25.1534 39.6479 25.1557L50.7004 34.4305C51.6781 35.2473 51.6815 36.5744 50.7083 37.3946C50.7057 37.3967 50.7032 37.3988 50.7004 37.4011L44.2104 42.8472C42.3483 44.3929 42.1141 46.849 43.6598 48.6235C46.0072 51.3268 48.6048 53.8705 51.4283 56.2315C54.5762 58.8846 57.9985 61.298 61.6548 63.4436C63.7676 64.6801 66.6318 64.4717 68.4594 62.9485L74.733 57.6014C75.7063 56.781 77.2878 56.7781 78.2652 57.5948C78.2677 57.5969 78.2703 57.5991 78.273 57.6014L89.3454 66.9093C90.3233 67.7258 90.3268 69.0527 89.3535 69.8731Z",
-    fill: "#50FFAB",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 13
-    }
-  }))), __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 9
-    }
-  }, "555-555-5555")));
+  })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ContactSocials);
+/* harmony default export */ __webpack_exports__["default"] = (ServiceContent);
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject2()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject3()));
-var SocialGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()));
+var ServiceGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].lessThan("small")(_templateObject5()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("small", "medium")(_templateObject6()), styled_media_query__WEBPACK_IMPORTED_MODULE_3__["default"].between("medium", "large")(_templateObject7()));
 
 /***/ }),
 
@@ -1386,159 +1357,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithHoles; });
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
-function _iterableToArrayLimit(arr, i) {
-  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
-    return;
-  }
-
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
-/* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js");
-/* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js");
-/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
-
-
-
-function _slicedToArray(arr, i) {
-  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
-}
 
 /***/ }),
 
@@ -8893,21 +8711,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Ccontact.js!./":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Ccontact.js ***!
-  \***********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js!./":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js ***!
+  \*************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
-      var mod = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/services", function() {
+      var mod = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
       if(true) {
-        module.hot.accept(/*! ./pages/contact.js */ "./pages/contact.js", function() {
-          if(!next.router.components["/contact"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
-          next.router.update("/contact", updatedPage)
+        module.hot.accept(/*! ./pages/services.js */ "./pages/services.js", function() {
+          if(!next.router.components["/services"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
+          next.router.update("/services", updatedPage)
         })
       }
       return mod
@@ -13886,2009 +13704,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-spring/web.js":
-/*!******************************************!*\
-  !*** ./node_modules/react-spring/web.js ***!
-  \******************************************/
-/*! exports provided: apply, config, update, animated, a, interpolate, Globals, useSpring, useTrail, useTransition, useChain, useSprings */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "apply", function() { return apply; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "update", function() { return update; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animated", function() { return extendedAnimated; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return extendedAnimated; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interpolate", function() { return interpolate$1; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Globals", function() { return Globals; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useSpring", function() { return useSpring; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTrail", function() { return useTrail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTransition", function() { return useTransition; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useChain", function() { return useChain; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useSprings", function() { return useSprings; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-const is = {
-  arr: Array.isArray,
-  obj: a => Object.prototype.toString.call(a) === '[object Object]',
-  fun: a => typeof a === 'function',
-  str: a => typeof a === 'string',
-  num: a => typeof a === 'number',
-  und: a => a === void 0,
-  nul: a => a === null,
-  set: a => a instanceof Set,
-  map: a => a instanceof Map,
-
-  equ(a, b) {
-    if (typeof a !== typeof b) return false;
-    if (is.str(a) || is.num(a)) return a === b;
-    if (is.obj(a) && is.obj(b) && Object.keys(a).length + Object.keys(b).length === 0) return true;
-    let i;
-
-    for (i in a) if (!(i in b)) return false;
-
-    for (i in b) if (a[i] !== b[i]) return false;
-
-    return is.und(i) ? a === b : true;
-  }
-
-};
-function merge(target, lowercase) {
-  if (lowercase === void 0) {
-    lowercase = true;
-  }
-
-  return object => (is.arr(object) ? object : Object.keys(object)).reduce((acc, element) => {
-    const key = lowercase ? element[0].toLowerCase() + element.substring(1) : element;
-    acc[key] = target(key);
-    return acc;
-  }, target);
-}
-function useForceUpdate() {
-  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(false),
-        f = _useState[1];
-
-  const forceUpdate = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])(() => f(v => !v), []);
-  return forceUpdate;
-}
-function withDefault(value, defaultValue) {
-  return is.und(value) || is.nul(value) ? defaultValue : value;
-}
-function toArray(a) {
-  return !is.und(a) ? is.arr(a) ? a : [a] : [];
-}
-function callProp(obj) {
-  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    args[_key - 1] = arguments[_key];
-  }
-
-  return is.fun(obj) ? obj(...args) : obj;
-}
-
-function getForwardProps(props) {
-  const to = props.to,
-        from = props.from,
-        config = props.config,
-        onStart = props.onStart,
-        onRest = props.onRest,
-        onFrame = props.onFrame,
-        children = props.children,
-        reset = props.reset,
-        reverse = props.reverse,
-        force = props.force,
-        immediate = props.immediate,
-        delay = props.delay,
-        attach = props.attach,
-        destroyed = props.destroyed,
-        interpolateTo = props.interpolateTo,
-        ref = props.ref,
-        lazy = props.lazy,
-        forward = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["to", "from", "config", "onStart", "onRest", "onFrame", "children", "reset", "reverse", "force", "immediate", "delay", "attach", "destroyed", "interpolateTo", "ref", "lazy"]);
-
-  return forward;
-}
-
-function interpolateTo(props) {
-  const forward = getForwardProps(props);
-  if (is.und(forward)) return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    to: forward
-  }, props);
-  const rest = Object.keys(props).reduce((a, k) => !is.und(forward[k]) ? a : Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, a, {
-    [k]: props[k]
-  }), {});
-  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    to: forward
-  }, rest);
-}
-function handleRef(ref, forward) {
-  if (forward) {
-    // If it's a function, assume it's a ref callback
-    if (is.fun(forward)) forward(ref);else if (is.obj(forward)) {
-      forward.current = ref;
-    }
-  }
-
-  return ref;
-}
-
-class Animated {
-  constructor() {
-    this.payload = void 0;
-    this.children = [];
-  }
-
-  getAnimatedValue() {
-    return this.getValue();
-  }
-
-  getPayload() {
-    return this.payload || this;
-  }
-
-  attach() {}
-
-  detach() {}
-
-  getChildren() {
-    return this.children;
-  }
-
-  addChild(child) {
-    if (this.children.length === 0) this.attach();
-    this.children.push(child);
-  }
-
-  removeChild(child) {
-    const index = this.children.indexOf(child);
-    this.children.splice(index, 1);
-    if (this.children.length === 0) this.detach();
-  }
-
-}
-class AnimatedArray extends Animated {
-  constructor() {
-    super(...arguments);
-    this.payload = [];
-
-    this.attach = () => this.payload.forEach(p => p instanceof Animated && p.addChild(this));
-
-    this.detach = () => this.payload.forEach(p => p instanceof Animated && p.removeChild(this));
-  }
-
-}
-class AnimatedObject extends Animated {
-  constructor() {
-    super(...arguments);
-    this.payload = {};
-
-    this.attach = () => Object.values(this.payload).forEach(s => s instanceof Animated && s.addChild(this));
-
-    this.detach = () => Object.values(this.payload).forEach(s => s instanceof Animated && s.removeChild(this));
-  }
-
-  getValue(animated) {
-    if (animated === void 0) {
-      animated = false;
-    }
-
-    const payload = {};
-
-    for (const key in this.payload) {
-      const value = this.payload[key];
-      if (animated && !(value instanceof Animated)) continue;
-      payload[key] = value instanceof Animated ? value[animated ? 'getAnimatedValue' : 'getValue']() : value;
-    }
-
-    return payload;
-  }
-
-  getAnimatedValue() {
-    return this.getValue(true);
-  }
-
-}
-
-let applyAnimatedValues;
-function injectApplyAnimatedValues(fn, transform) {
-  applyAnimatedValues = {
-    fn,
-    transform
-  };
-}
-let colorNames;
-function injectColorNames(names) {
-  colorNames = names;
-}
-let requestFrame = cb => typeof window !== 'undefined' ? window.requestAnimationFrame(cb) : -1;
-let cancelFrame = id => {
-  typeof window !== 'undefined' && window.cancelAnimationFrame(id);
-};
-function injectFrame(raf, caf) {
-  requestFrame = raf;
-  cancelFrame = caf;
-}
-let interpolation;
-function injectStringInterpolator(fn) {
-  interpolation = fn;
-}
-let now = () => Date.now();
-function injectNow(nowFn) {
-  now = nowFn;
-}
-let defaultElement;
-function injectDefaultElement(el) {
-  defaultElement = el;
-}
-let animatedApi = node => node.current;
-function injectAnimatedApi(fn) {
-  animatedApi = fn;
-}
-let createAnimatedStyle;
-function injectCreateAnimatedStyle(factory) {
-  createAnimatedStyle = factory;
-}
-let manualFrameloop;
-function injectManualFrameloop(callback) {
-  manualFrameloop = callback;
-}
-
-var Globals = /*#__PURE__*/Object.freeze({
-  get applyAnimatedValues () { return applyAnimatedValues; },
-  injectApplyAnimatedValues: injectApplyAnimatedValues,
-  get colorNames () { return colorNames; },
-  injectColorNames: injectColorNames,
-  get requestFrame () { return requestFrame; },
-  get cancelFrame () { return cancelFrame; },
-  injectFrame: injectFrame,
-  get interpolation () { return interpolation; },
-  injectStringInterpolator: injectStringInterpolator,
-  get now () { return now; },
-  injectNow: injectNow,
-  get defaultElement () { return defaultElement; },
-  injectDefaultElement: injectDefaultElement,
-  get animatedApi () { return animatedApi; },
-  injectAnimatedApi: injectAnimatedApi,
-  get createAnimatedStyle () { return createAnimatedStyle; },
-  injectCreateAnimatedStyle: injectCreateAnimatedStyle,
-  get manualFrameloop () { return manualFrameloop; },
-  injectManualFrameloop: injectManualFrameloop
-});
-
-/**
- * Wraps the `style` property with `AnimatedStyle`.
- */
-
-class AnimatedProps extends AnimatedObject {
-  constructor(props, callback) {
-    super();
-    this.update = void 0;
-    this.payload = !props.style ? props : Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-      style: createAnimatedStyle(props.style)
-    });
-    this.update = callback;
-    this.attach();
-  }
-
-}
-
-const isFunctionComponent = val => is.fun(val) && !(val.prototype instanceof react__WEBPACK_IMPORTED_MODULE_2___default.a.Component);
-
-const createAnimatedComponent = Component => {
-  const AnimatedComponent = Object(react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])((props, ref) => {
-    const forceUpdate = useForceUpdate();
-    const mounted = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(true);
-    const propsAnimated = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(null);
-    const node = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(null);
-    const attachProps = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])(props => {
-      const oldPropsAnimated = propsAnimated.current;
-
-      const callback = () => {
-        let didUpdate = false;
-
-        if (node.current) {
-          didUpdate = applyAnimatedValues.fn(node.current, propsAnimated.current.getAnimatedValue());
-        }
-
-        if (!node.current || didUpdate === false) {
-          // If no referenced node has been found, or the update target didn't have a
-          // native-responder, then forceUpdate the animation ...
-          forceUpdate();
-        }
-      };
-
-      propsAnimated.current = new AnimatedProps(props, callback);
-      oldPropsAnimated && oldPropsAnimated.detach();
-    }, []);
-    Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => () => {
-      mounted.current = false;
-      propsAnimated.current && propsAnimated.current.detach();
-    }, []);
-    Object(react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"])(ref, () => animatedApi(node, mounted, forceUpdate));
-    attachProps(props);
-
-    const _getValue = propsAnimated.current.getValue(),
-          scrollTop = _getValue.scrollTop,
-          scrollLeft = _getValue.scrollLeft,
-          animatedProps = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_getValue, ["scrollTop", "scrollLeft"]); // Functions cannot have refs, see:
-    // See: https://github.com/react-spring/react-spring/issues/569
-
-
-    const refFn = isFunctionComponent(Component) ? undefined : childRef => node.current = handleRef(childRef, ref);
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, animatedProps, {
-      ref: refFn
-    }));
-  });
-  return AnimatedComponent;
-};
-
-let active = false;
-const controllers = new Set();
-
-const update = () => {
-  if (!active) return false;
-  let time = now();
-
-  for (let controller of controllers) {
-    let isActive = false;
-
-    for (let configIdx = 0; configIdx < controller.configs.length; configIdx++) {
-      let config = controller.configs[configIdx];
-      let endOfAnimation, lastTime;
-
-      for (let valIdx = 0; valIdx < config.animatedValues.length; valIdx++) {
-        let animation = config.animatedValues[valIdx]; // If an animation is done, skip, until all of them conclude
-
-        if (animation.done) continue;
-        let from = config.fromValues[valIdx];
-        let to = config.toValues[valIdx];
-        let position = animation.lastPosition;
-        let isAnimated = to instanceof Animated;
-        let velocity = Array.isArray(config.initialVelocity) ? config.initialVelocity[valIdx] : config.initialVelocity;
-        if (isAnimated) to = to.getValue(); // Conclude animation if it's either immediate, or from-values match end-state
-
-        if (config.immediate) {
-          animation.setValue(to);
-          animation.done = true;
-          continue;
-        } // Break animation when string values are involved
-
-
-        if (typeof from === 'string' || typeof to === 'string') {
-          animation.setValue(to);
-          animation.done = true;
-          continue;
-        }
-
-        if (config.duration !== void 0) {
-          /** Duration easing */
-          position = from + config.easing((time - animation.startTime) / config.duration) * (to - from);
-          endOfAnimation = time >= animation.startTime + config.duration;
-        } else if (config.decay) {
-          /** Decay easing */
-          position = from + velocity / (1 - 0.998) * (1 - Math.exp(-(1 - 0.998) * (time - animation.startTime)));
-          endOfAnimation = Math.abs(animation.lastPosition - position) < 0.1;
-          if (endOfAnimation) to = position;
-        } else {
-          /** Spring easing */
-          lastTime = animation.lastTime !== void 0 ? animation.lastTime : time;
-          velocity = animation.lastVelocity !== void 0 ? animation.lastVelocity : config.initialVelocity; // If we lost a lot of frames just jump to the end.
-
-          if (time > lastTime + 64) lastTime = time; // http://gafferongames.com/game-physics/fix-your-timestep/
-
-          let numSteps = Math.floor(time - lastTime);
-
-          for (let i = 0; i < numSteps; ++i) {
-            let force = -config.tension * (position - to);
-            let damping = -config.friction * velocity;
-            let acceleration = (force + damping) / config.mass;
-            velocity = velocity + acceleration * 1 / 1000;
-            position = position + velocity * 1 / 1000;
-          } // Conditions for stopping the spring animation
-
-
-          let isOvershooting = config.clamp && config.tension !== 0 ? from < to ? position > to : position < to : false;
-          let isVelocity = Math.abs(velocity) <= config.precision;
-          let isDisplacement = config.tension !== 0 ? Math.abs(to - position) <= config.precision : true;
-          endOfAnimation = isOvershooting || isVelocity && isDisplacement;
-          animation.lastVelocity = velocity;
-          animation.lastTime = time;
-        } // Trails aren't done until their parents conclude
-
-
-        if (isAnimated && !config.toValues[valIdx].done) endOfAnimation = false;
-
-        if (endOfAnimation) {
-          // Ensure that we end up with a round value
-          if (animation.value !== to) position = to;
-          animation.done = true;
-        } else isActive = true;
-
-        animation.setValue(position);
-        animation.lastPosition = position;
-      } // Keep track of updated values only when necessary
-
-
-      if (controller.props.onFrame) controller.values[config.name] = config.interpolation.getValue();
-    } // Update callbacks in the end of the frame
-
-
-    if (controller.props.onFrame) controller.props.onFrame(controller.values); // Either call onEnd or next frame
-
-    if (!isActive) {
-      controllers.delete(controller);
-      controller.stop(true);
-    }
-  } // Loop over as long as there are controllers ...
-
-
-  if (controllers.size) {
-    if (manualFrameloop) manualFrameloop();else requestFrame(update);
-  } else {
-    active = false;
-  }
-
-  return active;
-};
-
-const start = controller => {
-  if (!controllers.has(controller)) controllers.add(controller);
-
-  if (!active) {
-    active = true;
-    if (manualFrameloop) requestFrame(manualFrameloop);else requestFrame(update);
-  }
-};
-
-const stop = controller => {
-  if (controllers.has(controller)) controllers.delete(controller);
-};
-
-function createInterpolator(range, output, extrapolate) {
-  if (typeof range === 'function') {
-    return range;
-  }
-
-  if (Array.isArray(range)) {
-    return createInterpolator({
-      range,
-      output: output,
-      extrapolate
-    });
-  }
-
-  if (interpolation && typeof range.output[0] === 'string') {
-    return interpolation(range);
-  }
-
-  const config = range;
-  const outputRange = config.output;
-  const inputRange = config.range || [0, 1];
-  const extrapolateLeft = config.extrapolateLeft || config.extrapolate || 'extend';
-  const extrapolateRight = config.extrapolateRight || config.extrapolate || 'extend';
-
-  const easing = config.easing || (t => t);
-
-  return input => {
-    const range = findRange(input, inputRange);
-    return interpolate(input, inputRange[range], inputRange[range + 1], outputRange[range], outputRange[range + 1], easing, extrapolateLeft, extrapolateRight, config.map);
-  };
-}
-
-function interpolate(input, inputMin, inputMax, outputMin, outputMax, easing, extrapolateLeft, extrapolateRight, map) {
-  let result = map ? map(input) : input; // Extrapolate
-
-  if (result < inputMin) {
-    if (extrapolateLeft === 'identity') return result;else if (extrapolateLeft === 'clamp') result = inputMin;
-  }
-
-  if (result > inputMax) {
-    if (extrapolateRight === 'identity') return result;else if (extrapolateRight === 'clamp') result = inputMax;
-  }
-
-  if (outputMin === outputMax) return outputMin;
-  if (inputMin === inputMax) return input <= inputMin ? outputMin : outputMax; // Input Range
-
-  if (inputMin === -Infinity) result = -result;else if (inputMax === Infinity) result = result - inputMin;else result = (result - inputMin) / (inputMax - inputMin); // Easing
-
-  result = easing(result); // Output Range
-
-  if (outputMin === -Infinity) result = -result;else if (outputMax === Infinity) result = result + outputMin;else result = result * (outputMax - outputMin) + outputMin;
-  return result;
-}
-
-function findRange(input, inputRange) {
-  for (var i = 1; i < inputRange.length - 1; ++i) if (inputRange[i] >= input) break;
-
-  return i - 1;
-}
-
-class AnimatedInterpolation extends AnimatedArray {
-  constructor(parents, range, output, extrapolate) {
-    super();
-    this.calc = void 0;
-    this.payload = parents instanceof AnimatedArray && !(parents instanceof AnimatedInterpolation) ? parents.getPayload() : Array.isArray(parents) ? parents : [parents];
-    this.calc = createInterpolator(range, output, extrapolate);
-  }
-
-  getValue() {
-    return this.calc(...this.payload.map(value => value.getValue()));
-  }
-
-  updateConfig(range, output, extrapolate) {
-    this.calc = createInterpolator(range, output, extrapolate);
-  }
-
-  interpolate(range, output, extrapolate) {
-    return new AnimatedInterpolation(this, range, output, extrapolate);
-  }
-
-}
-
-const interpolate$1 = (parents, range, output) => parents && new AnimatedInterpolation(parents, range, output);
-
-const config = {
-  default: {
-    tension: 170,
-    friction: 26
-  },
-  gentle: {
-    tension: 120,
-    friction: 14
-  },
-  wobbly: {
-    tension: 180,
-    friction: 12
-  },
-  stiff: {
-    tension: 210,
-    friction: 20
-  },
-  slow: {
-    tension: 280,
-    friction: 60
-  },
-  molasses: {
-    tension: 280,
-    friction: 120
-  }
-};
-
-/** API
- *  useChain(references, timeSteps, timeFrame)
- */
-
-function useChain(refs, timeSteps, timeFrame) {
-  if (timeFrame === void 0) {
-    timeFrame = 1000;
-  }
-
-  const previous = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])();
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => {
-    if (is.equ(refs, previous.current)) refs.forEach((_ref) => {
-      let current = _ref.current;
-      return current && current.start();
-    });else if (timeSteps) {
-      refs.forEach((_ref2, index) => {
-        let current = _ref2.current;
-
-        if (current) {
-          const ctrls = current.controllers;
-
-          if (ctrls.length) {
-            const t = timeFrame * timeSteps[index];
-            ctrls.forEach(ctrl => {
-              ctrl.queue = ctrl.queue.map(e => Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, e, {
-                delay: e.delay + t
-              }));
-              ctrl.start();
-            });
-          }
-        }
-      });
-    } else refs.reduce((q, _ref3, rI) => {
-      let current = _ref3.current;
-      return q = q.then(() => current.start());
-    }, Promise.resolve());
-    previous.current = refs;
-  });
-}
-
-/**
- * Animated works by building a directed acyclic graph of dependencies
- * transparently when you render your Animated components.
- *
- *               new Animated.Value(0)
- *     .interpolate()        .interpolate()    new Animated.Value(1)
- *         opacity               translateY      scale
- *          style                         transform
- *         View#234                         style
- *                                         View#123
- *
- * A) Top Down phase
- * When an AnimatedValue is updated, we recursively go down through this
- * graph in order to find leaf nodes: the views that we flag as needing
- * an update.
- *
- * B) Bottom Up phase
- * When a view is flagged as needing an update, we recursively go back up
- * in order to build the new value that it needs. The reason why we need
- * this two-phases process is to deal with composite props such as
- * transform which can receive values from multiple parents.
- */
-function addAnimatedStyles(node, styles) {
-  if ('update' in node) {
-    styles.add(node);
-  } else {
-    node.getChildren().forEach(child => addAnimatedStyles(child, styles));
-  }
-}
-
-class AnimatedValue extends Animated {
-  constructor(_value) {
-    var _this;
-
-    super();
-    _this = this;
-    this.animatedStyles = new Set();
-    this.value = void 0;
-    this.startPosition = void 0;
-    this.lastPosition = void 0;
-    this.lastVelocity = void 0;
-    this.startTime = void 0;
-    this.lastTime = void 0;
-    this.done = false;
-
-    this.setValue = function (value, flush) {
-      if (flush === void 0) {
-        flush = true;
-      }
-
-      _this.value = value;
-      if (flush) _this.flush();
-    };
-
-    this.value = _value;
-    this.startPosition = _value;
-    this.lastPosition = _value;
-  }
-
-  flush() {
-    if (this.animatedStyles.size === 0) {
-      addAnimatedStyles(this, this.animatedStyles);
-    }
-
-    this.animatedStyles.forEach(animatedStyle => animatedStyle.update());
-  }
-
-  clearStyles() {
-    this.animatedStyles.clear();
-  }
-
-  getValue() {
-    return this.value;
-  }
-
-  interpolate(range, output, extrapolate) {
-    return new AnimatedInterpolation(this, range, output, extrapolate);
-  }
-
-}
-
-class AnimatedValueArray extends AnimatedArray {
-  constructor(values) {
-    super();
-    this.payload = values.map(n => new AnimatedValue(n));
-  }
-
-  setValue(value, flush) {
-    if (flush === void 0) {
-      flush = true;
-    }
-
-    if (Array.isArray(value)) {
-      if (value.length === this.payload.length) {
-        value.forEach((v, i) => this.payload[i].setValue(v, flush));
-      }
-    } else {
-      this.payload.forEach(p => p.setValue(value, flush));
-    }
-  }
-
-  getValue() {
-    return this.payload.map(v => v.getValue());
-  }
-
-  interpolate(range, output) {
-    return new AnimatedInterpolation(this, range, output);
-  }
-
-}
-
-let G = 0;
-
-class Controller {
-  constructor() {
-    this.id = void 0;
-    this.idle = true;
-    this.hasChanged = false;
-    this.guid = 0;
-    this.local = 0;
-    this.props = {};
-    this.merged = {};
-    this.animations = {};
-    this.interpolations = {};
-    this.values = {};
-    this.configs = [];
-    this.listeners = [];
-    this.queue = [];
-    this.localQueue = void 0;
-
-    this.getValues = () => this.interpolations;
-
-    this.id = G++;
-  }
-  /** update(props)
-   *  This function filters input props and creates an array of tasks which are executed in .start()
-   *  Each task is allowed to carry a delay, which means it can execute asnychroneously */
-
-
-  update(args) {
-    //this._id = n + this.id
-    if (!args) return this; // Extract delay and the to-prop from props
-
-    const _ref = interpolateTo(args),
-          _ref$delay = _ref.delay,
-          delay = _ref$delay === void 0 ? 0 : _ref$delay,
-          to = _ref.to,
-          props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["delay", "to"]);
-
-    if (is.arr(to) || is.fun(to)) {
-      // If config is either a function or an array queue it up as is
-      this.queue.push(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-        delay,
-        to
-      }));
-    } else if (to) {
-      // Otherwise go through each key since it could be delayed individually
-      let ops = {};
-      Object.entries(to).forEach((_ref2) => {
-        let k = _ref2[0],
-            v = _ref2[1];
-
-        // Fetch delay and create an entry, consisting of the to-props, the delay, and basic props
-        const entry = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-          to: {
-            [k]: v
-          },
-          delay: callProp(delay, k)
-        }, props);
-
-        const previous = ops[entry.delay] && ops[entry.delay].to;
-        ops[entry.delay] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, ops[entry.delay], entry, {
-          to: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, previous, entry.to)
-        });
-      });
-      this.queue = Object.values(ops);
-    } // Sort queue, so that async calls go last
-
-
-    this.queue = this.queue.sort((a, b) => a.delay - b.delay); // Diff the reduced props immediately (they'll contain the from-prop and some config)
-
-    this.diff(props);
-    return this;
-  }
-  /** start(onEnd)
-   *  This function either executes a queue, if present, or starts the frameloop, which animates */
-
-
-  start(onEnd) {
-    // If a queue is present we must excecute it
-    if (this.queue.length) {
-      this.idle = false; // Updates can interrupt trailing queues, in that case we just merge values
-
-      if (this.localQueue) {
-        this.localQueue.forEach((_ref3) => {
-          let _ref3$from = _ref3.from,
-              from = _ref3$from === void 0 ? {} : _ref3$from,
-              _ref3$to = _ref3.to,
-              to = _ref3$to === void 0 ? {} : _ref3$to;
-          if (is.obj(from)) this.merged = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, from, this.merged);
-          if (is.obj(to)) this.merged = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.merged, to);
-        });
-      } // The guid helps us tracking frames, a new queue over an old one means an override
-      // We discard async calls in that caseÍ
-
-
-      const local = this.local = ++this.guid;
-      const queue = this.localQueue = this.queue;
-      this.queue = []; // Go through each entry and execute it
-
-      queue.forEach((_ref4, index) => {
-        let delay = _ref4.delay,
-            props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref4, ["delay"]);
-
-        const cb = finished => {
-          if (index === queue.length - 1 && local === this.guid && finished) {
-            this.idle = true;
-            if (this.props.onRest) this.props.onRest(this.merged);
-          }
-
-          if (onEnd) onEnd();
-        }; // Entries can be delayed, ansyc or immediate
-
-
-        let async = is.arr(props.to) || is.fun(props.to);
-
-        if (delay) {
-          setTimeout(() => {
-            if (local === this.guid) {
-              if (async) this.runAsync(props, cb);else this.diff(props).start(cb);
-            }
-          }, delay);
-        } else if (async) this.runAsync(props, cb);else this.diff(props).start(cb);
-      });
-    } // Otherwise we kick of the frameloop
-    else {
-        if (is.fun(onEnd)) this.listeners.push(onEnd);
-        if (this.props.onStart) this.props.onStart();
-        start(this);
-      }
-
-    return this;
-  }
-
-  stop(finished) {
-    this.listeners.forEach(onEnd => onEnd(finished));
-    this.listeners = [];
-    return this;
-  }
-  /** Pause sets onEnd listeners free, but also removes the controller from the frameloop */
-
-
-  pause(finished) {
-    this.stop(true);
-    if (finished) stop(this);
-    return this;
-  }
-
-  runAsync(_ref5, onEnd) {
-    var _this = this;
-
-    let delay = _ref5.delay,
-        props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref5, ["delay"]);
-
-    const local = this.local; // If "to" is either a function or an array it will be processed async, therefor "to" should be empty right now
-    // If the view relies on certain values "from" has to be present
-
-    let queue = Promise.resolve(undefined);
-
-    if (is.arr(props.to)) {
-      for (let i = 0; i < props.to.length; i++) {
-        const index = i;
-
-        const fresh = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, interpolateTo(props.to[index]));
-
-        if (is.arr(fresh.config)) fresh.config = fresh.config[index];
-        queue = queue.then(() => {
-          //this.stop()
-          if (local === this.guid) return new Promise(r => this.diff(fresh).start(r));
-        });
-      }
-    } else if (is.fun(props.to)) {
-      let index = 0;
-      let last;
-      queue = queue.then(() => props.to( // next(props)
-      p => {
-        const fresh = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, interpolateTo(p));
-
-        if (is.arr(fresh.config)) fresh.config = fresh.config[index];
-        index++; //this.stop()
-
-        if (local === this.guid) return last = new Promise(r => this.diff(fresh).start(r));
-        return;
-      }, // cancel()
-      function (finished) {
-        if (finished === void 0) {
-          finished = true;
-        }
-
-        return _this.stop(finished);
-      }).then(() => last));
-    }
-
-    queue.then(onEnd);
-  }
-
-  diff(props) {
-    this.props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, props);
-    let _this$props = this.props,
-        _this$props$from = _this$props.from,
-        from = _this$props$from === void 0 ? {} : _this$props$from,
-        _this$props$to = _this$props.to,
-        to = _this$props$to === void 0 ? {} : _this$props$to,
-        _this$props$config = _this$props.config,
-        config = _this$props$config === void 0 ? {} : _this$props$config,
-        reverse = _this$props.reverse,
-        attach = _this$props.attach,
-        reset = _this$props.reset,
-        immediate = _this$props.immediate; // Reverse values when requested
-
-    if (reverse) {
-      var _ref6 = [to, from];
-      from = _ref6[0];
-      to = _ref6[1];
-    } // This will collect all props that were ever set, reset merged props when necessary
-
-
-    this.merged = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, from, this.merged, to);
-    this.hasChanged = false; // Attachment handling, trailed springs can "attach" themselves to a previous spring
-
-    let target = attach && attach(this); // Reduces input { name: value } pairs into animated values
-
-    this.animations = Object.entries(this.merged).reduce((acc, _ref7) => {
-      let name = _ref7[0],
-          value = _ref7[1];
-      // Issue cached entries, except on reset
-      let entry = acc[name] || {}; // Figure out what the value is supposed to be
-
-      const isNumber = is.num(value);
-      const isString = is.str(value) && !value.startsWith('#') && !/\d/.test(value) && !colorNames[value];
-      const isArray = is.arr(value);
-      const isInterpolation = !isNumber && !isArray && !isString;
-      let fromValue = !is.und(from[name]) ? from[name] : value;
-      let toValue = isNumber || isArray ? value : isString ? value : 1;
-      let toConfig = callProp(config, name);
-      if (target) toValue = target.animations[name].parent;
-      let parent = entry.parent,
-          interpolation$$1 = entry.interpolation,
-          toValues = toArray(target ? toValue.getPayload() : toValue),
-          animatedValues;
-      let newValue = value;
-      if (isInterpolation) newValue = interpolation({
-        range: [0, 1],
-        output: [value, value]
-      })(1);
-      let currentValue = interpolation$$1 && interpolation$$1.getValue(); // Change detection flags
-
-      const isFirst = is.und(parent);
-      const isActive = !isFirst && entry.animatedValues.some(v => !v.done);
-      const currentValueDiffersFromGoal = !is.equ(newValue, currentValue);
-      const hasNewGoal = !is.equ(newValue, entry.previous);
-      const hasNewConfig = !is.equ(toConfig, entry.config); // Change animation props when props indicate a new goal (new value differs from previous one)
-      // and current values differ from it. Config changes trigger a new update as well (though probably shouldn't?)
-
-      if (reset || hasNewGoal && currentValueDiffersFromGoal || hasNewConfig) {
-        // Convert regular values into animated values, ALWAYS re-use if possible
-        if (isNumber || isString) parent = interpolation$$1 = entry.parent || new AnimatedValue(fromValue);else if (isArray) parent = interpolation$$1 = entry.parent || new AnimatedValueArray(fromValue);else if (isInterpolation) {
-          let prev = entry.interpolation && entry.interpolation.calc(entry.parent.value);
-          prev = prev !== void 0 && !reset ? prev : fromValue;
-
-          if (entry.parent) {
-            parent = entry.parent;
-            parent.setValue(0, false);
-          } else parent = new AnimatedValue(0);
-
-          const range = {
-            output: [prev, value]
-          };
-
-          if (entry.interpolation) {
-            interpolation$$1 = entry.interpolation;
-            entry.interpolation.updateConfig(range);
-          } else interpolation$$1 = parent.interpolate(range);
-        }
-        toValues = toArray(target ? toValue.getPayload() : toValue);
-        animatedValues = toArray(parent.getPayload());
-        if (reset && !isInterpolation) parent.setValue(fromValue, false);
-        this.hasChanged = true; // Reset animated values
-
-        animatedValues.forEach(value => {
-          value.startPosition = value.value;
-          value.lastPosition = value.value;
-          value.lastVelocity = isActive ? value.lastVelocity : undefined;
-          value.lastTime = isActive ? value.lastTime : undefined;
-          value.startTime = now();
-          value.done = false;
-          value.animatedStyles.clear();
-        }); // Set immediate values
-
-        if (callProp(immediate, name)) {
-          parent.setValue(isInterpolation ? toValue : value, false);
-        }
-
-        return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, acc, {
-          [name]: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, entry, {
-            name,
-            parent,
-            interpolation: interpolation$$1,
-            animatedValues,
-            toValues,
-            previous: newValue,
-            config: toConfig,
-            fromValues: toArray(parent.getValue()),
-            immediate: callProp(immediate, name),
-            initialVelocity: withDefault(toConfig.velocity, 0),
-            clamp: withDefault(toConfig.clamp, false),
-            precision: withDefault(toConfig.precision, 0.01),
-            tension: withDefault(toConfig.tension, 170),
-            friction: withDefault(toConfig.friction, 26),
-            mass: withDefault(toConfig.mass, 1),
-            duration: toConfig.duration,
-            easing: withDefault(toConfig.easing, t => t),
-            decay: toConfig.decay
-          })
-        });
-      } else {
-        if (!currentValueDiffersFromGoal) {
-          // So ... the current target value (newValue) appears to be different from the previous value,
-          // which normally constitutes an update, but the actual value (currentValue) matches the target!
-          // In order to resolve this without causing an animation update we silently flag the animation as done,
-          // which it technically is. Interpolations also needs a config update with their target set to 1.
-          if (isInterpolation) {
-            parent.setValue(1, false);
-            interpolation$$1.updateConfig({
-              output: [newValue, newValue]
-            });
-          }
-
-          parent.done = true;
-          this.hasChanged = true;
-          return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, acc, {
-            [name]: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, acc[name], {
-              previous: newValue
-            })
-          });
-        }
-
-        return acc;
-      }
-    }, this.animations);
-
-    if (this.hasChanged) {
-      // Make animations available to frameloop
-      this.configs = Object.values(this.animations);
-      this.values = {};
-      this.interpolations = {};
-
-      for (let key in this.animations) {
-        this.interpolations[key] = this.animations[key].interpolation;
-        this.values[key] = this.animations[key].interpolation.getValue();
-      }
-    }
-
-    return this;
-  }
-
-  destroy() {
-    this.stop();
-    this.props = {};
-    this.merged = {};
-    this.animations = {};
-    this.interpolations = {};
-    this.values = {};
-    this.configs = [];
-    this.local = 0;
-  }
-
-}
-
-/** API
- * const props = useSprings(number, [{ ... }, { ... }, ...])
- * const [props, set] = useSprings(number, (i, controller) => ({ ... }))
- */
-
-const useSprings = (length, props) => {
-  const mounted = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(false);
-  const ctrl = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])();
-  const isFn = is.fun(props); // The controller maintains the animation values, starts and stops animations
-
-  const _useMemo = Object(react__WEBPACK_IMPORTED_MODULE_2__["useMemo"])(() => {
-    // Remove old controllers
-    if (ctrl.current) {
-      ctrl.current.map(c => c.destroy());
-      ctrl.current = undefined;
-    }
-
-    let ref;
-    return [new Array(length).fill().map((_, i) => {
-      const ctrl = new Controller();
-      const newProps = isFn ? callProp(props, i, ctrl) : props[i];
-      if (i === 0) ref = newProps.ref;
-      ctrl.update(newProps);
-      if (!ref) ctrl.start();
-      return ctrl;
-    }), ref];
-  }, [length]),
-        controllers = _useMemo[0],
-        ref = _useMemo[1];
-
-  ctrl.current = controllers; // The hooks reference api gets defined here ...
-
-  const api = Object(react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"])(ref, () => ({
-    start: () => Promise.all(ctrl.current.map(c => new Promise(r => c.start(r)))),
-    stop: finished => ctrl.current.forEach(c => c.stop(finished)),
-
-    get controllers() {
-      return ctrl.current;
-    }
-
-  })); // This function updates the controllers
-
-  const updateCtrl = Object(react__WEBPACK_IMPORTED_MODULE_2__["useMemo"])(() => updateProps => ctrl.current.map((c, i) => {
-    c.update(isFn ? callProp(updateProps, i, c) : updateProps[i]);
-    if (!ref) c.start();
-  }), [length]); // Update controller if props aren't functional
-
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => {
-    if (mounted.current) {
-      if (!isFn) updateCtrl(props);
-    } else if (!ref) ctrl.current.forEach(c => c.start());
-  }); // Update mounted flag and destroy controller on unmount
-
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => (mounted.current = true, () => ctrl.current.forEach(c => c.destroy())), []); // Return animated props, or, anim-props + the update-setter above
-
-  const propValues = ctrl.current.map(c => c.getValues());
-  return isFn ? [propValues, updateCtrl, finished => ctrl.current.forEach(c => c.pause(finished))] : propValues;
-};
-
-/** API
- * const props = useSpring({ ... })
- * const [props, set] = useSpring(() => ({ ... }))
- */
-
-const useSpring = props => {
-  const isFn = is.fun(props);
-
-  const _useSprings = useSprings(1, isFn ? props : [props]),
-        result = _useSprings[0],
-        set = _useSprings[1],
-        pause = _useSprings[2];
-
-  return isFn ? [result[0], set, pause] : result;
-};
-
-/** API
- * const trails = useTrail(number, { ... })
- * const [trails, set] = useTrail(number, () => ({ ... }))
- */
-
-const useTrail = (length, props) => {
-  const mounted = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(false);
-  const isFn = is.fun(props);
-  const updateProps = callProp(props);
-  const instances = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])();
-
-  const _useSprings = useSprings(length, (i, ctrl) => {
-    if (i === 0) instances.current = [];
-    instances.current.push(ctrl);
-    return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, updateProps, {
-      config: callProp(updateProps.config, i),
-      attach: i > 0 && (() => instances.current[i - 1])
-    });
-  }),
-        result = _useSprings[0],
-        set = _useSprings[1],
-        pause = _useSprings[2]; // Set up function to update controller
-
-
-  const updateCtrl = Object(react__WEBPACK_IMPORTED_MODULE_2__["useMemo"])(() => props => set((i, ctrl) => {
-    const last = props.reverse ? i === 0 : length - 1 === i;
-    const attachIdx = props.reverse ? i + 1 : i - 1;
-    const attachController = instances.current[attachIdx];
-    return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-      config: callProp(props.config || updateProps.config, i),
-      attach: attachController && (() => attachController)
-    });
-  }), [length, updateProps.reverse]); // Update controller if props aren't functional
-
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => void (mounted.current && !isFn && updateCtrl(props))); // Update mounted flag and destroy controller on unmount
-
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => void (mounted.current = true), []);
-  return isFn ? [result, updateCtrl, pause] : result;
-};
-
-/** API
- * const transitions = useTransition(items, itemKeys, { ... })
- * const [transitions, update] = useTransition(items, itemKeys, () => ({ ... }))
- */
-
-let guid = 0;
-const ENTER = 'enter';
-const LEAVE = 'leave';
-const UPDATE = 'update';
-
-const mapKeys = (items, keys) => (typeof keys === 'function' ? items.map(keys) : toArray(keys)).map(String);
-
-const get = props => {
-  let items = props.items,
-      _props$keys = props.keys,
-      keys = _props$keys === void 0 ? item => item : _props$keys,
-      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["items", "keys"]);
-
-  items = toArray(items !== void 0 ? items : null);
-  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    items,
-    keys: mapKeys(items, keys)
-  }, rest);
-};
-
-function useTransition(input, keyTransform, config) {
-  const props = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    items: input,
-    keys: keyTransform || (i => i)
-  }, config);
-
-  const _get = get(props),
-        _get$lazy = _get.lazy,
-        lazy = _get$lazy === void 0 ? false : _get$lazy,
-        _get$unique = _get.unique,
-        _get$reset = _get.reset,
-        reset = _get$reset === void 0 ? false : _get$reset,
-        enter = _get.enter,
-        leave = _get.leave,
-        update = _get.update,
-        onDestroyed = _get.onDestroyed,
-        keys = _get.keys,
-        items = _get.items,
-        onFrame = _get.onFrame,
-        _onRest = _get.onRest,
-        onStart = _get.onStart,
-        ref = _get.ref,
-        extra = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_get, ["lazy", "unique", "reset", "enter", "leave", "update", "onDestroyed", "keys", "items", "onFrame", "onRest", "onStart", "ref"]);
-
-  const forceUpdate = useForceUpdate();
-  const mounted = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(false);
-  const state = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])({
-    mounted: false,
-    first: true,
-    deleted: [],
-    current: {},
-    transitions: [],
-    prevProps: {},
-    paused: !!props.ref,
-    instances: !mounted.current && new Map(),
-    forceUpdate
-  });
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"])(props.ref, () => ({
-    start: () => Promise.all(Array.from(state.current.instances).map((_ref) => {
-      let c = _ref[1];
-      return new Promise(r => c.start(r));
-    })),
-    stop: finished => Array.from(state.current.instances).forEach((_ref2) => {
-      let c = _ref2[1];
-      return c.stop(finished);
-    }),
-
-    get controllers() {
-      return Array.from(state.current.instances).map((_ref3) => {
-        let c = _ref3[1];
-        return c;
-      });
-    }
-
-  })); // Update state
-
-  state.current = diffItems(state.current, props);
-
-  if (state.current.changed) {
-    // Update state
-    state.current.transitions.forEach(transition => {
-      const slot = transition.slot,
-            from = transition.from,
-            to = transition.to,
-            config = transition.config,
-            trail = transition.trail,
-            key = transition.key,
-            item = transition.item;
-      if (!state.current.instances.has(key)) state.current.instances.set(key, new Controller()); // update the map object
-
-      const ctrl = state.current.instances.get(key);
-
-      const newProps = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, extra, {
-        to,
-        from,
-        config,
-        ref,
-        onRest: values => {
-          if (state.current.mounted) {
-            if (transition.destroyed) {
-              // If no ref is given delete destroyed items immediately
-              if (!ref && !lazy) cleanUp(state, key);
-              if (onDestroyed) onDestroyed(item);
-            } // A transition comes to rest once all its springs conclude
-
-
-            const curInstances = Array.from(state.current.instances);
-            const active = curInstances.some((_ref4) => {
-              let c = _ref4[1];
-              return !c.idle;
-            });
-            if (!active && (ref || lazy) && state.current.deleted.length > 0) cleanUp(state);
-            if (_onRest) _onRest(item, slot, values);
-          }
-        },
-        onStart: onStart && (() => onStart(item, slot)),
-        onFrame: onFrame && (values => onFrame(item, slot, values)),
-        delay: trail,
-        reset: reset && slot === ENTER // Update controller
-
-      });
-
-      ctrl.update(newProps);
-      if (!state.current.paused) ctrl.start();
-    });
-  }
-
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(() => {
-    state.current.mounted = mounted.current = true;
-    return () => {
-      state.current.mounted = mounted.current = false;
-      Array.from(state.current.instances).map((_ref5) => {
-        let c = _ref5[1];
-        return c.destroy();
-      });
-      state.current.instances.clear();
-    };
-  }, []);
-  return state.current.transitions.map((_ref6) => {
-    let item = _ref6.item,
-        slot = _ref6.slot,
-        key = _ref6.key;
-    return {
-      item,
-      key,
-      state: slot,
-      props: state.current.instances.get(key).getValues()
-    };
-  });
-}
-
-function cleanUp(state, filterKey) {
-  const deleted = state.current.deleted;
-
-  for (let _ref7 of deleted) {
-    let key = _ref7.key;
-
-    const filter = t => t.key !== key;
-
-    if (is.und(filterKey) || filterKey === key) {
-      state.current.instances.delete(key);
-      state.current.transitions = state.current.transitions.filter(filter);
-      state.current.deleted = state.current.deleted.filter(filter);
-    }
-  }
-
-  state.current.forceUpdate();
-}
-
-function diffItems(_ref8, props) {
-  let first = _ref8.first,
-      prevProps = _ref8.prevProps,
-      state = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref8, ["first", "prevProps"]);
-
-  let _get2 = get(props),
-      items = _get2.items,
-      keys = _get2.keys,
-      initial = _get2.initial,
-      from = _get2.from,
-      enter = _get2.enter,
-      leave = _get2.leave,
-      update = _get2.update,
-      _get2$trail = _get2.trail,
-      trail = _get2$trail === void 0 ? 0 : _get2$trail,
-      unique = _get2.unique,
-      config = _get2.config,
-      _get2$order = _get2.order,
-      order = _get2$order === void 0 ? [ENTER, LEAVE, UPDATE] : _get2$order;
-
-  let _get3 = get(prevProps),
-      _keys = _get3.keys,
-      _items = _get3.items;
-
-  let current = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state.current);
-
-  let deleted = [...state.deleted]; // Compare next keys with current keys
-
-  let currentKeys = Object.keys(current);
-  let currentSet = new Set(currentKeys);
-  let nextSet = new Set(keys);
-  let added = keys.filter(item => !currentSet.has(item));
-  let removed = state.transitions.filter(item => !item.destroyed && !nextSet.has(item.originalKey)).map(i => i.originalKey);
-  let updated = keys.filter(item => currentSet.has(item));
-  let delay = -trail;
-
-  while (order.length) {
-    const changeType = order.shift();
-
-    switch (changeType) {
-      case ENTER:
-        {
-          added.forEach((key, index) => {
-            // In unique mode, remove fading out transitions if their key comes in again
-            if (unique && deleted.find(d => d.originalKey === key)) deleted = deleted.filter(t => t.originalKey !== key);
-            const keyIndex = keys.indexOf(key);
-            const item = items[keyIndex];
-            const slot = first && initial !== void 0 ? 'initial' : ENTER;
-            current[key] = {
-              slot,
-              originalKey: key,
-              key: unique ? String(key) : guid++,
-              item,
-              trail: delay = delay + trail,
-              config: callProp(config, item, slot),
-              from: callProp(first ? initial !== void 0 ? initial || {} : from : from, item),
-              to: callProp(enter, item)
-            };
-          });
-          break;
-        }
-
-      case LEAVE:
-        {
-          removed.forEach(key => {
-            const keyIndex = _keys.indexOf(key);
-
-            const item = _items[keyIndex];
-            const slot = LEAVE;
-            deleted.unshift(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, current[key], {
-              slot,
-              destroyed: true,
-              left: _keys[Math.max(0, keyIndex - 1)],
-              right: _keys[Math.min(_keys.length, keyIndex + 1)],
-              trail: delay = delay + trail,
-              config: callProp(config, item, slot),
-              to: callProp(leave, item)
-            }));
-            delete current[key];
-          });
-          break;
-        }
-
-      case UPDATE:
-        {
-          updated.forEach(key => {
-            const keyIndex = keys.indexOf(key);
-            const item = items[keyIndex];
-            const slot = UPDATE;
-            current[key] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, current[key], {
-              item,
-              slot,
-              trail: delay = delay + trail,
-              config: callProp(config, item, slot),
-              to: callProp(update, item)
-            });
-          });
-          break;
-        }
-    }
-  }
-
-  let out = keys.map(key => current[key]); // This tries to restore order for deleted items by finding their last known siblings
-  // only using the left sibling to keep order placement consistent for all deleted items
-
-  deleted.forEach((_ref9) => {
-    let left = _ref9.left,
-        right = _ref9.right,
-        item = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref9, ["left", "right"]);
-
-    let pos; // Was it the element on the left, if yes, move there ...
-
-    if ((pos = out.findIndex(t => t.originalKey === left)) !== -1) pos += 1; // And if nothing else helps, move it to the start ¯\_(ツ)_/¯
-
-    pos = Math.max(0, pos);
-    out = [...out.slice(0, pos), item, ...out.slice(pos)];
-  });
-  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
-    changed: added.length || removed.length || updated.length,
-    first: first && added.length === 0,
-    transitions: out,
-    current,
-    deleted,
-    prevProps: props
-  });
-}
-
-class AnimatedStyle extends AnimatedObject {
-  constructor(style) {
-    if (style === void 0) {
-      style = {};
-    }
-
-    super();
-
-    if (style.transform && !(style.transform instanceof Animated)) {
-      style = applyAnimatedValues.transform(style);
-    }
-
-    this.payload = style;
-  }
-
-}
-
-// http://www.w3.org/TR/css3-color/#svg-color
-const colors = {
-  transparent: 0x00000000,
-  aliceblue: 0xf0f8ffff,
-  antiquewhite: 0xfaebd7ff,
-  aqua: 0x00ffffff,
-  aquamarine: 0x7fffd4ff,
-  azure: 0xf0ffffff,
-  beige: 0xf5f5dcff,
-  bisque: 0xffe4c4ff,
-  black: 0x000000ff,
-  blanchedalmond: 0xffebcdff,
-  blue: 0x0000ffff,
-  blueviolet: 0x8a2be2ff,
-  brown: 0xa52a2aff,
-  burlywood: 0xdeb887ff,
-  burntsienna: 0xea7e5dff,
-  cadetblue: 0x5f9ea0ff,
-  chartreuse: 0x7fff00ff,
-  chocolate: 0xd2691eff,
-  coral: 0xff7f50ff,
-  cornflowerblue: 0x6495edff,
-  cornsilk: 0xfff8dcff,
-  crimson: 0xdc143cff,
-  cyan: 0x00ffffff,
-  darkblue: 0x00008bff,
-  darkcyan: 0x008b8bff,
-  darkgoldenrod: 0xb8860bff,
-  darkgray: 0xa9a9a9ff,
-  darkgreen: 0x006400ff,
-  darkgrey: 0xa9a9a9ff,
-  darkkhaki: 0xbdb76bff,
-  darkmagenta: 0x8b008bff,
-  darkolivegreen: 0x556b2fff,
-  darkorange: 0xff8c00ff,
-  darkorchid: 0x9932ccff,
-  darkred: 0x8b0000ff,
-  darksalmon: 0xe9967aff,
-  darkseagreen: 0x8fbc8fff,
-  darkslateblue: 0x483d8bff,
-  darkslategray: 0x2f4f4fff,
-  darkslategrey: 0x2f4f4fff,
-  darkturquoise: 0x00ced1ff,
-  darkviolet: 0x9400d3ff,
-  deeppink: 0xff1493ff,
-  deepskyblue: 0x00bfffff,
-  dimgray: 0x696969ff,
-  dimgrey: 0x696969ff,
-  dodgerblue: 0x1e90ffff,
-  firebrick: 0xb22222ff,
-  floralwhite: 0xfffaf0ff,
-  forestgreen: 0x228b22ff,
-  fuchsia: 0xff00ffff,
-  gainsboro: 0xdcdcdcff,
-  ghostwhite: 0xf8f8ffff,
-  gold: 0xffd700ff,
-  goldenrod: 0xdaa520ff,
-  gray: 0x808080ff,
-  green: 0x008000ff,
-  greenyellow: 0xadff2fff,
-  grey: 0x808080ff,
-  honeydew: 0xf0fff0ff,
-  hotpink: 0xff69b4ff,
-  indianred: 0xcd5c5cff,
-  indigo: 0x4b0082ff,
-  ivory: 0xfffff0ff,
-  khaki: 0xf0e68cff,
-  lavender: 0xe6e6faff,
-  lavenderblush: 0xfff0f5ff,
-  lawngreen: 0x7cfc00ff,
-  lemonchiffon: 0xfffacdff,
-  lightblue: 0xadd8e6ff,
-  lightcoral: 0xf08080ff,
-  lightcyan: 0xe0ffffff,
-  lightgoldenrodyellow: 0xfafad2ff,
-  lightgray: 0xd3d3d3ff,
-  lightgreen: 0x90ee90ff,
-  lightgrey: 0xd3d3d3ff,
-  lightpink: 0xffb6c1ff,
-  lightsalmon: 0xffa07aff,
-  lightseagreen: 0x20b2aaff,
-  lightskyblue: 0x87cefaff,
-  lightslategray: 0x778899ff,
-  lightslategrey: 0x778899ff,
-  lightsteelblue: 0xb0c4deff,
-  lightyellow: 0xffffe0ff,
-  lime: 0x00ff00ff,
-  limegreen: 0x32cd32ff,
-  linen: 0xfaf0e6ff,
-  magenta: 0xff00ffff,
-  maroon: 0x800000ff,
-  mediumaquamarine: 0x66cdaaff,
-  mediumblue: 0x0000cdff,
-  mediumorchid: 0xba55d3ff,
-  mediumpurple: 0x9370dbff,
-  mediumseagreen: 0x3cb371ff,
-  mediumslateblue: 0x7b68eeff,
-  mediumspringgreen: 0x00fa9aff,
-  mediumturquoise: 0x48d1ccff,
-  mediumvioletred: 0xc71585ff,
-  midnightblue: 0x191970ff,
-  mintcream: 0xf5fffaff,
-  mistyrose: 0xffe4e1ff,
-  moccasin: 0xffe4b5ff,
-  navajowhite: 0xffdeadff,
-  navy: 0x000080ff,
-  oldlace: 0xfdf5e6ff,
-  olive: 0x808000ff,
-  olivedrab: 0x6b8e23ff,
-  orange: 0xffa500ff,
-  orangered: 0xff4500ff,
-  orchid: 0xda70d6ff,
-  palegoldenrod: 0xeee8aaff,
-  palegreen: 0x98fb98ff,
-  paleturquoise: 0xafeeeeff,
-  palevioletred: 0xdb7093ff,
-  papayawhip: 0xffefd5ff,
-  peachpuff: 0xffdab9ff,
-  peru: 0xcd853fff,
-  pink: 0xffc0cbff,
-  plum: 0xdda0ddff,
-  powderblue: 0xb0e0e6ff,
-  purple: 0x800080ff,
-  rebeccapurple: 0x663399ff,
-  red: 0xff0000ff,
-  rosybrown: 0xbc8f8fff,
-  royalblue: 0x4169e1ff,
-  saddlebrown: 0x8b4513ff,
-  salmon: 0xfa8072ff,
-  sandybrown: 0xf4a460ff,
-  seagreen: 0x2e8b57ff,
-  seashell: 0xfff5eeff,
-  sienna: 0xa0522dff,
-  silver: 0xc0c0c0ff,
-  skyblue: 0x87ceebff,
-  slateblue: 0x6a5acdff,
-  slategray: 0x708090ff,
-  slategrey: 0x708090ff,
-  snow: 0xfffafaff,
-  springgreen: 0x00ff7fff,
-  steelblue: 0x4682b4ff,
-  tan: 0xd2b48cff,
-  teal: 0x008080ff,
-  thistle: 0xd8bfd8ff,
-  tomato: 0xff6347ff,
-  turquoise: 0x40e0d0ff,
-  violet: 0xee82eeff,
-  wheat: 0xf5deb3ff,
-  white: 0xffffffff,
-  whitesmoke: 0xf5f5f5ff,
-  yellow: 0xffff00ff,
-  yellowgreen: 0x9acd32ff
-};
-
-// const INTEGER = '[-+]?\\d+';
-const NUMBER = '[-+]?\\d*\\.?\\d+';
-const PERCENTAGE = NUMBER + '%';
-
-function call() {
-  for (var _len = arguments.length, parts = new Array(_len), _key = 0; _key < _len; _key++) {
-    parts[_key] = arguments[_key];
-  }
-
-  return '\\(\\s*(' + parts.join(')\\s*,\\s*(') + ')\\s*\\)';
-}
-
-const rgb = new RegExp('rgb' + call(NUMBER, NUMBER, NUMBER));
-const rgba = new RegExp('rgba' + call(NUMBER, NUMBER, NUMBER, NUMBER));
-const hsl = new RegExp('hsl' + call(NUMBER, PERCENTAGE, PERCENTAGE));
-const hsla = new RegExp('hsla' + call(NUMBER, PERCENTAGE, PERCENTAGE, NUMBER));
-const hex3 = /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/;
-const hex4 = /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/;
-const hex6 = /^#([0-9a-fA-F]{6})$/;
-const hex8 = /^#([0-9a-fA-F]{8})$/;
-
-/*
-https://github.com/react-community/normalize-css-color
-
-BSD 3-Clause License
-
-Copyright (c) 2016, React Community
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
-
-* Neither the name of the copyright holder nor the names of its
-  contributors may be used to endorse or promote products derived from
-  this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-function normalizeColor(color) {
-  let match;
-
-  if (typeof color === 'number') {
-    return color >>> 0 === color && color >= 0 && color <= 0xffffffff ? color : null;
-  } // Ordered based on occurrences on Facebook codebase
-
-
-  if (match = hex6.exec(color)) return parseInt(match[1] + 'ff', 16) >>> 0;
-  if (colors.hasOwnProperty(color)) return colors[color];
-
-  if (match = rgb.exec(color)) {
-    return (parse255(match[1]) << 24 | // r
-    parse255(match[2]) << 16 | // g
-    parse255(match[3]) << 8 | // b
-    0x000000ff) >>> // a
-    0;
-  }
-
-  if (match = rgba.exec(color)) {
-    return (parse255(match[1]) << 24 | // r
-    parse255(match[2]) << 16 | // g
-    parse255(match[3]) << 8 | // b
-    parse1(match[4])) >>> // a
-    0;
-  }
-
-  if (match = hex3.exec(color)) {
-    return parseInt(match[1] + match[1] + // r
-    match[2] + match[2] + // g
-    match[3] + match[3] + // b
-    'ff', // a
-    16) >>> 0;
-  } // https://drafts.csswg.org/css-color-4/#hex-notation
-
-
-  if (match = hex8.exec(color)) return parseInt(match[1], 16) >>> 0;
-
-  if (match = hex4.exec(color)) {
-    return parseInt(match[1] + match[1] + // r
-    match[2] + match[2] + // g
-    match[3] + match[3] + // b
-    match[4] + match[4], // a
-    16) >>> 0;
-  }
-
-  if (match = hsl.exec(color)) {
-    return (hslToRgb(parse360(match[1]), // h
-    parsePercentage(match[2]), // s
-    parsePercentage(match[3]) // l
-    ) | 0x000000ff) >>> // a
-    0;
-  }
-
-  if (match = hsla.exec(color)) {
-    return (hslToRgb(parse360(match[1]), // h
-    parsePercentage(match[2]), // s
-    parsePercentage(match[3]) // l
-    ) | parse1(match[4])) >>> // a
-    0;
-  }
-
-  return null;
-}
-
-function hue2rgb(p, q, t) {
-  if (t < 0) t += 1;
-  if (t > 1) t -= 1;
-  if (t < 1 / 6) return p + (q - p) * 6 * t;
-  if (t < 1 / 2) return q;
-  if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-  return p;
-}
-
-function hslToRgb(h, s, l) {
-  const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-  const p = 2 * l - q;
-  const r = hue2rgb(p, q, h + 1 / 3);
-  const g = hue2rgb(p, q, h);
-  const b = hue2rgb(p, q, h - 1 / 3);
-  return Math.round(r * 255) << 24 | Math.round(g * 255) << 16 | Math.round(b * 255) << 8;
-}
-
-function parse255(str) {
-  const int = parseInt(str, 10);
-  if (int < 0) return 0;
-  if (int > 255) return 255;
-  return int;
-}
-
-function parse360(str) {
-  const int = parseFloat(str);
-  return (int % 360 + 360) % 360 / 360;
-}
-
-function parse1(str) {
-  const num = parseFloat(str);
-  if (num < 0) return 0;
-  if (num > 1) return 255;
-  return Math.round(num * 255);
-}
-
-function parsePercentage(str) {
-  // parseFloat conveniently ignores the final %
-  const int = parseFloat(str);
-  if (int < 0) return 0;
-  if (int > 100) return 1;
-  return int / 100;
-}
-
-function colorToRgba(input) {
-  let int32Color = normalizeColor(input);
-  if (int32Color === null) return input;
-  int32Color = int32Color || 0;
-  let r = (int32Color & 0xff000000) >>> 24;
-  let g = (int32Color & 0x00ff0000) >>> 16;
-  let b = (int32Color & 0x0000ff00) >>> 8;
-  let a = (int32Color & 0x000000ff) / 255;
-  return `rgba(${r}, ${g}, ${b}, ${a})`;
-} // Problem: https://github.com/animatedjs/animated/pull/102
-// Solution: https://stackoverflow.com/questions/638565/parsing-scientific-notation-sensibly/658662
-
-
-const stringShapeRegex = /[+\-]?(?:0|[1-9]\d*)(?:\.\d*)?(?:[eE][+\-]?\d+)?/g; // Covers rgb, rgba, hsl, hsla
-// Taken from https://gist.github.com/olmokramer/82ccce673f86db7cda5e
-
-const colorRegex = /(#(?:[0-9a-f]{2}){2,4}|(#[0-9a-f]{3})|(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\))/gi; // Covers color names (transparent, blue, etc.)
-
-const colorNamesRegex = new RegExp(`(${Object.keys(colors).join('|')})`, 'g');
-/**
- * Supports string shapes by extracting numbers so new values can be computed,
- * and recombines those values into new strings of the same shape.  Supports
- * things like:
- *
- *   rgba(123, 42, 99, 0.36)           // colors
- *   -45deg                            // values with units
- *   0 2px 2px 0px rgba(0, 0, 0, 0.12) // box shadows
- */
-
-const createStringInterpolator = config => {
-  // Replace colors with rgba
-  const outputRange = config.output.map(rangeValue => rangeValue.replace(colorRegex, colorToRgba)).map(rangeValue => rangeValue.replace(colorNamesRegex, colorToRgba));
-  const outputRanges = outputRange[0].match(stringShapeRegex).map(() => []);
-  outputRange.forEach(value => {
-    value.match(stringShapeRegex).forEach((number, i) => outputRanges[i].push(+number));
-  });
-  const interpolations = outputRange[0].match(stringShapeRegex).map((_value, i) => createInterpolator(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, config, {
-    output: outputRanges[i]
-  })));
-  return input => {
-    let i = 0;
-    return outputRange[0] // 'rgba(0, 100, 200, 0)'
-    // ->
-    // 'rgba(${interpolations[0](input)}, ${interpolations[1](input)}, ...'
-    .replace(stringShapeRegex, () => interpolations[i++](input)) // rgba requires that the r,g,b are integers.... so we want to round them, but we *dont* want to
-    // round the opacity (4th column).
-    .replace(/rgba\(([0-9\.-]+), ([0-9\.-]+), ([0-9\.-]+), ([0-9\.-]+)\)/gi, (_, p1, p2, p3, p4) => `rgba(${Math.round(p1)}, ${Math.round(p2)}, ${Math.round(p3)}, ${p4})`);
-  };
-};
-
-let isUnitlessNumber = {
-  animationIterationCount: true,
-  borderImageOutset: true,
-  borderImageSlice: true,
-  borderImageWidth: true,
-  boxFlex: true,
-  boxFlexGroup: true,
-  boxOrdinalGroup: true,
-  columnCount: true,
-  columns: true,
-  flex: true,
-  flexGrow: true,
-  flexPositive: true,
-  flexShrink: true,
-  flexNegative: true,
-  flexOrder: true,
-  gridRow: true,
-  gridRowEnd: true,
-  gridRowSpan: true,
-  gridRowStart: true,
-  gridColumn: true,
-  gridColumnEnd: true,
-  gridColumnSpan: true,
-  gridColumnStart: true,
-  fontWeight: true,
-  lineClamp: true,
-  lineHeight: true,
-  opacity: true,
-  order: true,
-  orphans: true,
-  tabSize: true,
-  widows: true,
-  zIndex: true,
-  zoom: true,
-  // SVG-related properties
-  fillOpacity: true,
-  floodOpacity: true,
-  stopOpacity: true,
-  strokeDasharray: true,
-  strokeDashoffset: true,
-  strokeMiterlimit: true,
-  strokeOpacity: true,
-  strokeWidth: true
-};
-
-const prefixKey = (prefix, key) => prefix + key.charAt(0).toUpperCase() + key.substring(1);
-
-const prefixes = ['Webkit', 'Ms', 'Moz', 'O'];
-isUnitlessNumber = Object.keys(isUnitlessNumber).reduce((acc, prop) => {
-  prefixes.forEach(prefix => acc[prefixKey(prefix, prop)] = acc[prop]);
-  return acc;
-}, isUnitlessNumber);
-
-function dangerousStyleValue(name, value, isCustomProperty) {
-  if (value == null || typeof value === 'boolean' || value === '') return '';
-  if (!isCustomProperty && typeof value === 'number' && value !== 0 && !(isUnitlessNumber.hasOwnProperty(name) && isUnitlessNumber[name])) return value + 'px'; // Presumes implicit 'px' suffix for unitless numbers
-
-  return ('' + value).trim();
-}
-
-const attributeCache = {};
-injectCreateAnimatedStyle(style => new AnimatedStyle(style));
-injectDefaultElement('div');
-injectStringInterpolator(createStringInterpolator);
-injectColorNames(colors);
-injectApplyAnimatedValues((instance, props) => {
-  if (instance.nodeType && instance.setAttribute !== undefined) {
-    const style = props.style,
-          children = props.children,
-          scrollTop = props.scrollTop,
-          scrollLeft = props.scrollLeft,
-          attributes = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["style", "children", "scrollTop", "scrollLeft"]);
-
-    const filter = instance.nodeName === 'filter' || instance.parentNode && instance.parentNode.nodeName === 'filter';
-    if (scrollTop !== void 0) instance.scrollTop = scrollTop;
-    if (scrollLeft !== void 0) instance.scrollLeft = scrollLeft; // Set textContent, if children is an animatable value
-
-    if (children !== void 0) instance.textContent = children; // Set styles ...
-
-    for (let styleName in style) {
-      if (!style.hasOwnProperty(styleName)) continue;
-      var isCustomProperty = styleName.indexOf('--') === 0;
-      var styleValue = dangerousStyleValue(styleName, style[styleName], isCustomProperty);
-      if (styleName === 'float') styleName = 'cssFloat';
-      if (isCustomProperty) instance.style.setProperty(styleName, styleValue);else instance.style[styleName] = styleValue;
-    } // Set attributes ...
-
-
-    for (let name in attributes) {
-      // Attributes are written in dash case
-      const dashCase = filter ? name : attributeCache[name] || (attributeCache[name] = name.replace(/([A-Z])/g, n => '-' + n.toLowerCase()));
-      if (typeof instance.getAttribute(dashCase) !== 'undefined') instance.setAttribute(dashCase, attributes[name]);
-    }
-
-    return;
-  } else return false;
-}, style => style);
-
-const domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr', // SVG
-'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
-// Extend animated with all the available THREE elements
-const apply = merge(createAnimatedComponent, false);
-const extendedAnimated = apply(domElements);
-
-
-
-
-/***/ }),
-
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_2adc2403d89adc16ead0 ***!
@@ -20624,10 +18439,10 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/services.js":
+/*!***************************!*\
+  !*** ./pages/services.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -20638,22 +18453,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_contact_ContactBanner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/contact/ContactBanner */ "./components/contact/ContactBanner.js");
-/* harmony import */ var _components_contact_ContactForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../components/contact/ContactForm */ "./components/contact/ContactForm.js");
-/* harmony import */ var _components_contact_ContactSocials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/contact/ContactSocials */ "./components/contact/ContactSocials.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_UI_NavbarComp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/UI/NavbarComp */ "./components/UI/NavbarComp.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_service_ServiceBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../components/service/ServiceBox */ "./components/service/ServiceBox.js");
+/* harmony import */ var _components_service_ServiceBanner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/service/ServiceBanner */ "./components/service/ServiceBanner.js");
+/* harmony import */ var _components_service_ServiceContent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/service/ServiceContent */ "./components/service/ServiceContent.js");
+/* harmony import */ var _components_UI_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/UI/Footer */ "./components/UI/Footer.js");
 
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\contact.js";
+    _jsxFileName = "C:\\Users\\Laka Ganth\\Documents\\NextJS\\sam\\pages\\services.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  line-height: 1.3;\n  margin: 0;\n  overflow-x: hidden;\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 100vw;\n  height: 100vh;\n  line-height: 1.3;\n  overflow-x: hidden;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -20669,20 +18486,22 @@ function _templateObject() {
 
 
 
-var contact = function contact() {
+
+
+var services = function services() {
   return __jsx("div", {
     className: "jsx-633493357",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 5
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("title", {
@@ -20690,17 +18509,17 @@ var contact = function contact() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 9
     }
-  }, "Sam's Auto| Contact"), __jsx("link", {
+  }, "Sam's Auto | Services"), __jsx("link", {
     href: "https://fonts.googleapis.com/css?family=Poppins|Quicksand|Racing+Sans+One&display=swap",
     rel: "stylesheet",
     className: "jsx-633493357",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -20710,56 +18529,85 @@ var contact = function contact() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 19,
       columnNumber: 9
     }
   })), __jsx(Container, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 7
     }
-  }, __jsx(_components_contact_ContactBanner__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
-    }
-  }), __jsx(_components_contact_ContactForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
-    }
-  }), __jsx(_components_contact_ContactSocials__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(_components_service_ServiceBanner__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22,
       columnNumber: 9
     }
+  }), __jsx(_components_service_ServiceContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }), __jsx(_components_UI_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 9
+    }
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
     id: "633493357",
     __self: _this
-  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXGNvbnRhY3QuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUJ5QixBQUdvQixTQUNDLFVBQ1ksc0JBQ3hCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXGNvbnRhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XHJcbmltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHNcIjtcclxuaW1wb3J0IENvbnRhY3RCYW5uZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvY29udGFjdC9Db250YWN0QmFubmVyXCI7XHJcbmltcG9ydCBDb250YWN0Rm9ybSBmcm9tIFwiLi8uLi9jb21wb25lbnRzL2NvbnRhY3QvQ29udGFjdEZvcm1cIjtcclxuaW1wb3J0IENvbnRhY3RTb2NpYWxzIGZyb20gXCIuLi9jb21wb25lbnRzL2NvbnRhY3QvQ29udGFjdFNvY2lhbHNcIjtcclxuXHJcbmNvbnN0IGNvbnRhY3QgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5TYW0ncyBBdXRvfCBDb250YWN0PC90aXRsZT5cclxuICAgICAgICA8bGlua1xyXG4gICAgICAgICAgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Qb3BwaW5zfFF1aWNrc2FuZHxSYWNpbmcrU2FucytPbmUmZGlzcGxheT1zd2FwXCJcclxuICAgICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxyXG4gICAgICAgIC8+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjBcIiAvPlxyXG4gICAgICA8L0hlYWQ+XHJcbiAgICAgIDxDb250YWluZXI+XHJcbiAgICAgICAgPENvbnRhY3RCYW5uZXIgLz5cclxuICAgICAgICA8Q29udGFjdEZvcm0gLz5cclxuICAgICAgICA8Q29udGFjdFNvY2lhbHMgLz5cclxuICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgICAgYm9keSB7XHJcbiAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBjb250YWN0O1xyXG5cclxuY29uc3QgQ29udGFpbmVyID0gc3R5bGVkLmRpdmBcclxuICB3aWR0aDogMTAwdnc7XHJcbiAgbGluZS1oZWlnaHQ6IDEuMztcclxuICBtYXJnaW46IDA7XHJcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG5gO1xyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\contact.js */"));
+  }, "body{margin:0;padding:0;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTGFrYSBHYW50aFxcRG9jdW1lbnRzXFxOZXh0SlNcXHNhbVxccGFnZXNcXHNlcnZpY2VzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXlCeUIsQUFHb0IsU0FDQyxVQUNZLHNCQUN4QiIsImZpbGUiOiJDOlxcVXNlcnNcXExha2EgR2FudGhcXERvY3VtZW50c1xcTmV4dEpTXFxzYW1cXHBhZ2VzXFxzZXJ2aWNlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHNcIjtcclxuaW1wb3J0IE5hdmJhckNvbXAgZnJvbSBcIi4uL2NvbXBvbmVudHMvVUkvTmF2YmFyQ29tcFwiO1xyXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XHJcbmltcG9ydCBTZXJ2aWNlQm94IGZyb20gXCIuLy4uL2NvbXBvbmVudHMvc2VydmljZS9TZXJ2aWNlQm94XCI7XHJcbmltcG9ydCBTZXJ2aWNlQmFubmVyIGZyb20gXCIuLi9jb21wb25lbnRzL3NlcnZpY2UvU2VydmljZUJhbm5lclwiO1xyXG5pbXBvcnQgU2VydmljZUNvbnRlbnQgZnJvbSBcIi4uL2NvbXBvbmVudHMvc2VydmljZS9TZXJ2aWNlQ29udGVudFwiO1xyXG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL1VJL0Zvb3RlclwiO1xyXG5cclxuY29uc3Qgc2VydmljZXMgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDx0aXRsZT5TYW0ncyBBdXRvIHwgU2VydmljZXM8L3RpdGxlPlxyXG4gICAgICAgIDxsaW5rXHJcbiAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVBvcHBpbnN8UXVpY2tzYW5kfFJhY2luZytTYW5zK09uZSZkaXNwbGF5PXN3YXBcIlxyXG4gICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXHJcbiAgICAgICAgLz5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiIC8+XHJcbiAgICAgIDwvSGVhZD5cclxuICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICA8U2VydmljZUJhbm5lciAvPlxyXG4gICAgICAgIDxTZXJ2aWNlQ29udGVudCAvPlxyXG4gICAgICAgIDxGb290ZXIgLz5cclxuICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgICAgYm9keSB7XHJcbiAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBzZXJ2aWNlcztcclxuXHJcbmNvbnN0IENvbnRhaW5lciA9IHN0eWxlZC5kaXZgXHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbiAgbGluZS1oZWlnaHQ6IDEuMztcclxuICBvdmVyZmxvdy14OiBoaWRkZW47XHJcbmA7XHJcblxyXG4vLyBjb25zdCBDb250YWluZXIgPSBzdHlsZWQuZGl2YFxyXG4vLyAgIHdpZHRoOiAxMDB2dztcclxuLy8gICBsaW5lLWhlaWdodDogMS4zO1xyXG4vLyAgIG1hcmdpbjogMDtcclxuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTUxNTE1O1xyXG4vLyAgIC8qIGhlaWdodDogMzAwdmg7ICovXHJcbi8vICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4vLyAgIHotaW5kZXg6IC0yMDtcclxuLy8gICBvdmVyZmxvdzogaGlkZGVuO1xyXG5cclxuLy8gYDtcclxuLy8gY29uc3QgQmFubmVyQkcgPSBzdHlsZWQuZGl2YFxyXG4vLyAgIHdpZHRoOiAxMDB2dztcclxuLy8gICBoZWlnaHQ6IDYwdmg7XHJcbi8vICAgYmFja2dyb3VuZDogdXJsKFwiL3N0YXRpYy9pbWFnZXMvc2VydmljZS9zZXJ2aWNlLWJhbm5lci5wbmdcIikgYm90dG9tIGNlbnRlclxyXG4vLyAgICAgbm8tcmVwZWF0O1xyXG4vLyAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbi8vICAgLmJhbm5lci10aXRsZSB7XHJcbi8vICAgICBoZWlnaHQ6IDYwJTtcclxuLy8gICAgIHdpZHRoOiAxMDAlO1xyXG4vLyAgICAgYmFja2dyb3VuZDogcmdiYSg2NywgNjcsIDY3LCAwLjQ0KTtcclxuXHJcbi8vICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDM1JSwgMCk7XHJcbi8vICAgfVxyXG4vLyAgIHAge1xyXG4vLyAgICAgZm9udC1mYW1pbHk6IFF1aWNrc2FuZDtcclxuLy8gICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuLy8gICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XHJcbi8vICAgICBmb250LXNpemU6IDEwMHB4O1xyXG4vLyAgICAgbGluZS1oZWlnaHQ6IDEyNXB4O1xyXG4vLyAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4vLyAgICAgbGV0dGVyLXNwYWNpbmc6IDAuNzI1ZW07XHJcbi8vICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDY1JSwgMCk7XHJcbi8vICAgICBjb2xvcjogI2ZmZmZmZjtcclxuLy8gICB9XHJcbi8vIGA7XHJcblxyXG4vLyBjb25zdCBTZXJ2aWNlR3JpZCA9IHN0eWxlZC5kaXZgXHJcbi8vICAgei1pbmRleDogMTA7XHJcbi8vICAgbWFyZ2luOiAxNXZoIDA7XHJcbi8vICAgZGlzcGxheTogZ3JpZDtcclxuLy8gICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgyLCAxZnIpO1xyXG4vLyAgIGdyaWQtZ2FwOiA5NXB4O1xyXG4vLyBgO1xyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\Laka Ganth\\\\Documents\\\\NextJS\\\\sam\\\\pages\\\\services.js */"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (contact);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject());
-
-/***/ }),
-
-/***/ "./public/static/images/contact/shopphone.png":
-/*!****************************************************!*\
-  !*** ./public/static/images/contact/shopphone.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/shopphone-8b91ae7f4f8710b0f664e8d1bbb561c7.png";
+/* harmony default export */ __webpack_exports__["default"] = (services);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject()); // const Container = styled.div`
+//   width: 100vw;
+//   line-height: 1.3;
+//   margin: 0;
+//   background-color: #151515;
+//   /* height: 300vh; */
+//   position: relative;
+//   z-index: -20;
+//   overflow: hidden;
+// `;
+// const BannerBG = styled.div`
+//   width: 100vw;
+//   height: 60vh;
+//   background: url("/static/images/service/service-banner.png") bottom center
+//     no-repeat;
+//   background-size: cover;
+//   .banner-title {
+//     height: 60%;
+//     width: 100%;
+//     background: rgba(67, 67, 67, 0.44);
+//     transform: translate3d(0, 35%, 0);
+//   }
+//   p {
+//     font-family: Quicksand;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 100px;
+//     line-height: 125px;
+//     text-align: center;
+//     letter-spacing: 0.725em;
+//     transform: translate3d(0, 65%, 0);
+//     color: #ffffff;
+//   }
+// `;
+// const ServiceGrid = styled.div`
+//   z-index: 10;
+//   margin: 15vh 0;
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-gap: 95px;
+// `;
 
 /***/ }),
 
@@ -20774,14 +18622,58 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 
 /***/ }),
 
-/***/ 2:
-/*!***************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Ccontact.js ***!
-  \***************************************************************************************************************************************************/
+/***/ "./public/static/images/landing/facebook.svg":
+/*!***************************************************!*\
+  !*** ./public/static/images/landing/facebook.svg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ0Ljk5NjQgMjIuNDk4M0M0NC45OTY0IDEwLjA3MjggMzQuOTIzNyAwIDIyLjQ5ODMgMEMxMC4wNzI4IDAgMCAxMC4wNzI4IDAgMjIuNDk4M0MwIDMzLjcyNzkgOC4yMjcyOSA0My4wMzU0IDE4Ljk4MjkgNDQuNzIzM1YyOS4wMDE4SDEzLjI3MDVWMjIuNDk4M0gxOC45ODI5VjE3LjU0MTZDMTguOTgyOSAxMS45MDMgMjIuMzQxNyA4Ljc4ODM5IDI3LjQ4MDcgOC43ODgzOUMyOS45NDIyIDguNzg4MzkgMzIuNTE3IDkuMjI3NzkgMzIuNTE3IDkuMjI3NzlWMTQuNzY0NUgyOS42ODAxQzI2Ljg4NTMgMTQuNzY0NSAyNi4wMTM2IDE2LjQ5ODcgMjYuMDEzNiAxOC4yNzhWMjIuNDk4M0gzMi4yNTM0TDMxLjI1NTkgMjkuMDAxOEgyNi4wMTM2VjQ0LjcyMzNDMzYuNzY5MyA0My4wMzU0IDQ0Ljk5NjQgMzMuNzI3OSA0NC45OTY0IDIyLjQ5ODNaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
+
+/***/ }),
+
+/***/ "./public/static/images/landing/insta.svg":
+/*!************************************************!*\
+  !*** ./public/static/images/landing/insta.svg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjQwNjIgMjRDMTkuNDA2MiAyNi41MzcxIDIxLjQ2MjkgMjguNTkzOCAyNCAyOC41OTM4QzI2LjUzNzEgMjguNTkzOCAyOC41OTM4IDI2LjUzNzEgMjguNTkzOCAyNEMyOC41OTM4IDIxLjQ2MjkgMjYuNTM3MSAxOS40MDYyIDI0IDE5LjQwNjJDMjEuNDYyOSAxOS40MDYyIDE5LjQwNjIgMjEuNDYyOSAxOS40MDYyIDI0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEzLjI1NjggMTUuODcyNEMxMy40Nzc3IDE1LjI3NCAxMy44MyAxNC43MzI0IDE0LjI4NzcgMTQuMjg3OEMxNC43MzIzIDEzLjgzMDEgMTUuMjczNiAxMy40Nzc4IDE1Ljg3MjMgMTMuMjU3QzE2LjM1NzkgMTMuMDY4NCAxNy4wODc0IDEyLjg0MzkgMTguNDMxIDEyLjc4MjdDMTkuODg0NSAxMi43MTY0IDIwLjMyMDMgMTIuNzAyMSAyNCAxMi43MDIxQzI3LjY4MDEgMTIuNzAyMSAyOC4xMTU4IDEyLjcxNjEgMjkuNTY5IDEyLjc4MjNDMzAuOTEyNiAxMi44NDM5IDMxLjY0MjUgMTMuMDY4NCAzMi4xMjc3IDEzLjI1N0MzMi43MjY0IDEzLjQ3NzggMzMuMjY4MSAxMy44MzAxIDMzLjcxMjMgMTQuMjg3OEMzNC4xNyAxNC43MzI0IDM0LjUyMjMgMTUuMjczNyAzNC43NDM1IDE1Ljg3MjRDMzQuOTMyMSAxNi4zNTggMzUuMTU2NiAxNy4wODc5IDM1LjIxNzggMTguNDMxNUMzNS4yODQxIDE5Ljg4NDYgMzUuMjk4MyAyMC4zMjA0IDM1LjI5ODMgMjQuMDAwNUMzNS4yOTgzIDI3LjY4MDIgMzUuMjg0MSAyOC4xMTYgMzUuMjE3OCAyOS41Njk1QzM1LjE1NjYgMzAuOTEzMSAzNC45MzIxIDMxLjY0MjYgMzQuNzQzNSAzMi4xMjgyQzM0LjUyMjMgMzIuNzI2OSAzNC4xNzA0IDMzLjI2ODIgMzMuNzEyNiAzMy43MTI4QzMzLjI2ODEgMzQuMTcwNSAzMi43MjY4IDM0LjUyMjggMzIuMTI4MSAzNC43NDM2QzMxLjY0MjUgMzQuOTMyNiAzMC45MTI2IDM1LjE1NzEgMjkuNTY5IDM1LjIxODNDMjguMTE1OCAzNS4yODQ1IDI3LjY4MDQgMzUuMjk4NSAyNC4wMDA0IDM1LjI5ODVDMjAuMzE5OSAzNS4yOTg1IDE5Ljg4NDIgMzUuMjg0NSAxOC40MzE0IDM1LjIxODNDMTcuMDg3OCAzNS4xNTcxIDE2LjM1NzkgMzQuOTMyNiAxNS44NzIzIDM0Ljc0MzZDMTQuNjcwNCAzNC4yOCAxMy43MjA1IDMzLjMzMDEgMTMuMjU2OCAzMi4xMjgyQzEzLjA2ODIgMzEuNjQyNiAxMi44NDM4IDMwLjkxMzEgMTIuNzgyMiAyOS41Njk1QzEyLjcxNTkgMjguMTE2IDEyLjcwMiAyNy42ODAyIDEyLjcwMiAyNC4wMDA1QzEyLjcwMiAyMC4zMjA0IDEyLjcxNTkgMTkuODg0NiAxMi43ODIyIDE4LjQzMTVDMTIuODQzNCAxNy4wODc5IDEzLjA2NzkgMTYuMzU4IDEzLjI1NjggMTUuODcyNFpNMjQgMzEuMDc2OEMyNy45MDg2IDMxLjA3NjggMzEuMDc3IDI3LjkwODcgMzEuMDc3IDI0LjAwMDFDMzEuMDc3IDIwLjA5MTYgMjcuOTA4NiAxNi45MjM1IDI0IDE2LjkyMzVDMjAuMDkxOCAxNi45MjM1IDE2LjkyMzMgMjAuMDkxNiAxNi45MjMzIDI0LjAwMDFDMTYuOTIzMyAyNy45MDg3IDIwLjA5MTggMzEuMDc2OCAyNCAzMS4wNzY4Wk0xNi42NDM2IDE4LjI5NzVDMTcuNTU2OSAxOC4yOTc1IDE4LjI5NzQgMTcuNTU3IDE4LjI5NzQgMTYuNjQzN0MxOC4yOTc0IDE1LjczMDMgMTcuNTU2OSAxNC45ODk5IDE2LjY0MzYgMTQuOTg5OUMxNS43MzAyIDE0Ljk4OTkgMTQuOTg5NyAxNS43MzAzIDE0Ljk4OTcgMTYuNjQzN0MxNC45OTAxIDE3LjU1NyAxNS43MzAyIDE4LjI5NzUgMTYuNjQzNiAxOC4yOTc1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI0IDBDMzcuMjUyOCAwIDQ4IDEwLjc0NzIgNDggMjRDNDggMzcuMjUyOCAzNy4yNTI4IDQ4IDI0IDQ4QzEwLjc0NzIgNDggMCAzNy4yNTI4IDAgMjRDMCAxMC43NDcyIDEwLjc0NzIgMCAyNCAwWk0xMC4zMDE5IDI5LjY4MThDMTAuMzY4NSAzMS4xNDg4IDEwLjYwMTggMzIuMTUwNCAxMC45NDI0IDMzLjAyNzFDMTEuNjU4MyAzNC44NzgzIDEzLjEyMTcgMzYuMzQxNyAxNC45NzI5IDM3LjA1NzZDMTUuODQ5MiAzNy4zOTgyIDE2Ljg1MTIgMzcuNjMxMSAxOC4zMTc5IDM3LjY5ODFDMTkuNzg3NSAzNy43NjUxIDIwLjI1NyAzNy43ODEyIDIzLjk5OTYgMzcuNzgxMkMyNy43NDI3IDM3Ljc4MTIgMjguMjExOCAzNy43NjUxIDI5LjY4MTggMzcuNjk4MUMzMS4xNDg0IDM3LjYzMTEgMzIuMTUwNCAzNy4zOTgyIDMzLjAyNjcgMzcuMDU3NkMzMy45NDY3IDM2LjcxMTUgMzQuNzc5NCAzNi4xNjkyIDM1LjQ2NzkgMzUuNDY3OUMzNi4xNjg4IDM0Ljc3OTggMzYuNzExMiAzMy45NDY3IDM3LjA1NzMgMzMuMDI3MUMzNy4zOTc4IDMyLjE1MDggMzcuNjMxMSAzMS4xNDg4IDM3LjY5NzggMjkuNjgyMUMzNy43NjU1IDI4LjIxMjIgMzcuNzgxMiAyNy43NDI3IDM3Ljc4MTIgMjRDMzcuNzgxMiAyMC4yNTczIDM3Ljc2NTUgMTkuNzg3OCAzNy42OTgxIDE4LjMxODJDMzcuNjMxNSAxNi44NTEyIDM3LjM5ODYgMTUuODQ5NiAzNy4wNTggMTQuOTcyOUMzNi43MTE5IDE0LjA1MzMgMzYuMTY5MiAxMy4yMjAyIDM1LjQ2NzkgMTIuNTMyMUMzNC43Nzk4IDExLjgzMDggMzMuOTQ2NyAxMS4yODg1IDMzLjAyNzEgMTAuOTQyNEMzMi4xNTA0IDEwLjYwMTggMzEuMTQ4OCAxMC4zNjg5IDI5LjY4MTggMTAuMzAxOUMyOC4yMTIyIDEwLjIzNDkgMjcuNzQyNyAxMC4yMTg4IDI0IDEwLjIxODhDMjAuMjU3MyAxMC4yMTg4IDE5Ljc4NzggMTAuMjM0OSAxOC4zMTgyIDEwLjMwMjJDMTYuODUxMiAxMC4zNjg5IDE1Ljg0OTYgMTAuNjAxOCAxNC45NzI5IDEwLjk0MkMxNC4wNTMzIDExLjI4ODEgMTMuMjIwMiAxMS44MzA4IDEyLjUzMTcgMTIuNTMyMUMxMS44MzA4IDEzLjIyMDYgMTEuMjg4MSAxNC4wNTMzIDEwLjk0MjQgMTQuOTcyOUMxMC42MDE0IDE1Ljg0OTYgMTAuMzY4NSAxNi44NTEyIDEwLjMwMTUgMTguMzE4MkMxMC4yMzQ1IDE5Ljc4NzggMTAuMjE4OCAyMC4yNTczIDEwLjIxODggMjRDMTAuMjE4OCAyNy43NDI3IDEwLjIzNDUgMjguMjEyMiAxMC4zMDE5IDI5LjY4MThaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
+
+/***/ }),
+
+/***/ "./public/static/images/landing/map.png":
+/*!**********************************************!*\
+  !*** ./public/static/images/landing/map.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/map-6dbac7c6417c1739f6a6d5e8aa9240d9.png";
+
+/***/ }),
+
+/***/ "./public/static/images/landing/phone.svg":
+/*!************************************************!*\
+  !*** ./public/static/images/landing/phone.svg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA0MiA0MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0zNS44NDY1IDYuMTQ4MDNDMjcuNjQ0MyAtMi4wNTE3MyAxNC4zNDc4IC0yLjA0OTc2IDYuMTQ4MDMgNi4xNTI1NEMtMi4wNTE3MyAxNC4zNTQ4IC0yLjA0OTc2IDI3LjY1MTMgNi4xNTI1NCAzNS44NTExQzE0LjM1NDggNDQuMDUwOCAyNy42NTEzIDQ0LjA0ODggMzUuODUxMSAzNS44NDY1QzM5Ljc4OSAzMS45MDczIDQyLjAwMDggMjYuNTY1IDQxLjk5OTUgMjAuOTk1QzQxLjk5ODQgMTUuNDI1OSAzOS43ODUxIDEwLjA4NTQgMzUuODQ2NSA2LjE0ODAzWk0zMS44MDMzIDI5LjI1MjNDMzEuODAyNCAyOS4yNTMyIDMxLjgwMTUgMjkuMjU0MiAzMS44MDA1IDI5LjI1NTFWMjkuMjQ4MUwzMC43MzY1IDMwLjMwNTFDMjkuMzYwNCAzMS42OTg1IDI3LjM1NjMgMzIuMjcxOSAyNS40NTE1IDMxLjgxNzFDMjMuNTMyMyAzMS4zMDM0IDIxLjcwOCAzMC40ODU3IDIwLjA0NzUgMjkuMzk1MUMxOC41MDQ4IDI4LjQwOTIgMTcuMDc1MiAyNy4yNTY2IDE1Ljc4NDUgMjUuOTU4MUMxNC41OTY5IDI0Ljc3OTIgMTMuNTMgMjMuNDg0OCAxMi41OTk1IDIyLjA5NDFDMTEuNTgxNiAyMC41OTc3IDEwLjc3NiAxOC45Njc1IDEwLjIwNTUgMTcuMjUwMUM5LjU1MTQyIDE1LjIzMjQgMTAuMDkzNCAxMy4wMTg1IDExLjYwNTUgMTEuNTMxMUwxMi44NTE1IDEwLjI4NTFDMTMuMTk3OSA5LjkzNzE0IDEzLjc2MDggOS45MzU5MSAxNC4xMDg3IDEwLjI4MjNDMTQuMTA5NiAxMC4yODMyIDE0LjExMDYgMTAuMjg0MSAxNC4xMTE1IDEwLjI4NTFMMTguMDQ1NCAxNC4yMTkxQzE4LjM5MzQgMTQuNTY1NSAxOC4zOTQ2IDE1LjEyODQgMTguMDQ4MiAxNS40NzYzQzE4LjA0NzMgMTUuNDc3MiAxOC4wNDY0IDE1LjQ3ODEgMTguMDQ1NCAxNS40NzkxTDE1LjczNTQgMTcuNzg5MUMxNS4wNzI2IDE4LjQ0NDcgMTQuOTg5MyAxOS40ODY1IDE1LjUzOTUgMjAuMjM5MUMxNi4zNzQ5IDIxLjM4NTcgMTcuMjk5NSAyMi40NjQ3IDE4LjMwNDUgMjMuNDY2MUMxOS40MjUgMjQuNTkxNCAyMC42NDMgMjUuNjE1MSAyMS45NDQ1IDI2LjUyNTJDMjIuNjk2NCAyNy4wNDk3IDIzLjcxNTkgMjYuOTYxMiAyNC4zNjY0IDI2LjMxNTJMMjYuNTk5NCAyNC4wNDcyQzI2Ljk0NTggMjMuNjk5MiAyNy41MDg3IDIzLjY5OCAyNy44NTY2IDI0LjA0NDRDMjcuODU3NSAyNC4wNDUzIDI3Ljg1ODQgMjQuMDQ2MiAyNy44NTk0IDI0LjA0NzJMMzEuODAwNCAyNy45OTUyQzMyLjE0ODUgMjguMzQxNSAzMi4xNDk3IDI4LjkwNDMgMzEuODAzMyAyOS4yNTIzWiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"
+
+/***/ }),
+
+/***/ 3:
+/*!*****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Ccontact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Ccontact.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js!./");
 
 
 /***/ }),
@@ -20797,5 +18689,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=contact.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=services.js.map

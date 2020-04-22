@@ -127,34 +127,58 @@ var ContactForm = function ContactForm() {
       message = _React$useState6[0],
       setMessage = _React$useState6[1];
 
+  var handleSubmit = function handleSubmit(e) {
+    fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: {
+        "form-name": "contact",
+        name: name,
+        phone: phone,
+        subject: subject,
+        message: message
+      }
+    }).then(function () {
+      return alert("Success!");
+    })["catch"](function (error) {
+      return alert(error);
+    });
+    e.preventDefault();
+  };
+
   return __jsx(Container, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 24,
       columnNumber: 5
     }
   }, __jsx(FormBox, {
-    method: "POST",
+    name: "contact",
+    method: "post",
     "data-netlify": "true",
+    "data-netlify-honeypot": "bot-field",
+    onSubmit: handleSubmit,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 25,
       columnNumber: 7
     }
   }, __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 32,
       columnNumber: 9
     }
   }, "Contact Form"), __jsx(InputGroup, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 33,
       columnNumber: 9
     }
   }, __jsx("input", {
@@ -169,20 +193,20 @@ var ContactForm = function ContactForm() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 34,
       columnNumber: 11
     }
   })), __jsx(InputGroup, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 43,
       columnNumber: 9
     }
   }, __jsx("input", {
     className: "phone-input",
     type: "text",
-    name: "email",
+    name: "Phone",
     value: phone,
     placeholder: "Phone",
     onChange: function onChange(phone) {
@@ -191,14 +215,14 @@ var ContactForm = function ContactForm() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 44,
       columnNumber: 11
     }
   })), __jsx(InputGroup, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, __jsx("input", {
@@ -212,14 +236,14 @@ var ContactForm = function ContactForm() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 55,
       columnNumber: 11
     }
   })), __jsx(InputGroup, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 63,
       columnNumber: 9
     }
   }, __jsx("textarea", {
@@ -233,7 +257,7 @@ var ContactForm = function ContactForm() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 64,
       columnNumber: 11
     }
   })), __jsx("button", {
@@ -241,7 +265,7 @@ var ContactForm = function ContactForm() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 72,
       columnNumber: 9
     }
   }, "Submit")));
@@ -255,4 +279,4 @@ var InputGroup = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_
 /***/ })
 
 })
-//# sourceMappingURL=contact.js.aa8018a01f008c3c38b6.hot-update.js.map
+//# sourceMappingURL=contact.js.69f44237bca26c99f79f.hot-update.js.map

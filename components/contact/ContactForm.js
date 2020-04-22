@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [subject, setSubject] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -121,6 +121,7 @@ const FormBox = styled.form`
     font-size: 24px;
     border: none;
     margin: 0 40%;
+    cursor: pointer;
     /* box-shadow: 6px 4px 16px -2px rgba(134, 143, 179, 1); */
   }
   ${media.lessThan("small")`
