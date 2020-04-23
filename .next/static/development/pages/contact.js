@@ -20774,7 +20774,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Ccontact.js ***!
   \***************************************************************************************************************************************************/
@@ -20797,5 +20797,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map

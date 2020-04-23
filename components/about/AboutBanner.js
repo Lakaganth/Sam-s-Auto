@@ -110,7 +110,7 @@ const BannerBG = styled.div`
   width: 100vw;
   height: 424px;
   overflow: hidden;
-  background: url("/static/images/about/about-ban.png") top center no-repeat;
+  background: url("/static/images/about/about-ban.png") center center no-repeat;
   background-size: cover;
   animation: bannerAnimation 1s forwards 0s ease-in-out;
   @keyframes bannerAnimation {

@@ -18666,7 +18666,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iNDIi
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=C%3A%5CUsers%5CLaka%20Ganth%5CDocuments%5CNextJS%5Csam%5Cpages%5Cservices.js ***!
   \*****************************************************************************************************************************************************/
@@ -18689,5 +18689,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=services.js.map
